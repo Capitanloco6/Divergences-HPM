@@ -1,0 +1,10 @@
+owner = SCA
+controller = SCA
+add_core = SFJ
+colonial = 2
+trade_goods = coffee
+life_rating = 35
+1861.1.1 = {
+owner = DOM
+controller = DOM
+}

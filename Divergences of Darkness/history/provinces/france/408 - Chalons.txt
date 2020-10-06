@@ -1,0 +1,8 @@
+owner = DUA
+controller = DUA
+add_core = DUA
+add_core = FRA
+fort = 1
+trade_goods = fruit
+life_rating = 35
+1861.1.1 = { railroad = 3 }

@@ -1,0 +1,17 @@
+leader = {
+	name = "Thomas von Turm"
+	type = land
+	date = 1836.1.1
+	personality = eccentric_genius
+	background = amateur_surveyor
+}
+
+army = {
+	name = "Lippische Armee"
+	location = 585
+	regiment = {
+		name= "1. Lippische Infanterie-Brigade"
+		type = infantry
+		home = 585
+	}	            
+}

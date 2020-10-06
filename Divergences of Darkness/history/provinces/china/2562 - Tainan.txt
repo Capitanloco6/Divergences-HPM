@@ -1,0 +1,6 @@
+owner = TNG
+controller = TNG
+add_core = TNG
+trade_goods = timber
+life_rating = 32
+terrain = montane_forest

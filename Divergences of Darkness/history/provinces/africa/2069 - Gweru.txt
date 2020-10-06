@@ -1,0 +1,11 @@
+owner = SHO
+controller = SHO
+add_core = SHO
+terrain = savanna
+trade_goods = tobacco
+life_rating = 10
+1861.1.1 = {
+	owner = MAT
+	controller = MAT
+	life_rating = 35
+}

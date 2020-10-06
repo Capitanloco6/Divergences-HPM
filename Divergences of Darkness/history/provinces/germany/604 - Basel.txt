@@ -1,0 +1,22 @@
+owner = SWI
+controller = SWI
+add_core = SWI
+add_core = GER
+trade_goods = fruit
+life_rating = 32
+fort = 1
+state_building = {
+	level = 2
+	building = steel_factory
+	upgrade = yes
+}
+
+1861.1.1 = { 
+	railroad = 1
+
+	state_building = {
+		level = 1
+		building = fabric_factory
+		upgrade = yes
+ 	}
+}

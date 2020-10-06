@@ -1,0 +1,11 @@
+owner = SPA
+controller = SPA
+add_core = ZAN
+colonial = 1
+trade_goods = cattle
+terrain = savanna
+life_rating = 35
+1861.1.1 = {
+	owner = ZAN
+	controller = ZAN
+}

@@ -1,0 +1,124 @@
+political_decisions = {
+
+	enable_options = {
+		alert = no
+		potential = {
+			ai = no
+			NOT = { has_global_flag = looking_through_options }
+			NOT = { year = 1837 }
+		}
+		
+		allow = {
+		}
+		
+		effect = {
+			set_global_flag = looking_through_options
+			set_country_flag = country_looking_through_options
+		}
+	}
+	
+	disable_options = {
+		alert = no
+		potential = {
+			ai = no
+			has_country_flag = country_looking_through_options
+			NOT = { year = 1837 }
+		}
+		
+		allow = {
+		}
+		
+		effect = {
+			clr_global_flag = looking_through_options
+			clr_country_flag = country_looking_through_options
+		}
+	}
+	
+	option_disable_anarcho_liberals = {
+		alert = no
+		potential = {
+			ai = no
+			has_country_flag = country_looking_through_options
+			NOT = { year = 1837 }
+			NOT = { has_global_flag = anarcho_liberals_disabled }
+		}
+		
+		allow = {
+		}
+		
+		effect = {
+			set_global_flag = anarcho_liberals_disabled
+		}
+	}
+	
+	option_disable_hpm_crisis = {
+		alert = no
+		potential = {
+			ai = no
+			has_country_flag = country_looking_through_options
+			NOT = { year = 1837 }
+			NOT = { has_global_flag = revolution_n_counter_researched }
+		}
+		
+		allow = {
+		}
+		
+		effect = {
+			set_global_flag = revolution_n_counter_researched
+		}
+	}
+	
+	option_disable_bankruptcy_events = {
+		alert = no
+		potential = {
+			ai = no
+			has_country_flag = country_looking_through_options
+			NOT = { year = 1837 }
+			NOT = { has_country_flag = bankruptcy_events_disabled }
+		}
+		
+		allow = {
+		}
+		
+		effect = {
+			set_country_flag = bankruptcy_events_disabled
+			any_country = { limit = { ai = no } set_country_flag = bankruptcy_events_disabled }
+		}
+	}
+	
+	option_disable_starting_party_loyalty = {
+		alert = no
+		potential = {
+			ai = no
+			has_country_flag = country_looking_through_options
+			NOT = { year = 1837 }
+			NOT = { has_global_flag = party_loyalty_eliminated }
+		}
+		
+		allow = {
+		}
+		
+		effect = {
+			set_global_flag = party_loyalty_eliminated
+			country_event = 6016814
+		}
+	}
+
+	option_disable_DVG_badboy = {
+		alert = no
+		potential = {
+			ai = no
+			has_country_flag = country_looking_through_options
+			NOT = { year = 1837 }
+			NOT = { has_global_flag = DVG_infamy }
+		}
+		
+		allow = {
+		}
+		
+		effect = {
+			set_global_flag = DVG_infamy
+		}		
+		
+	}
+}

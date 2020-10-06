@@ -1,0 +1,8 @@
+owner = NAV
+controller = NAV
+add_core = NAV
+trade_goods = fruit
+life_rating = 35
+
+
+1861.1.1 = { railroad = 3 }
