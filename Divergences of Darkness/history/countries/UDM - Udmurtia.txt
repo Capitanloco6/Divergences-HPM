@@ -1,7 +1,7 @@
 capital = 1031
 primary_culture = udmurt
 religion = orthodox
-government = subject
+government = absolute_monarchy
 plurality = 0.0
 nationalvalue = nv_tradition
 literacy = 0.01

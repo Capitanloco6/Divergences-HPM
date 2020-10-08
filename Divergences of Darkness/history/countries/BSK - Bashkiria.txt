@@ -1,7 +1,7 @@
 capital = 1059
 primary_culture = bashkir
 religion = sunni
-government = subject
+government = absolute_monarchy
 plurality = 0.0
 nationalvalue = nv_tradition
 literacy = 0.01
