@@ -1259,7 +1259,7 @@
 	soldiers = {
 		culture = greek
 		religion = orthodox
-		size= 1100
+		size= 3000
 
 	}
 
