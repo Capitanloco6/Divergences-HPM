@@ -35,8 +35,16 @@ political_decisions = {
 		}
 		allow = {
 			war = no
-			civilized = yes
-			rank = 24
+			OR = {
+			    AND = {
+				civilized = yes
+			    rank = 24
+				}
+				AND = {
+				2562 = { owned_by = THIS }
+				prestige = 35
+				}
+			}	
 		}
 		effect = {
 			prestige = 25
