@@ -5845,7 +5845,7 @@ acquire_core_substate_region = {
 	months = 12
 	crisis = no
 	
-	construction_speed = 0.25
+	construction_speed = 0.50
 	
 	badboy_factor = 0.75
 	prestige_factor = 1.5
