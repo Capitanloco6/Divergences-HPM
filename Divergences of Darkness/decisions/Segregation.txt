@@ -37,6 +37,7 @@ political_decisions = {
 						is_culture_group = mesoandean						
 						is_culture_group = native_north_american						
 						is_culture_group = native_south_american 
+						is_culture_group = african_diaspora_cultures
 					}
 				}
 			}
@@ -278,6 +279,50 @@ political_decisions = {
 				limit = { is_core = THIS any_pop = { has_pop_culture = micronesian } NOT = { owner = { accepted_culture = micronesian } } }
 				owner = { add_accepted_culture = micronesian }
 			}
+			random_owned = {
+				limit = { is_core = THIS any_pop = { has_pop_culture = afro_germanic } NOT = { owner = { accepted_culture = afro_germanic } } }
+				owner = { add_accepted_culture = afro_germanic }
+			}
+			random_owned = {
+				limit = { is_core = THIS any_pop = { has_pop_culture = afro_caribbean } NOT = { owner = { accepted_culture = afro_caribbean } } }
+				owner = { add_accepted_culture = afro_caribbean }
+			}
+		    random_owned = {
+				limit = { is_core = THIS any_pop = { has_pop_culture = afro_american } NOT = { owner = { accepted_culture = afro_american } } }
+				owner = { add_accepted_culture = afro_american }
+			}
+			random_owned = {
+				limit = { is_core = THIS any_pop = { has_pop_culture = afro_caribeno } NOT = { owner = { accepted_culture = afro_caribeno } } }
+				owner = { add_accepted_culture = afro_caribeno }
+			}
+			random_owned = {
+				limit = { is_core = THIS any_pop = { has_pop_culture = afro_brazilian } NOT = { owner = { accepted_culture = afro_brazilian } } }
+				owner = { add_accepted_culture = afro_brazilian }
+			}
+			random_owned = {
+				limit = { is_core = THIS any_pop = { has_pop_culture = afro_antillean } NOT = { owner = { accepted_culture = afro_antillean } } }
+				owner = { add_accepted_culture = afro_antillean }
+			}
+			random_owned = {
+				limit = { is_core = THIS any_pop = { has_pop_culture = kreol } NOT = { owner = { accepted_culture = kreol } } }
+				owner = { add_accepted_culture = kreol }
+			}
+			random_owned = {
+				limit = { is_core = THIS any_pop = { has_pop_culture = afro_latino } NOT = { owner = { accepted_culture = afro_latino } } }
+				owner = { add_accepted_culture = afro_latino }
+			}
+			random_owned = {
+				limit = { is_core = THIS any_pop = { has_pop_culture = zanj } NOT = { owner = { accepted_culture = zanj } } }
+				owner = { add_accepted_culture = zanj }
+			}
+			random_owned = {
+				limit = { is_core = THIS any_pop = { has_pop_culture = afro_frankish } NOT = { owner = { accepted_culture = afro_frankish } } }
+				owner = { add_accepted_culture = afro_frankish }
+			}
+			random_owned = {
+				limit = { is_core = THIS any_pop = { has_pop_culture = darjani } NOT = { owner = { accepted_culture = darjani } } }
+				owner = { add_accepted_culture = darjani }
+			}
 		}
 		ai_will_do = {
 			factor = 1
@@ -389,6 +434,7 @@ political_decisions = {
 					OR = {
 						is_culture_group = native_north_american
 						is_culture_group = native_south_american
+						is_culture_group = african_diaspora_cultures
 						is_culture_group = mesoandean						
 						is_culture_group = oceanic
 					}
@@ -502,6 +548,7 @@ political_decisions = {
 					OR = {
 						is_culture_group = native_north_american
 						is_culture_group = native_south_american
+						is_culture_group = african_diaspora_cultures
 						is_culture_group = mesoandean						
 						is_culture_group = oceanic
 					}
@@ -514,6 +561,7 @@ political_decisions = {
 					OR = {
 						is_culture_group = native_north_american
 						is_culture_group = native_south_american
+						is_culture_group = african_diaspora_cultures
 						is_culture_group = mesoandean						
 						is_culture_group = oceanic
 					}
