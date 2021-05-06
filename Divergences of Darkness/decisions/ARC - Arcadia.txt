@@ -13,9 +13,12 @@ political_decisions = {
 			all_core = {
 					OR = {
 						owned_by = THIS
-						empty = yes						
+						empty = yes		
 						owner = {
-							in_sphere = THIS
+							OR = {
+						        in_sphere = THIS
+						        vassal_of = THIS
+							}	
 						}
 					}
 			}
@@ -34,12 +37,15 @@ political_decisions = {
 			  any_country = {
 				limit = {
 					OR = {
-          tag = PLA
-          tag = NBG
-          tag = KKN
-		  tag = ATS
-          }
-					in_sphere = THIS
+                        tag = VIN
+                        tag = NBG
+                        tag = LST
+		                tag = ATS
+                        }
+					OR = {
+						in_sphere = THIS
+						vassal_of = THIS
+					    }
 				}
 				country_event = 333458
 			  }				
@@ -65,8 +71,12 @@ political_decisions = {
 			all_core = {
 					OR = {
 						owned_by = THIS
+						empty = yes		
 						owner = {
-							in_sphere = THIS
+							OR = {
+						        in_sphere = THIS
+						        vassal_of = THIS
+							}	
 						}
 					}
 			}
@@ -85,11 +95,15 @@ political_decisions = {
 			  any_country = {
 				limit = {
 					OR = {
-          tag = PLA
-          tag = VIN
-		  tag = ATS
-          }
-					in_sphere = THIS
+                        tag = VIN
+                        tag = NBG
+                        tag = LST
+		                tag = ATS
+                        }
+					OR = {
+						in_sphere = THIS
+						vassal_of = THIS
+					    }
 				}
 				country_event = 333458
 			  }				  
@@ -117,8 +131,12 @@ political_decisions = {
 			all_core = {
 					OR = {
 						owned_by = THIS
+						empty = yes		
 						owner = {
-							in_sphere = THIS
+							OR = {
+						        in_sphere = THIS
+						        vassal_of = THIS
+							}	
 						}
 					}
 			}
@@ -137,12 +155,15 @@ political_decisions = {
 			  any_country = {
 				limit = {
 					OR = {
-          tag = VIN
-          tag = NBG
-          tag = LST
-		  tag = ATS
-          }
-					in_sphere = THIS
+                        tag = VIN
+                        tag = NBG
+                        tag = LST
+		                tag = ATS
+                        }
+					OR = {
+						in_sphere = THIS
+						vassal_of = THIS
+					    }
 				}
 				country_event = 333458
 			  }				
@@ -200,9 +221,12 @@ political_decisions = {
 			is_greater_power = yes
       NBG = {
 			all_core = {
-						owned_by = THIS
+				OR = {
+					owned_by = THIS
+					empty = yes
+				}
 			}
-      }
+        }
 			social_thought = 1
 		}
 		effect = {
@@ -230,9 +254,12 @@ political_decisions = {
 			is_greater_power = yes
       PLA = {
 			all_core = {
-						owned_by = THIS
+				OR = {
+					owned_by = THIS
+					empty = yes
+				}
 			}
-      }
+        }
 			social_thought = 1
 		}
 		effect = {
@@ -262,9 +289,12 @@ political_decisions = {
 			is_greater_power = yes
       LST = {
 			all_core = {
-						owned_by = THIS
+				OR = {
+					owned_by = THIS
+					empty = yes
+				}
 			}
-      }
+        }
 			social_thought = 1
 		}
 		effect = {
@@ -371,10 +401,17 @@ political_decisions = {
       money = 50000     
       ARC = {
 			all_core = {
+						OR = {
 						owned_by = THIS
+						empty = yes
+						owner = {
+							in_sphere = THIS
+						}
+					}
+				}	
 			}
-      }
-		}
+        }
+		
 		effect = {	
 				set_country_flag = new_capital   
 				country_event = 333453        
