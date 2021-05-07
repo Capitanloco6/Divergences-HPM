@@ -490,8 +490,9 @@ political_decisions = {
 				tag = ARC 
 				tag = CUB 
 				tag = SFJ 
-				tag = AZL 
 				tag = UBD
+				tag = AZL
+				tag = CLM
 			}
 			owns = 200 
 			NOT = { has_country_flag = athesian_culture }
@@ -551,8 +552,9 @@ political_decisions = {
 				tag = PLA 
 				tag = ARC 
 				tag = ATS 
-				tag = SFJ 
-				tag = AZL 
+				tag = SFJ
+				tag = AZL				
+				tag = CLM 
 				tag = UBD
 			}
 			owns = 2209 
@@ -614,7 +616,8 @@ political_decisions = {
 				tag = ARC 
 				tag = ATS 
 				tag = CUB 
-				tag = AZL 
+				tag = AZL
+				tag = CLM
 				tag = UBD
 			}
 			owns = 2213 
