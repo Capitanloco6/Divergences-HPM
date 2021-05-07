@@ -506,7 +506,10 @@ political_decisions = {
 		picture = "falkland"
 	
 		potential = { 
-		tag = NAN 
+		OR = {
+		    tag = NAN
+			tag = HBE
+			}
 		2131 = { owned_by = SCA }
 		}
 		
