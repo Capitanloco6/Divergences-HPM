@@ -559,8 +559,18 @@ country_event = {
 	desc = "333219.D"
 
 	trigger = { 
-	tag = SAF 
-	primary_culture = boer 
+	OR = {
+	    AND = {
+		    tag = SAF
+ 			primary_culture = boer
+			}
+		AND = {
+		    tag = SAF
+			medicine = 1
+			state_n_government = 1
+			functionalism = 1
+			}
+		}	
 	NOT = { is_vassal = yes }
 	}
 	
