@@ -353,21 +353,20 @@ country_event = {
 	picture = "oirat_khanate"
 	
 	trigger = { 
-	tag = CHG 
-	year = 1850 
-	NOT = { has_country_flag = empire_dislocated }
-	NOT = { year = 1860 }
-	NOT = { 
-        owns = 1556
-     	owns = 1572
-	    owns = 1559
-        owns = 1490
-			}
+		tag = CHG 
+		year = 1850 
+		NOT = { has_country_flag = empire_dislocated }
+		NOT = { year = 1860 }
+		NOT = { 
+			owns = 1556
+			owns = 1572
+			owns = 1559
+			owns = 1490
 		}
 	}
 	
 	mean_time_to_happen = { 
-	months = 2 
+		months = 2 
 	}
 	
 	option = { 

@@ -379,7 +379,7 @@ political_decisions = {
 				AND = { 
 					tag = CLM
 					owns = 2185 
-					}					
+				}						
 				tag = ATS
 				}
 			2209 = {
@@ -509,7 +509,7 @@ political_decisions = {
 		OR = {
 		    tag = NAN
 			tag = HBE
-			}
+		}
 		2131 = { owned_by = SCA }
 		}
 		

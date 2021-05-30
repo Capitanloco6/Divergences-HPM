@@ -47,7 +47,6 @@ political_decisions = {
 			FRA_412 = {
 				add_core = GER
 			}
-			capital = 564
 			564 = {
 				life_rating = 10
 				add_province_modifier = { 
