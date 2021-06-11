@@ -352,7 +352,7 @@ political_decisions = {
   		}
 	}
 	
-    china_han_acceptence = {  
+    china_han_acceptance = {  
       picture = qin_shi_huang
   		potential = {
   			tag = CHI
@@ -361,7 +361,7 @@ political_decisions = {
 		
   		
   		allow = { 
-		  revolution_n_counterrevolution
+		  revolution_n_counterrevolution = 1
           civilized = yes
   		  NOT = { war = yes }
 		
@@ -374,6 +374,7 @@ political_decisions = {
 			add_accepted_culture = min
 			add_accepted_culture = yue
 			add_accepted_culture = hakka
+			add_accepted_culture = hui
 		}
   		ai_will_do = {
   			factor = 1
