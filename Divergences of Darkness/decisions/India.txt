@@ -206,10 +206,12 @@ political_decisions = {
 			KAL_1221 = { add_core = BHA }
 			PAN_1224 = { add_core = BHA }
 			ENG_1321 = { add_core = BHA }
+            NEP_1326 = { add_core = BHA }
 			NEP_1327 = { add_core = BHA }
 			BUR_1330 = { add_core = BHA }
 			BUR_1334 = { add_core = BHA }
 			BUR_1339 = { add_core = BHA }
+            1226 = { add_core = BHA }
 			2128 = { add_core = BHA }
 			any_country = {
 				limit = {

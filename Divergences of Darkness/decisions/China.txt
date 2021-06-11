@@ -351,4 +351,32 @@ political_decisions = {
   			factor = 1
   		}
 	}
+	
+    china_han_acceptence = {  
+      picture = qin_shi_huang
+  		potential = {
+  			tag = CHI
+			NOT = { set_country_flag = china_han_acceptance }
+  		}
+		
+  		
+  		allow = { 
+		  revolution_n_counterrevolution
+          civilized = yes
+  		  NOT = { war = yes }
+		
+  		}
+  		effect = {
+		    set_country_flag = china_han_acceptance
+  			prestige = 20
+  			add_accepted_culture = beifaren
+			add_accepted_culture = nanfaren	
+			add_accepted_culture = min
+			add_accepted_culture = yue
+			add_accepted_culture = hakka
+		}
+  		ai_will_do = {
+  			factor = 1
+  		}
+	}
 }

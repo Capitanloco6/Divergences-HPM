@@ -1,7 +1,7 @@
 capital = 1235
 primary_culture = nepali
 culture = panjabi
-culture = marathi
+culture = avadhi
 religion = hindu
 government = absolute_monarchy
 plurality = 0.0

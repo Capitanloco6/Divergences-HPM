@@ -125,50 +125,50 @@ political_decisions = {
 		}
 	}
 
-	greater_nepal = {
-		picture = greater_nepal
-		potential = {
-			tag = NEP
-			NOT = { has_country_flag = claimed_greater_nepal }
-		}
-		
-		allow = {
-			war = no
-			OR = {
-				NOT = { neighbour = ENG }
-				AND = {
-					war_policy = jingoism
-					civilized = yes
-				}
-			}
-			military_score = 30
-			government = fascist_dictatorship
-		}
-		
-		effect = {
-			set_country_flag = claimed_greater_nepal
-			1235 = { add_core = NEP }
-			1328 = { add_core = NEP }
-			1252 = { add_core = NEP }
-			1255 = { add_core = NEP }
-			any_country = {
-				limit = {
-					OR = {
-						owns = 1235
-						owns = 1328
-						owns = 1252
-						owns = 1255
-					}
-				}
-				relation = { who = THIS value = -100 }
-			}
-		}
-		
-		ai_will_do = {
-			factor = 1
-		}
-	}
-	
+#	greater_nepal = {
+#		picture = greater_nepal
+#		potential = {
+#			tag = NEP
+#			NOT = { has_country_flag = claimed_greater_nepal }
+#		}
+#		
+#		allow = {
+#			war = no
+#			OR = {
+#				NOT = { neighbour = ENG }
+#				AND = {
+#					war_policy = jingoism
+#					civilized = yes
+#				}
+#			}
+#			military_score = 30
+#			government = fascist_dictatorship
+#		}
+#		
+#		effect = {
+#			set_country_flag = claimed_greater_nepal
+#			1235 = { add_core = NEP }
+#			1328 = { add_core = NEP }
+#			1252 = { add_core = NEP }
+#			1255 = { add_core = NEP }
+#			any_country = {
+#				limit = {
+#					OR = {
+#						owns = 1235
+#						owns = 1328
+#						owns = 1252
+#						owns = 1255
+#					}
+#				}
+#				relation = { who = THIS value = -100 }
+#			}
+#		}
+#		
+#		ai_will_do = {
+#			factor = 1
+#		}
+#	}
+#	
 	greater_serbia = {
 	picture = greater_serbia
 		potential = {
