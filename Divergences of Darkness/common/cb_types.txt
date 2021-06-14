@@ -2438,6 +2438,20 @@ liberate_puppet = {
     war_name = WAR_LIBERATE_NAME
 
     on_add = {
+        any_country = {
+            limit = {
+                exists = yes
+                NOT = { has_country_flag = existing_country }
+            }
+            set_country_flag = existing_country
+        }
+        any_country = {
+            limit = {
+                exists = no
+                has_country_flag = existing_country
+            }
+            clr_country_flag = existing_country
+        }
         move_issue_percentage = {
             from = jingoism
             to = pro_military
@@ -2450,6 +2464,7 @@ liberate_puppet = {
         any_country = {
             limit = {
                 exists = yes
+                NOT = { has_country_flag = existing_country }
                 is_vassal = no
                 in_sphere = THIS
             }

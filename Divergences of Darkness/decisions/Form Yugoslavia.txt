@@ -398,25 +398,9 @@ political_decisions = {
             }
             any_owned = {
                 limit = {
-                    is_core = THIS
                     is_core = YUG
-                    OR = {
-                        is_core = SER
-                        is_core = BOS
-                        is_core = CRO
-                    }
+                    NOT = { is_core = THIS }					
                 }
-                remove_core = THIS
-            }
-            any_owned = {
-                limit = {
-                    is_core = THIS
-                    is_core = YUG
-                }
-                remove_core = YUG
-            }
-            any_owned = {
-                limit = { is_core = YUG }
                 secede_province = YUG
             }
             create_vassal = YUG
