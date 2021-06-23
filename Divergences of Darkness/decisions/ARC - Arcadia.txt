@@ -478,7 +478,12 @@ political_decisions = {
             voting_system = proportional_representation
             citizens_rights = all_voting_pops
             ARC = {
-                all_core = { owned_by = THIS }
+                all_core = {
+                    OR = {
+                        owned_by = THIS
+                        empty = yes
+                    }
+                }					
             }
         }
         effect = {
@@ -542,6 +547,13 @@ political_decisions = {
         effect = {
             add_accepted_culture = athesian
             set_country_flag = athesian_culture
+            any_owned = {
+                limit = {
+                    is_core = THIS
+                    is_core = ATS
+                }
+                remove_core = ATS
+            }
             any_pop = {
                 limit = { culture = athesian }
                 militancy = -3
@@ -687,22 +699,206 @@ political_decisions = {
         }
     }
 
+afro_latin_citizenship = {
+        picture = acceptation_afro
+        potential = {
+            OR = {
+                tag = VIN
+                tag = PLA
+                tag = NBG
+                tag = ARC
+            }
+            OR = {
+                owns = 2211
+                owns = 2140
+                owns = 135
+            }
+            NOT = { has_country_flag = afro_latino_citizens }
+        }
+        allow = {
+            OR = {
+                owns = 2211
+                owns = 2140
+                owns = 135
+            }
+            NOT = { war = yes }
+            slavery = no_slavery
+            NOT = { average_militancy = 3 }
+            OR = {
+                upper_house = {
+                    ideology = socialist
+                    value = 0.4
+                }
+                upper_house = {
+                    ideology = liberal
+                    value = 0.4
+                }
+                AND = {
+                    upper_house = {
+                        ideology = socialist
+                        value = 0.25
+                    }
+                    upper_house = {
+                        ideology = liberal
+                        value = 0.25
+                    }
+                }
+            }
+        }
+        effect = {
+            add_accepted_culture = afro_latino
+            set_country_flag = afro_latino_citizens
+            any_pop = {
+                limit = {
+                    NOT = { culture = afro_latino }
+                }
+                militancy = 1
+            }
+            any_pop = {
+                limit = { culture = afro_latino }
+                consciousness = 2
+            }
+        }
+    }
+	
+	afro_germanic_citizenship = {
+        picture = acceptation_afro
+        potential = {
+            OR = {
+                tag = VIN
+                tag = PLA
+                tag = NBG
+                tag = ARC
+            }
+            OR = {
+                owns = 2215
+                owns = 2216
+                owns = 2222
+            }
+            NOT = { has_country_flag = afro_germanic_citizens }
+        }
+        allow = {
+            OR = {
+                owns = 2215
+                owns = 2216
+                owns = 2222
+            }
+            NOT = { war = yes }
+            slavery = no_slavery
+            NOT = { average_militancy = 3 }
+            OR = {
+                upper_house = {
+                    ideology = socialist
+                    value = 0.4
+                }
+                upper_house = {
+                    ideology = liberal
+                    value = 0.4
+                }
+                AND = {
+                    upper_house = {
+                        ideology = socialist
+                        value = 0.25
+                    }
+                    upper_house = {
+                        ideology = liberal
+                        value = 0.25
+                    }
+                }
+            }
+        }
+        effect = {
+            add_accepted_culture = afro_germanic
+            set_country_flag = afro_germanic_citizens
+            any_pop = {
+                limit = {
+                    NOT = { culture = afro_germanic }
+                }
+                militancy = 1
+            }
+            any_pop = {
+                limit = { culture = afro_germanic }
+                consciousness = 2
+            }
+        }
+    }
+	
+	rohnnst_citizenship = {
+        picture = acceptation_afro
+        potential = {
+            OR = {
+                tag = VIN
+                tag = PLA
+                tag = NBG
+                tag = ARC
+            }
+            NOT = { has_country_flag = rohnnst_citizens }
+            owns = 30
+        }
+        allow = {
+            owns = 30
+            NOT = { war = yes }
+            slavery = no_slavery
+            NOT = { average_militancy = 3 }
+            OR = {
+                upper_house = {
+                    ideology = socialist
+                    value = 0.4
+                }
+                upper_house = {
+                    ideology = liberal
+                    value = 0.4
+                }
+                AND = {
+                    upper_house = {
+                        ideology = socialist
+                        value = 0.25
+                    }
+                    upper_house = {
+                        ideology = liberal
+                        value = 0.25
+                    }
+                }
+            }
+        }
+        effect = {
+            add_accepted_culture = rohnnst
+            set_country_flag = rohnnst_citizens
+            any_pop = {
+                limit = {
+                    NOT = { culture = rohnnst }
+                }
+                militancy = 1
+            }
+            any_pop = {
+                limit = { culture = rohnnst }
+                consciousness = 2
+            }
+        }
+    }
+		
     Western_border_treaty = {
         picture = Manifest_Destiny_ARC
 
         potential = {
             tag = ARC
-            NOT = {
-                DNG = { rank = 8 }
-            }
+            OR = {
+                DNG = { exists = no }
+                NOT = {
+                    DNG = { rank = 8 }
+                }
+            }	
             NOT = { has_country_flag = manifest_destiny_arc }
             has_country_flag = panarcadianism
         }
 
         allow = {
-            DNG = {
-                NOT = { war = yes }
-            }
+            OR = {
+                DNG = { exists = no }
+                DNG = {
+                    NOT = { war = yes }
+                }
+            }	
             NOT = { war = yes }
             money = 1000000
         }

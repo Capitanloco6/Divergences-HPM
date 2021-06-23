@@ -290,6 +290,7 @@ political_decisions = {
             war = no
             is_greater_power = yes
             SER = {
+                ai = yes
                 all_core = {
                     OR = {
                         owned_by = THIS
@@ -304,6 +305,7 @@ political_decisions = {
                 }
             }
             BOS = {
+                ai = yes
                 all_core = {
                     OR = {
                         owned_by = THIS
@@ -318,6 +320,7 @@ political_decisions = {
                 }
             }
             CRO = {
+                ai = yes
                 all_core = {
                     OR = {
                         owned_by = THIS

@@ -429,7 +429,7 @@ political_decisions = {
 
         effect = {
             set_country_flag = south_acc
-            add_accepted_culture = north_german
+            add_accepted_culture = south_german
         }
     }
 
