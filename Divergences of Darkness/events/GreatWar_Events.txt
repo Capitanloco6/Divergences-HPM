@@ -2979,15 +2979,44 @@ country_event = {
             remove_province_modifier = anglois_federalism
         }
 
+        ENG_273 = { remove_core = DUA add_core = ENL }
+        ENG_300 = { remove_core = DUA add_core = ENL }
+        ENG_296 = { remove_core = DUA add_core = ENL }
+        ENG_291 = { remove_core = DUA add_core = ENL }
+        capital = 425
+        any_country = {
+            limit = {
+               tag = OCC
+               vassal_of = THIS
+            }
+            annex_to = THIS
+        }
+        any_country = {
+            limit = {
+               tag = IRE
+               vassal_of = THIS
+            }
+            annex_to = THIS
+        }
+        any_country = {
+            limit = {
+               tag = ENL
+               vassal_of = THIS
+            }
+            annex_to = THIS
+        }
+        inherit = FRA
         change_tag = FRA
+        primary_culture = french
         remove_accepted_culture = welsh
         remove_accepted_culture = english
         remove_accepted_culture = irish
         remove_accepted_culture = scottish
         remove_accepted_culture = provencal
         remove_accepted_culture = basque
-        add_accepted_culture = french
+        add_accepted_culture = anglois
         add_accepted_culture = breton
+        ENL = { add_accepted_culture = anglois }
 
         any_owned = {
             limit = { is_core = DUA }

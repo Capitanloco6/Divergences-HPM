@@ -7562,6 +7562,12 @@ acquire_capital = {
             neighbour = THIS
             war_with = THIS
         }
+        OR = {
+            war_with = THIS
+            THIS = {
+                NOT = { has_country_modifier = no_more_war }
+            }
+        }
         NOT = { is_our_vassal = THIS }
         number_of_states = 2 # annex if you want their last state
         any_owned_province = {
@@ -7644,6 +7650,12 @@ demand_capital_concession = {
         any_owned_province = {
             not = { is_core = THIS }
             is_colonial = no
+        }
+        OR = {
+            war_with = THIS
+            THIS = {
+                NOT = { has_country_modifier = no_more_war }
+            }
         }
         AND = {
             civilized = no

@@ -737,53 +737,32 @@ country_event = { ######All cultures accepted
 }
 
 country_event = { ###Occitan and French puppets
-    id = 650312
-    title = "DUA112.T"
-    desc = "DUA112.D"
-
-    is_triggered_only = yes
-
-    option = {
-        name = "650312.A"
+	id = 650312
+	title = "DUA112.T"
+	desc = "DUA112.D"
+	
+	is_triggered_only = yes 
+	major = yes 
+	
+    option = { 
+	    name = "650312.A"
         FRA_420 = { remove_core = FRA }
         FRA_425 = { remove_core = FRA }
         FRA_435 = { remove_core = FRA }
         FRA_418 = { remove_core = FRA }
-        any_country = {
-            any_owned = {
-                limit = { is_core = OCC }
-                remove_core = DUA
-            }
-        }
-        release_vassal = FRA
-        release_vassal = OCC
-        any_owned = {
-            limit = { is_core = OCC }
-            remove_core = DUA
-            secede_province = OCC
-        }
-        create_vassal = OCC
-        diplomatic_influence = {
-            who = OCC
-            value = 300
-        }
-        FRA = {
-            prestige = -100
-            capital = 438
-        }
-        OCC = {
-            prestige = -100
-            capital = 455
-        }
-        diplomatic_influence = {
-            who = FRA
-            value = 300
-        }
+        any_owned = { limit = { is_core = FRA } remove_core = DUA }
+        any_owned = { limit = { is_core = OCC } remove_core = DUA }
+        release_vassal = FRA 
+        release_vassal = OCC 
+        diplomatic_influence = { who = FRA value = 300 }
+        diplomatic_influence = { who = OCC value = 300 }
+        FRA = { prestige = -100 capital = 438 }
+        OCC = { prestige = -100 capital = 455 }
         any_pop = { militancy = -3 }
         add_accepted_culture = english
         add_accepted_culture = irish
         capital = 300
-    }
+	}
 }
 
 country_event = { ###France and Occitania leave
