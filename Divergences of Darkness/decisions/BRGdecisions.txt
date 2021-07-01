@@ -423,4 +423,211 @@ political_decisions = {
             add_accepted_culture = rheinish
         }
     }
+    
+    rhenish_lands_BRG = {
+        picture = froehliche_rheinland
+        potential = {
+            tag = BRG
+            has_country_flag = BRG_rhein
+            NOT = { has_country_flag = BRG_rhenish_lands }
+            NOT = {
+                GER = { exists = yes }
+            }
+        }
+			
+        allow = {
+            is_greater_power = yes
+            all_core = { owned_by = THIS } 
+            WUR_589 = {
+                OR = {
+                    owned_by = THIS
+                    owner = {
+                        OR = {
+                            in_sphere = THIS
+                            vassal_of = THIS
+                        }
+                    }
+                }
+            }
+            BAD_586 = {
+                OR = {
+                    owned_by = THIS
+                    owner = {
+                        OR = {
+                            in_sphere = THIS
+                            vassal_of = THIS
+                        }
+                    }
+                }
+            }
+            PRU_575 = {
+                OR = {
+                    owned_by = THIS
+                    owner = {
+                        OR = {
+                            in_sphere = THIS
+                            vassal_of = THIS
+                        }
+                    }
+                }
+            }
+            564 = {
+                OR = {
+                    owned_by = THIS
+                    owner = {
+                        OR = {
+                            in_sphere = THIS
+                            vassal_of = THIS
+                        }
+                    }
+                }
+            }
+            565 = {
+                OR = {
+                    owned_by = THIS
+                    owner = {
+                        OR = {
+                            in_sphere = THIS
+                            vassal_of = THIS
+                        }
+                    }
+                }
+            }
+            584 = {
+                OR = {
+                    owned_by = THIS
+                    owner = {
+                        OR = {
+                            in_sphere = THIS
+                            vassal_of = THIS
+                        }
+                    }
+                }
+            }
+            583 = {
+                OR = {
+                    owned_by = THIS
+                    owner = {
+                        OR = {
+                            in_sphere = THIS
+                            vassal_of = THIS
+                        }
+                    }
+                }
+            }
+            581 = {
+                OR = {
+                    owned_by = THIS
+                    owner = {
+                        OR = {
+                            in_sphere = THIS
+                            vassal_of = THIS
+                        }
+                    }
+                }
+            }
+            580 = {
+                OR = {
+                    owned_by = THIS
+                    owner = {
+                        OR = {
+                            in_sphere = THIS
+                            vassal_of = THIS
+                        }
+                    }
+                }
+            }
+            1743 = {
+                OR = {
+                    owned_by = THIS
+                    owner = {
+                        OR = {
+                            in_sphere = THIS
+                            vassal_of = THIS
+                        }
+                    }
+                }
+            }
+            543 = {
+                OR = {
+                    owned_by = THIS
+                    owner = {
+                        OR = {
+                            in_sphere = THIS
+                            vassal_of = THIS
+                        }
+                    }
+                }
+            }
+            542 = {
+                OR = {
+                    owned_by = THIS
+                    owner = {
+                        OR = {
+                            in_sphere = THIS
+                            vassal_of = THIS
+                        }
+                    }
+                }
+            }
+            2560 = {
+                OR = {
+                    owned_by = THIS
+                    owner = {
+                        OR = {
+                            in_sphere = THIS
+                            vassal_of = THIS
+                        }
+                    }
+                }
+            }
+        }
+
+        effect = {
+            set_country_flag = BRG_rhenish_lands
+            prestige = 20
+            any_country = {
+                limit = {
+                    OR = {
+                        tag = BAD
+                        tag = WUR
+                        tag = HES
+                        tag = FRM
+                        tag = NAS
+                        tag = BEG
+                        tag = MNR
+                        tag = FRI
+                    }
+                    OR = {
+                        in_sphere = THIS
+                        vassal_of = THIS
+                    }
+                }
+            annex_to = THIS
+            }
+            WUR_589 = { add_core = BRG }
+            BAD_586 = { add_core = BRG }
+            PRU_575 = { add_core = BRG }
+            564 = { add_core = BRG }
+            565 = { add_core = BRG }
+            584 = { add_core = BRG }
+            583 = { add_core = BRG }
+            581 = { add_core = BRG }
+            580 = { add_core = BRG }
+            1743 = { add_core = BRG }
+            543 = { add_core = BRG }
+            542 = { add_core = BRG }
+            2560 = { add_core = BRG }
+            any_country = {
+                limit = {
+                    tag = LIP
+                    OR = {
+                        in_sphere = THIS
+                        vassal_of = THIS  
+                    }
+                }
+            538 = { secede_province = LIP }
+            }
+        }
+    }
 }

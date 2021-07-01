@@ -993,7 +993,12 @@ country_event = { ### Event for Arabia to gain PROV1806 if they own Khartoum (PR
     trigger = {
         tag = UAR
         exists = yes
-        1806 = { empty = yes }
+        1806 = { 
+            OR = {
+                empty = yes 
+                owned_by = THIS
+            }
+        }
         war = no
         owns = 1827
     }

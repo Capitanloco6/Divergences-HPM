@@ -242,6 +242,7 @@ political_decisions = {
             set_country_flag = my_latvian_brother
             prestige = 10
             add_accepted_culture = latvian
+            add_accepted_culture = estonian
         }
 
         ai_will_do = { factor = 1 }

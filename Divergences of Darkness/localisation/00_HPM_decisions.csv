@@ -1930,6 +1930,8 @@ burgundian_flanders_title;Renaming the Flanders;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 burgundian_flanders_desc;Now we have taken the Flanders, we will certainly give back their true names, Burgundian names, to the Flemish cities!;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 accept_rhenish_BRG_title;Integration of the Rheinland;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 accept_rhenish_BRG_desc;The Rhine River has been the official border of the Kingdom of Burgundy since the conquests of Charles the Bold of 1483, even if it would take time to integrate the various duchies and cities in the Burgundian state. While they never enjoyed the same relation the Dutch had with the Valois the Rhineland was not a rebellious area, that is until the German revolution. Ever since the contract between Burgundy and the Rhenish seemed to have been broken. Eventually with efficient policies of integration this trust can be rebuild as to secure the loyalty of the Rhineland to Anvers.;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+rhenish_lands_BRG_title;Assimilation of the Rheinland;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+rhenish_lands_BRG_desc;Now that we have accepted the rhenish in our great nation, it is time to integrate the various duchies and cities german-rhenish east of us!;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 build_kiel_canal_mod_title;Build the Kiel Canal;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 build_kiel_canal_mod_desc;Building a canal between the Baltic and The North Sea would be a tremendous boon to our shipping, and we are in a position to build one in Kiel. Reserve at least 120,000 before starting construction.;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 build_suez_canal_mod_title;Build the Suez Canal;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;

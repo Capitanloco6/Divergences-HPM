@@ -20,6 +20,11 @@ country_event = {
         badboy = 10
         prestige = 15
         any_pop = { militancy = -5 }
+        casus_belli = {
+            target = TUR
+            type = liberate_country
+            months = 12
+        }
         war = {
             target = TUR
             attacker_goal = {
