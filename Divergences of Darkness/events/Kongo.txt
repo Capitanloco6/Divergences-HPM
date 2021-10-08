@@ -49,6 +49,10 @@ country_event = {
             name = kongo_missing_children
             duration = 3650
         }
+        add_country_modifier = {
+            name = western_influences
+            duration = -1
+        }
         521 = {
             owner = {
                 relation = {
@@ -112,13 +116,14 @@ country_event = {
         }
         random_owned = {
             owner = {
-                economic_reform = yes_education_reform
-                economic_reform = yes_admin_reform
-                military_reform = yes_foreign_officers
-                military_reform = yes_foreign_weapons
-                activate_technology = flintlock_rifles
                 clr_country_flag = lacking_writing_system
                 remove_country_modifier = lacks_writing_sytem
+                economic_reform = yes_western_science
+                economic_reform = yes_admin_reform
+                military_reform = yes_foreign_training
+                military_reform = yes_foreign_weapons
+                military_reform = yes_foreign_navies
+                activate_technology = flintlock_rifles
             }
         }
 

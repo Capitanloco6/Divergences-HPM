@@ -157,8 +157,29 @@ political_decisions = {
             }
 
             TUS = { country_event = 36720 }
+			
+            ################Uncivs Close their borders###########################
+            any_country = {
+                limit = {
+                    civilized = no
+                    has_country_modifier = uncivilized_isolationism
+                }
+                political_reform = closed_borders
+            }
+            ##########################################################
+			
+			
+            any_country = {
+                limit = {
+                    has_country_flag = lacking_writing_system
+                    exists = yes
+                }
+                add_country_modifier = { name = lacks_writing_system duration = -1 }
+            }
+			
 
             set_global_flag = setup_complete
+			
         }
 
         ai_will_do = { factor = 0 }
