@@ -4426,14 +4426,19 @@ province_event = {
                 NOT = { province_id = 1496 }
                 NOT = { province_id = 1569 }
                 NOT = { province_id = 1566 }
+                NOT = { province_id = 1481 }
             }
             AND = {
                 province_id = 1569
-                total_pops = 30000
+                #total_pops = 30000
             }
             AND = {
                 province_id = 1566
-                total_pops = 30000
+                #total_pops = 30000
+            }
+            AND = {
+                province_id = 1481
+                #total_pops = 30000
             }
         }
         port = yes
