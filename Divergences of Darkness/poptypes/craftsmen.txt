@@ -205,11 +205,11 @@ migration_target = {
 		is_colonial = yes
 	}
 	
-    modifier = {
-        factor = 0
-        is_overseas = yes
-        #country = { border_policy = closed_borders }
-    }
+    #modifier = {
+    #    factor = 0
+    #    is_overseas = yes
+    #    country = { border_policy = closed_borders }
+    #}
 
     modifier = {
         factor = 0

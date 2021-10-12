@@ -8102,6 +8102,15 @@ EVTNAME66901;Quechua Rebellion!;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 EVTDESC66901;Upon the start the Incan Emperor Pachacuti II's reign the Quechua people of Cuzco and Arequipa began agitating to rejoin the Inca Empire. After repeatedly being ignored they have entered into open revolt. As the Incans grow in power and prestige it will become increasingly difficult to hold onto the area as it contains their ancestral capital. It maybe adventagous to transfer the lands peacefully to the Inca, rather than waiting for them to come and take it themselves. On the other hand we could simply put down the rebellion, and the upstart Inca Empire itself and be done with it as they most likely incited the rebellion in the first place to further their own aims.;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 EVTOPTA66901;"Allow the savages to Join their beloved ""Empire""";;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 EVTOPTB66901;We will never allow ourselves to lose land! Fight the savages!;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+EVTNAME66902;The Incan Emperor is threatening us!;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+EVTDESC66902;Upon the start the Incan Emperor Pachacuti II's reign the Quechua people of Cuzco and Arequipa began agitating to rejoin the Inca Empire. After repeatedly being ignored they have entered into open revolt.
+EVTOPTA66902;"Help me my lord!";;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+EVTNAME66903;The Quechua Rebellion is defeated!;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+EVTDESC66903;The Incan armies flee! We have crushed the enemy and retrieved our vassal's rightful land!;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+EVTOPTA66903;"It is time we give the land back to their rightful owners.";;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+EVTNAME66904;The Quechua Rebellion is defeated!;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+EVTDESC66904;Our glorious armies, with the help of our overlord, have expelled the filthy incas from our core land that they claim as theirs!;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+EVTOPTA66904;"Viva la $COUNTRY$";;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 PNJ_revolt.T;Punjab in open revolt !;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 PNJ_revolt.D;The Panjabis have revolted against our rule and rallied around the late son of Rajit Singh, Dhulip Singh who has entered Lahore in triumph ! We have to act swiftly or our Indian ambitions will end there !;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 78901.A;Damn the Panjabis !;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
