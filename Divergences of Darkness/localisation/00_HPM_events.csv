@@ -11841,7 +11841,7 @@ EVTDESC22263;The Sultane of Maghreb has for centuries been a bulwark against Chr
 EVTOPTA22263;The Caliphate shall be universal.;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 EVTOPTB22263;We cannot afford confrontation with the European powers.;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 EVTNAME90670;Broken Jihad;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
-EVTDESC90670;Despite our best efforts the infidels have forced us to concede a defeat. Our will for Jihad has been broken and the legitimacy of the Caliphate has come under serious doubts.;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+EVTDESC90670;Despite our best efforts we have been humiliated. Our will for Jihad has been broken and the legitimacy of the Caliphate has come under serious doubts.;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 EVTOPTA90670;Why has Allah forsaken us?!;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 EVTNAME90671;Jihad Declared;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 EVTDESC90671;We will crush our enemies who haven't seen the light! Unfortunately with our military occupied the remaining infidels in our land might get the courage to rebel against our rule...;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
@@ -11849,6 +11849,9 @@ EVTOPTA90671;Allah is with us!;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 EVTNAME90673;Jihad Won;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 EVTDESC90673;We have succeeded in our conquest of the infidel lands!;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 EVTOPTA90673;Allahu Akbar!;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+EVTNAME90674;Reconsidering our Government;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+EVTDESC90674;The faith in our divine mandate has been shaken up. We must return to somewhat more secular ways.;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+EVTOPTA90674;It is necessary...;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 EVTNAME199035;Mining Boom in $PROVINCENAME$;;;;;;;;;;;;;;;;;;;;;;;x;;;;;;;;;;;;;;;;;;;;;;;;;;;x;;;;
 EVTDESC199035;Iron mining is on the rise in $PROVINCENAME$, leading to a good part of the population abandoning previous economical activities in favor of prospecting and extracting iron. Meanwhile, in other parts of $COUNTRY$, new sources of income are discovered or explored.;;;;;;;;;;;;;;;;;;;;;;;x;;;;;;;;;;;;;;;;;;;;;;;;;;;x;;;;
 EVTOPTA199035;This will surely bring us prosperity.;;;;;;;;;;;;;;;;;;;;;;;x;;;;;;;;;;;;;;;;;;;;;;;;;;;x;;;;
