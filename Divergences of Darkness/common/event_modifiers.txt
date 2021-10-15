@@ -2560,23 +2560,6 @@ war_focus = {
     icon = 7
 }
 
-kongo_missing_children = {
-    core_pop_militancy_modifier = 0.15
-    icon = 7
-}
-
-influx_of_ideas = {
-    research_points_modifier = 0.5
-    education_efficiency_modifier = 0.1
-    icon = 5
-}
-
-kongo_missionaries = {
-    education_efficiency_modifier = 0.2
-    core_pop_militancy_modifier = 0.05
-    icon = 5
-}
-
 ### Ideological Strongholds ###
 reactionary_stronghold = {
     pop_consciousness_modifier = -0.2
@@ -2616,6 +2599,30 @@ fascist_stronghold = {
     pop_militancy_modifier = 0.05
     icon = 3
 }
+
+### Kongo ###
+kongo_missing_children = {
+    core_pop_militancy_modifier = 0.15
+    icon = 7
+}
+
+influx_of_ideas = {
+    research_points_modifier = 0.5
+    education_efficiency_modifier = 0.1
+    icon = 5
+}
+
+kongo_missionaries = {
+    education_efficiency_modifier = 0.2
+    core_pop_militancy_modifier = 0.05
+    icon = 5
+}
+
+demoralized_warriors = {
+    land_organisation = -0.5
+    icon = 3
+}
+
 
 ### Caliphate ###
 recent_jihad = {

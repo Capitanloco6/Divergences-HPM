@@ -478,6 +478,8 @@ ansei_purge;Ansei Purge;;;;;;;;;;;;x,,,,,,,,,,,,,,,,,,,,,,;;;;;;;;;;;;;;;;;;;;;;
 meddled_in_foreign_affairs;Meddled in Foreign Affairs;;;;;;;;;;;;x,,,,,,,,,,,,,,,,,,,,,,;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 no_freedom;Attempted Freedom;;;;;;;;;;;;x,,,,,,,,,,,,,,,,,,,,,,;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 no_freedom_desc;We attempted to free ourselves from foreign rule. We must wait until there is another opportunity, as for now they are watching us closely.;;;;;;;;;;;;x,,,,,,,,,,,,,,,,,,,,,;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+demoralized_warriors;Demoralized Warriors;;;;;;;;;;;;x,,,,,,,,,,,,,,,,,,,,,,;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+demoralized_warriors_desc;Many warriors are missing their children. They do not believe we made the right decision.;;;;;;;;;;;;x,,,,,,,,,,,,,,,,,,,,,,;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 kongo_missing_children;Missing Children;;;;;;;;;;;;x,,,,,,,,,,,,,,,,,,,,,,;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 kongo_missing_children_desc;Many of our children have been shipped to Europe for an education.;;;;;;;;;;;;x,,,,,,,,,,,,,,,,,,,,,,;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 kongo_missionaries;Catholic Missionaries;;;;;;;;;;;;x,,,,,,,,,,,,,,,,,,,,,,;;;;;;;;;;;;;;;;;;;;;;;;;;;;
