@@ -132,6 +132,7 @@ political_decisions = {
 				owned_by = THIS
 			}
 			money = 10000
+			iron_railroad = 1
 		}
 		
         effect = {
