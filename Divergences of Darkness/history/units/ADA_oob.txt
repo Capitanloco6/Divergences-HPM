@@ -1,3 +1,14 @@
+
+
+FUN = { 
+	value = 50		#relation
+}
+
+AJU = { 
+	value = 75		#relation
+}
+
+
 leader = {
 	name = "Ahmad ibn Ibrihim al-Ghazi"
 	type = land
