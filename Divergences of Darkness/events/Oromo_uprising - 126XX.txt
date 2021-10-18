@@ -62,6 +62,7 @@ country_event = {
 			small_arms = 20
             regular_clothes = 20
             canned_food = 20
+			add_country_modifier = { name = zemene_mesafint duration = 730 }
 		}
 		AMT = {
 			treasury = 10000

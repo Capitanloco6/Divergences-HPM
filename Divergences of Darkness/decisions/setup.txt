@@ -175,9 +175,9 @@ political_decisions = {
                 add_country_modifier = { name = lacks_writing_system duration = -1 }
             }
 			
-			ADA = { add_country_modifier = { name = zemene_mesafint duration = 3650 small_arms = 50 canned_food = 50 regular_clothes = 50 } }
-			AMT = { add_country_modifier = { name = zemene_mesafint duration = 3650 small_arms = 50 canned_food = 50 regular_clothes = 50 } }
-			ETH = { add_country_modifier = { name = zemene_mesafint duration = 3650 small_arms = 100 canned_food = 100 regular_clothes = 100 grain = 100 } }
+			ADA = { add_country_modifier = { name = zemene_mesafint duration = 3650 } small_arms = 50 canned_food = 50 regular_clothes = 50 }
+			AMT = { add_country_modifier = { name = zemene_mesafint duration = 3650 } small_arms = 50 canned_food = 50 regular_clothes = 50 }
+			ETH = { add_country_modifier = { name = zemene_mesafint duration = 3650 } small_arms = 100 canned_food = 100 regular_clothes = 100 grain = 200 }
 			
             ##########################################################
 			

@@ -458,15 +458,17 @@ political_decisions = {
 			}
 			add_accepted_culture = harari
 			add_accepted_culture = afar
+			
+			grain = 100
+			small_arms = 50
+			regular_clothes = 50
+			canned_food = 50
         }
         ai_will_do = {
 			factor = 1
 			modifier = {
 				factor = 0
-				OR = {
-					war_exhaustion = 1
-					NOT = { total_amount_of_divisions = 1 }
-				}
+				war_exhaustion = 1
 			}
 		}
     }
