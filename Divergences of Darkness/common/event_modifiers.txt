@@ -2056,6 +2056,13 @@ disunited_country = {
     icon = 8
 }
 
+zemene_mesafint = {
+    war_exhaustion = -2.5
+    supply_consumption = -0.75
+    icon = 18
+}
+
+
 ### The Great Game ###
 border_incident = {
     war_exhaustion = -0.01
@@ -2622,7 +2629,6 @@ demoralized_warriors = {
     land_organisation = -0.5
     icon = 3
 }
-
 
 ### Caliphate ###
 recent_jihad = {

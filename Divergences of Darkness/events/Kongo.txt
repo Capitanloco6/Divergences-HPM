@@ -69,7 +69,7 @@ country_event = {
                 }
             }
         }
-        ai_chance = { factor = 50 }
+        ai_chance = { factor = 20 }
     }
 
     option = {
@@ -82,7 +82,7 @@ country_event = {
                 }
             }
         }
-        ai_chance = { factor = 50 }
+        ai_chance = { factor = 80 }
     }
 }
 
