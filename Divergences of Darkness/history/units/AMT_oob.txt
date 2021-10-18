@@ -2,7 +2,7 @@ leader = {
 	name = "Tekle Giyorgis"
 	type = land
 	date = 1836.1.1
-	personality = competent
+	personality = aggressive
 	background = cavalry_school
 }
 

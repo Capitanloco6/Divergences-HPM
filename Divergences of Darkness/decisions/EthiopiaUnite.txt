@@ -22,7 +22,6 @@ political_decisions = {
 			all_core = { add_core = ETH }
             change_tag = ETH
 			
-            capital = 1859
         }
         ai_will_do = { factor = 1 }
     }
@@ -62,6 +61,7 @@ political_decisions = {
             add_accepted_culture = tigray
             add_accepted_culture = amhara
             add_accepted_culture = oromo
+            capital = 1859
         }
         ai_will_do = { factor = 1 }
     }
@@ -90,7 +90,6 @@ political_decisions = {
 			all_core = { add_core = ETH }
             change_tag = ETH
 			
-            capital = 1859
         }
         ai_will_do = { factor = 1 }
     }
