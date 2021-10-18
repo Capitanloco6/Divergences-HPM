@@ -463,7 +463,10 @@ political_decisions = {
 			factor = 1
 			modifier = {
 				factor = 0
-				war_exhaustion = 1
+				OR = {
+					war_exhaustion = 1
+					NOT = { total_amount_of_divisions = 1 }
+				}
 			}
 		}
     }
