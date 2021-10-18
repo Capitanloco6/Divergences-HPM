@@ -47,6 +47,7 @@ political_decisions = {
 
         effect = {
             set_country_flag = ethiopia_united
+			remove_country_modifier = zemene_mesafint
             prestige = 10
             AMT = {
 				all_core = {
