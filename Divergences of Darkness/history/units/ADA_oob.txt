@@ -54,6 +54,12 @@ army = {
 	regiment = {
 		name= "4th Freedom Division"
 		type = infantry
+		home = 1861
+	}
+	
+	regiment = {
+		name= "5th Freedom Division"
+		type = infantry
 		home = 1865
 	}
 }
@@ -77,5 +83,11 @@ army = {
 		name= "3rd Sultan's Division"
 		type = infantry
 		home = 1873
+	}
+	
+	regiment = {
+		name= "4th Sultan's Division"
+		type = cavalry
+		home = 1865
 	}
 }
