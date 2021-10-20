@@ -187,6 +187,35 @@ political_decisions = {
 				}
 				treasury = 10000
 			}
+            any_country = {
+                limit = {
+                    war = yes
+					civilized = no
+				}
+				grain = 200
+				small_arms = 20
+				canned_food = 20
+				regular_clothes = 20
+			}
+            any_country = {
+                limit = {
+                    war = yes
+					civilized = yes
+				}
+				small_arms = 100
+				canned_food = 100
+				regular_clothes = 100
+			}
+            any_country = {
+                limit = {
+                    war = yes
+					civilized = yes
+					is_greater_power = yes
+				}
+				small_arms = 400
+				canned_food = 400
+				regular_clothes = 400
+			}
 			
 
             set_global_flag = setup_complete
