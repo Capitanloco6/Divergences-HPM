@@ -486,7 +486,12 @@ political_decisions = {
 			civilized = yes
             war = no
             ETH = {
-				all_core = { owned_by = THIS }
+				all_core = { 
+					OR = {
+						owned_by = THIS
+						empty = yes
+					}
+				}
 			}
         }
 
