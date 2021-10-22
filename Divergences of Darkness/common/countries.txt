@@ -78,6 +78,7 @@ DHY = "countries/Dahomey.txt"
 WTT = "countries/Wattara.txt"
 AMT = "countries/Amatsa.txt" #The rebellion
 ADA = "countries/Adal.txt"
+ABS = "countries/Abyssinia.txt"
 ORO = "countries/Oromo.txt"
 DAR = "countries/Darfour.txt"
 AJU = "countries/Ajuuraan.txt"
