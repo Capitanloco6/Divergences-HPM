@@ -122,7 +122,7 @@ dismantle_cb = {
 
     construction_speed = 0.25
 
-    badboy_factor = 1
+    badboy_factor = 2
     prestige_factor = 10
     peace_cost_factor = 35
     penalty_factor = 3
@@ -905,7 +905,7 @@ add_to_sphere = {
     months = 12
     crisis = no
 
-    badboy_factor = 1
+    badboy_factor = 2
     prestige_factor = 2
     peace_cost_factor = 50
     penalty_factor = 1
@@ -980,7 +980,7 @@ unification_humiliate_cb = {
     months = 12
     crisis = no
 
-    badboy_factor = 0.5
+    badboy_factor = 1
     prestige_factor = 1
     peace_cost_factor = 10
     penalty_factor = 1
@@ -1241,7 +1241,7 @@ take_from_sphere = {
     is_triggered_only = yes
     months = 12
 
-    badboy_factor = 1
+    badboy_factor = 2
     prestige_factor = 3
     peace_cost_factor = 20
     penalty_factor = 1
@@ -1338,7 +1338,7 @@ free_peoples = {
     is_triggered_only = yes
     months = 12
 
-    badboy_factor = 0.75
+    badboy_factor = 1.5
     prestige_factor = 2
     peace_cost_factor = 1
     penalty_factor = 1
@@ -1720,7 +1720,7 @@ liberate_country = {
     is_triggered_only = yes
     months = 12
 
-    badboy_factor = 1.1
+    badboy_factor = 2.2
     prestige_factor = 2
     peace_cost_factor = 1
     penalty_factor = 1
@@ -2029,7 +2029,7 @@ free_allied_cores = {
 
     construction_speed = 0.75
 
-    badboy_factor = 0.5
+    badboy_factor = 1.0
     prestige_factor = 2
     peace_cost_factor = 0.8
     penalty_factor = 1
@@ -2235,7 +2235,7 @@ liberate_puppet = {
 
     construction_speed = 0.3
 
-    badboy_factor = 1.4
+    badboy_factor = 2.8
     prestige_factor = 2
     peace_cost_factor = 1
     penalty_factor = 1
@@ -2617,7 +2617,7 @@ release_puppet = {
     is_triggered_only = yes
     months = 12
 
-    badboy_factor = 0.5
+    badboy_factor = 1
     prestige_factor = 1
     peace_cost_factor = 5
     penalty_factor = 1
@@ -2781,7 +2781,7 @@ gunboat = {
     constructing_cb = no
     crisis = no
 
-    badboy_factor = 0.5
+    badboy_factor = 1
     prestige_factor = 5
     peace_cost_factor = 1
     penalty_factor = 0
@@ -2846,7 +2846,7 @@ cut_down_to_size = {
     is_triggered_only = yes
     months = 12
 
-    badboy_factor = 0.65
+    badboy_factor = 1.3
     prestige_factor = 1
     peace_cost_factor = 25
     penalty_factor = 1
@@ -3032,7 +3032,7 @@ humiliate = {
     is_triggered_only = yes
     months = 12
 
-    badboy_factor = 0.75
+    badboy_factor = 1.5
     prestige_factor = 1
     peace_cost_factor = 15
     penalty_factor = 1
@@ -3136,7 +3136,7 @@ place_in_the_sun = {
     is_triggered_only = yes
     months = 12
 
-    badboy_factor = 0.55
+    badboy_factor = 1.1
     prestige_factor = 2
     peace_cost_factor = 0.5
     penalty_factor = 1
@@ -3250,7 +3250,7 @@ acquire_state = {
 	
 	construction_speed = 0.5
 
-	badboy_factor = 1.1
+	badboy_factor = 2.2
 	prestige_factor = 2
 	peace_cost_factor = 1
 	penalty_factor = 1
@@ -3846,7 +3846,7 @@ sahel_jihad_cb = {
 
     construction_speed = 1.25
 
-    badboy_factor = 1
+    badboy_factor = 2
     prestige_factor = 2
     peace_cost_factor = 1
     penalty_factor = 1
@@ -3940,7 +3940,7 @@ demand_concession_casus_belli = {
     construction_speed = 1.2
     crisis = no
 
-    badboy_factor = 0.75
+    badboy_factor = 1.5
     prestige_factor = 1
     peace_cost_factor = 0.6
     penalty_factor = 1
@@ -4160,7 +4160,7 @@ demand_concession_NI_casus_belli = {
 
     construction_speed = 1.2
 
-    badboy_factor = 0.5
+    badboy_factor = 1
     prestige_factor = 1
     peace_cost_factor = 0.5
     penalty_factor = 1
@@ -4359,7 +4359,7 @@ demand_concession_BC_casus_belli = {
 
     construction_speed = 1.2
 
-    badboy_factor = 0.25
+    badboy_factor = 0.5
     prestige_factor = 1
     peace_cost_factor = 0.4
     penalty_factor = 1
@@ -4790,7 +4790,7 @@ conquest = {
         }
     }
 
-    badboy_factor = 1.1
+    badboy_factor = 2.2
     prestige_factor = 5
     peace_cost_factor = 1
     penalty_factor = 1
@@ -5050,7 +5050,7 @@ establish_protectorate_casus_belli = {
 
     construction_speed = 0.5
 
-    badboy_factor = 0.75
+    badboy_factor = 1.5
     prestige_factor = 1
     peace_cost_factor = 1
     penalty_factor = 1
@@ -5240,7 +5240,7 @@ establish_protectorate_NI_casus_belli = {
 
     construction_speed = 0.8
 
-    badboy_factor = 0.5
+    badboy_factor = 1
     prestige_factor = 1
     peace_cost_factor = 0.8
     penalty_factor = 1
@@ -5406,7 +5406,7 @@ establish_protectorate_BC_casus_belli = {
 
     construction_speed = 1
 
-    badboy_factor = 0.25
+    badboy_factor = 0.5
     prestige_factor = 1
     peace_cost_factor = 0.6
     penalty_factor = 1
@@ -5599,6 +5599,55 @@ status_quo = {
     war_name = WAR_NAME
 }
 
+#New with AHD
+cut_down_to_size_boxer = {
+    sprite_index = 8
+    is_triggered_only = yes
+    months = 12
+    constructing_cb = no
+    crisis = no
+
+    can_use = {
+        tag = QNG
+        civilized = no
+        has_country_flag = boxers_appeared
+        NOT = { has_country_flag = boxers_disbanded }
+    }
+
+    badboy_factor = 1.1
+    prestige_factor = 5
+    peace_cost_factor = 12.5
+    penalty_factor = 1
+
+    break_truce_prestige_factor = 1
+    break_truce_infamy_factor = 1
+    break_truce_militancy_factor = 1
+    truce_months = 48
+
+    good_relation_prestige_factor = 1
+    good_relation_infamy_factor = 1
+    good_relation_militancy_factor = 1
+
+    po_disarmament = yes
+    po_reparations = yes
+
+    war_name = WAR_BOXER_NAME
+
+    on_add = {
+        set_country_flag = intervened_boxer_war
+        move_issue_percentage = {
+            from = jingoism
+            to = pro_military
+            value = 0.25
+        }
+    }
+
+    on_po_accepted = {
+        THIS = { clr_country_flag = intervened_boxer_war }
+        country_event = 99015
+    }
+}
+
 # Make Puppet
 make_puppet = {
     sprite_index = 18
@@ -5606,7 +5655,7 @@ make_puppet = {
     months = 12
     crisis = no
 
-    badboy_factor = 1.0
+    badboy_factor = 2.0
     prestige_factor = 1
     peace_cost_factor = 1
     penalty_factor = 1
@@ -5694,7 +5743,7 @@ become_independent = {
 
     always = yes
 
-    badboy_factor = 0.5
+    badboy_factor = 1
     prestige_factor = 1
     peace_cost_factor = 5
     penalty_factor = 1
@@ -5746,7 +5795,7 @@ install_communist_gov_cb = {
     months = 12
     crisis = no
 
-    badboy_factor = 0.5
+    badboy_factor = 1
     prestige_factor = 1
     peace_cost_factor = 1
     penalty_factor = 1
@@ -5820,7 +5869,7 @@ uninstall_communist_gov_cb = {
     # so they can revert those countries government.
     constructing_cb = no
 
-    badboy_factor = 0.25
+    badboy_factor = 0.5
     prestige_factor = 1
     peace_cost_factor = 5
     penalty_factor = 1
@@ -6040,7 +6089,7 @@ install_democracy = {
     construction_speed = 1.5
     crisis = no
 
-    badboy_factor = 0.75
+    badboy_factor = 1.5
     prestige_factor = 1
     peace_cost_factor = 50
     penalty_factor = 1
@@ -6124,7 +6173,7 @@ install_fascism = {
     construction_speed = 1.5
     crisis = no
 
-    badboy_factor = 1
+    badboy_factor = 2
     prestige_factor = 1
     peace_cost_factor = 50
     penalty_factor = 1
@@ -6201,7 +6250,7 @@ install_communism = {
     construction_speed = 1.5
     crisis = no
 
-    badboy_factor = 1
+    badboy_factor = 2
     prestige_factor = 1
     peace_cost_factor = 50
     penalty_factor = 1
@@ -6281,7 +6330,7 @@ acquire_core_substate_region = {
 
     construction_speed = 0.50
 
-    badboy_factor = 0.375
+    badboy_factor = 0.75
     prestige_factor = 1.5
     peace_cost_factor = 1
     penalty_factor = 1
@@ -6340,7 +6389,7 @@ acquire_substate_region = {
 
     construction_speed = 0.5
 
-    badboy_factor = 1.1
+    badboy_factor = 2.2
     prestige_factor = 2
     peace_cost_factor = 1
     penalty_factor = 1
@@ -6448,7 +6497,7 @@ dismantle_forts = {
     is_triggered_only = yes
     months = 12
 
-    badboy_factor = 0.5
+    badboy_factor = 1
     prestige_factor = 0.5
     peace_cost_factor = 5
     penalty_factor = 1
@@ -6724,7 +6773,7 @@ treaty_port_casus_belli = {
     months = 12
     crisis = no
 
-    badboy_factor = 0.5
+    badboy_factor = 1
     prestige_factor = 0.5
     peace_cost_factor = 10
     penalty_factor = 2
@@ -6869,7 +6918,7 @@ install_fascism_make_puppet = {
     months = 12
     crisis = no
 
-    badboy_factor = 1.0
+    badboy_factor = 2
     prestige_factor = 1
     peace_cost_factor = 1.17
     penalty_factor = 1
@@ -6913,7 +6962,7 @@ install_communism_make_puppet = {
     months = 12
     crisis = no
 
-    badboy_factor = 1.0
+    badboy_factor = 2
     prestige_factor = 1
     peace_cost_factor = 1.17
     penalty_factor = 1
@@ -6957,7 +7006,7 @@ install_democracy_make_puppet = {
     months = 12
     crisis = no
 
-    badboy_factor = 1.0
+    badboy_factor = 2
     prestige_factor = 1
     peace_cost_factor = 1.17
     penalty_factor = 1
@@ -7001,7 +7050,7 @@ war_reparations = {
     months = 12
     construction_speed = 0.8
 
-    badboy_factor = 0.125
+    badboy_factor = 0.25
     prestige_factor = 0.5
     peace_cost_factor = 20
     penalty_factor = 1
@@ -7048,7 +7097,7 @@ hre_unification = {
     months = 12
     crisis = no
 
-    badboy_factor = 0.5
+    badboy_factor = 1
     prestige_factor = 1
     peace_cost_factor = 25
     penalty_factor = 1
@@ -7106,7 +7155,7 @@ hre_unification2 = {
     months = 12
     crisis = no
 
-    badboy_factor = 0.5
+    badboy_factor = 1
     prestige_factor = 1
     peace_cost_factor = 25
     penalty_factor = 1
@@ -7480,7 +7529,7 @@ acquire_capital = {
     months = 12
     construction_speed = 0.5
 
-    badboy_factor = 1.5
+    badboy_factor = 3
     prestige_factor = 10
     peace_cost_factor = 1
     penalty_factor = 1
@@ -7584,7 +7633,7 @@ demand_capital_concession = {
     months = 12
     construction_speed = 1
 
-    badboy_factor = 1.15
+    badboy_factor = 2.3
     prestige_factor = 2
     peace_cost_factor = 1
     penalty_factor = 1
@@ -7947,7 +7996,7 @@ minor_conquest = {
         }
     }
 
-    badboy_factor = 0.6
+    badboy_factor = 1.2
     prestige_factor = 5
     peace_cost_factor = 1
     penalty_factor = 1
