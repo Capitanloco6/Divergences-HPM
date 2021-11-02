@@ -1,6 +1,6 @@
 ;;;;;;;;;;;;;;;;;;;;x,,,,,;;;;;;;;;;;;;;;;;;;;;
 smithian_school;Smithianism;;;;;;;;;;;;;;;;;;;;x,,,,,;;;;;;;;;;;;;;;;;;;;
-smithian_school_desc;"Laissez-faire philosophies, such as minimizing the role of government intervention and taxation in the free markets, and the idea that an ""invisible hand"" guides supply and demand are among the key ideas Adam Smith's writing is responsible for promoting. Our trade policies are largely inspired by him.";;;;;;;;;;;;;;;;;;;;x,,,,,;;;;;;;;;;;;;;;;;;;;
+smithian_school_desc;"Laissez-faire philosophies, such as minimizing the role of government intervention and taxation in the free markets, and the idea that an 'invisible hand' guides supply and demand are among the key ideas Adam Smith's writing is responsible for promoting. Our trade policies are largely inspired by him.";;;;;;;;;;;;;;;;;;;;x,,,,,;;;;;;;;;;;;;;;;;;;;
 french_liberal_school;Orthodox Liberal School;;;;;;;;;;;;;;;;;;;;x,,,,,;;;;;;;;;;;;;;;;;;;;
 french_liberal_school_desc;The Orthodox school of economic thought, also known as the French Liberal School or Oprtimist School, voraciously defends free trade and laissez-faire capitalism. They are the primary opponents of collectivist, interventionist and protectionist ideas.  Our trade policies are largely inspired by this school.;;;;;;;;;;;;;;;;;;;;x,,,,,;;;;;;;;;;;;;;;;;;;;x,,,,,
 no_trade_policy_set;No Set Trade Policy;;;;;;;;;;;;;;;;;;;;x,,,,,;;;;;;;;;;;;;;;;;;;;
@@ -303,7 +303,7 @@ tribute_paid_desc;We have to share part of our earnings with our overlord over t
 islamic_law_triggered;Islamic Law;;;;;;;;;;;;;;;;;;;;;;;;x;;;;;;;;;;;;;;;;
 islamic_law_triggered_desc;Islamic law is now the basis law code of our society. It deals with several topics including: crime, politics, and economics, as well as personal matters such as sexual intercourse, hygiene, diet, prayer, everyday etiquette and fasting.;;;;;;;;;;;;;;;;;;;;;;;;x;;;;;;;;;;;;;;;;
 deportation_underway;Deportation;;;;;;;;;;;;;;;;;;;;;;;;x;;;;;;;;;;;;;;;;
-deportation_underway_desc;"People from different ethnicities are being ""encouraged"" to move out of this country.";;;;;;;;;;;;;;;;;;;;;;;;x;;;;;;;;;;;;;;;;
+deportation_underway_desc;"People from different ethnicities are being 'encouraged' to move out of this country.";;;;;;;;;;;;;;;;;;;;;;;;x;;;;;;;;;;;;;;;;
 treaty_port;Treaty Port;;;;;;;;;;;;;;;;;;;;;;;;x;;;;;;;;;;;;;;;;
 treaty_port_desc;This port was ceded to a foreign administration and it's a hub of trade from China to the rest of the world.;;;;;;;;;;;;;;;;;;;;;;;;x;;;;;;;;;;;;;;;;
 drained_marsh;Drained Marsh;;;;;;;;;;;;;;;;;;;;;;;;x;;;;;;;;;;;;;;;;
@@ -323,7 +323,7 @@ law_changed_by_force_desc;We pressured the upper house to pass an urgent reform.
 social_reformed_nation;Full Welfare State;;;;;;;;;;;;;;;;;;;;;;;;x;;;;;;;;;;;;;;;;
 social_reformed_nation_desc;Our country social reforms match every socialist demand, having some scholars call us an welfare state.;;;;;;;;;;;;;;;;;;;;;;;;x;;;;;;;;;;;;;;;;
 wahhabism_in_nejd;Wahhabism;;;;;;;;;;;;;;;;;;;;;;;;;x;;;;;;;;;;;;;;;
-wahhabism_in_nejd_desc;"The ""pivotal idea"" of Wahhabism teaching was that people who called themselves Muslims but who participated in such innovations were not just misguided or committing a sin, but were ""outside the pale of Islam altogether"", as were Muslims who disagreed with his definition. This included not just lax, unlettered, nomadic Bedu, but Shia, Sufi, and Ottomans.";;;;;;;;;;;;;;;;;;;;;;;;;x;;;;;;;;;;;;;;;
+wahhabism_in_nejd_desc;"The 'pivotal idea' of Wahhabism teaching was that people who called themselves Muslims but who participated in such innovations were not just misguided or committing a sin, but were 'outside the pale of Islam altogether', as were Muslims who disagreed with his definition. This included not just lax, unlettered, nomadic Bedu, but Shia, Sufi, and Ottomans.";;;;;;;;;;;;;;;;;;;;;;;;;x;;;;;;;;;;;;;;;
 russian_army;The Russian Army;;;;;;;;;;;;;;;;;;;;;;;;;x;;;;;;;;;;;;;;;
 russian_army_desc;The Russian Army may be the biggest land force of Europe, but it is poorly supplied and organized.;;;;;;;;;;;;;;;;;;;;;;;;;x;;;;;;;;;;;;;;;
 landlocked_nation;Landlocked Nation;;;;;;;;;;;;;;;;;;;;;;;;;x;;;;;;;;;;;;;;;
