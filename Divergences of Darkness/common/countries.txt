@@ -2,6 +2,7 @@
 
 # Special countries...
 REB = "countries/rebels.txt"
+CLN = "countries/Cleanup.txt"
 
 ##DoD
 HLR = "countries/Holy Roman Empire.txt"
@@ -200,7 +201,6 @@ PTG = "countries/Patagonia.txt"
 RGR = "countries/Rio Grande.txt"
 YUC = "countries/Yucatan.txt"
 SFJ = "countries/Sudurhafeyjar.txt"
-AZL = "countries/Federation.txt" #Ameriga
 
 #North America
 BLZ = "countries/Belize.txt"
@@ -318,7 +318,6 @@ CMR = "countries/Cameroon.txt"
 CYR = "countries/Cyrenaica.txt"
 DAH = "countries/Dahomey.txt"
 DAM = "countries/Damagaram.txt"
-DAR = "countries/Darfur.txt"
 DND = "countries/Dendi.txt"
 GAB = "countries/Gabon.txt"
 GAZ = "countries/Gaza.txt"
@@ -375,7 +374,6 @@ WRI = "countries/Warri.txt"
 WOL = "countries/Wolof.txt"
 XHO = "countries/Xhosa.txt"
 ZAM = "countries/Zambia.txt"
-KON = "countries/Kongo.txt"
 GRQ = "countries/Griqualand.txt" #Vryland
 LWE = "countries/Leeuwin.txt"
 NFL = "countries/New Flander.txt"
@@ -564,7 +562,6 @@ BIK = "countries/Bikaner.txt"
 BUN = "countries/Bundelkhand.txt"
 GWA = "countries/Gwailor.txt"
 HYD = "countries/Hyderabad.txt"
-IND = "countries/Indore.txt"
 JAI = "countries/Jaipur.txt"
 JAS = "countries/Jaisalmer.txt"
 JOD = "countries/Jodhpur.txt"
@@ -625,7 +622,6 @@ HON = "countries/Honduras.txt"
 NIC = "countries/Nicaragua.txt"
 PNM = "countries/Panama.txt"
 UCA = "countries/United States of Central America.txt"
-KUB = "countries/Kuba.txt"
 
 # South America
 CLM = "countries/Gran Colombia.txt"

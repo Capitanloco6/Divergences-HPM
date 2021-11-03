@@ -189,7 +189,7 @@ political_decisions = {
 					limit = {
 						location = {
 							NOT = {
-								OR {
+								OR = {
 									province_id = 1745
 									province_id = 1751
 								}
@@ -206,7 +206,7 @@ political_decisions = {
 					limit = {
 						location = {
 							NOT = {
-								OR {
+								OR = {
 									province_id = 1745
 									province_id = 1751
 								}
@@ -223,7 +223,7 @@ political_decisions = {
 					limit = {
 						location = {
 							NOT = {
-								OR {
+								OR = {
 									province_id = 1745
 									province_id = 1751
 								}
@@ -240,7 +240,7 @@ political_decisions = {
 					limit = {
 						location = {
 							NOT = {
-								OR {
+								OR = {
 									province_id = 1745
 									province_id = 1751
 								}
