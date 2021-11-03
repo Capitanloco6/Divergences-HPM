@@ -116,6 +116,7 @@ political_decisions = {
         allow = { always = no }
 
         effect = {
+			CLN = { country_event = 477877789 }
             any_country = {
                 limit = { exists = yes }
                 set_country_flag = existing_country
