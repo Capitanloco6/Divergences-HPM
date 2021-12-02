@@ -1,5 +1,5 @@
 #
-# V2ME Cleanup 1.0.1 by Bob Bobington and Dr, configured for DOD-HPM
+# V2ME Cleanup 1.0.2 by Bob Bobington and Dr, configured for DOD-HPM
 #
 #
 #
@@ -246,9 +246,17 @@ country_event = {
 				limit = {
 					is_core = UTI
 				}
-				secede_province = UTI
+				secede_province = THIS
 			}
-			create_vassal = UTI
+			THIS = {
+				any_owned = {
+					limit = {
+						is_core = UTI
+					}
+					secede_province = UTI
+				}
+				create_vassal = UTI
+			}
 			inherit = UTI
 			any_owned = {
 				limit = {
