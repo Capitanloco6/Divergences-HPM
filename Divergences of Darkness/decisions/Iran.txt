@@ -168,6 +168,60 @@ political_decisions = {
 			set_country_flag = accepted_tats	
         }
         ai_will_do = { factor = 1 }
-    }		
+    }
+
+    treaty_of_bandar_abbas = {
+        picture = treaty_signing
+        potential = {
+            OR = {
+                tag = ZND
+                tag = PER
+                tag = ARY
+            }
+            1071 = {
+                owner = {
+                    OR = {
+						NOT = { primary_culture = persian }
+						capital_scope = { continent = europe }
+					}
+                    war_with = THIS
+                }
+            }
+        }
+
+        allow = {
+            war = yes
+            1071 = {
+                controlled_by = THIS
+                province_control_days = 365
+            }
+
+            THIS = {
+                all_core = {
+                    OR = {
+                        controlled_by = THIS
+                        controller = { alliance_with = THIS }
+                        empty = yes
+                        province_id = 1071
+                        owner = {
+                            NOT = { war_with = THIS }
+                        }
+                    }
+                }
+            }
+        }
+
+        effect = {
+            random_country = {
+                limit = {
+                    owns = 1071
+                    war_with = THIS
+                }
+                country_event = 180015
+            }
+        }
+
+        ai_will_do = { factor = 1 }
+    }	
 	
 }
