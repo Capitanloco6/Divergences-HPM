@@ -2446,11 +2446,11 @@ italian_emigration = {
     icon = 4
 }
 
-integration_sicily = { tax_efficiency = -0.2 }
+integration_sicily = { tax_efficiency = -0.05 }
 
 integration_arborea = { tax_efficiency = -0.05 }
 
-integration_venice = { tax_efficiency = -0.15 }
+integration_venice = { tax_efficiency = -0.05 }
 
 stroganov_romanov = {
     research_points = 1
