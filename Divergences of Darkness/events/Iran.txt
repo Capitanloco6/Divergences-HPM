@@ -88,6 +88,8 @@ country_event = {
         RUS_1196 = { add_core = TKM }
 		1116 = { add_core = TKM }
 		1150 = { add_core = TKM }
+		1212 = { add_core = AFG }
+		1214 = { add_core = AFG }		
 		change_tag = TKM
         random_owned = {
             limit = {
@@ -376,12 +378,11 @@ country_event = {
             }
         }
 		set_country_flag = ZND_lost_qeshm
-        create_alliance = FROM		
 		add_country_modifier = {
 			name = "qeshm_trade"
 			duration = 3650
 		}		
-        ai_chance = { factor = 30 }
+        ai_chance = { factor = 80 }
     }
 
     option = {
@@ -392,7 +393,7 @@ country_event = {
 				days = 30
 			}
 		}	
-        ai_chance = { factor = 70 }
+        ai_chance = { factor = 20 }
     }		
 	
 }
@@ -487,6 +488,7 @@ country_event = { #Event to change Esfahan's RGO to opium, if Qeshm is owned by 
 			tag = ARY
 		}
 		exists = yes
+		year = 1855
 		war = no
         1071 = { owner = { capital_scope = { continent = europe } }	}
     }
@@ -520,7 +522,7 @@ country_event = { #Event to change Esfahan's RGO to opium, if Qeshm is owned by 
 	
 }
 
-country_event = {
+country_event = { #Treaty to end war over Qeshm
     id = 180015
     title = "EVTNAME180015"
     desc = "EVTDESC180015"
@@ -549,5 +551,226 @@ country_event = {
             }
             end_war = THIS
         }
+    }
+}
+
+country_event = { #Sets up tribal maluses in Lurish territory
+    id = 180016
+    title = "EVTNAME180016"
+    desc = "EVTDESC180016"
+    picture = "bakhtiari_nomads"
+
+
+    trigger = {
+        tag = ZND
+        year = 1836
+    }
+
+    mean_time_to_happen = { months = 1 }
+
+    fire_only_once = yes
+
+    option = {
+        name = "EVTOPTA180016"
+
+		add_country_modifier = {
+			name = "shekhbizin_tribal_army"
+			duration = -1
+		}
+
+        any_owned = {
+            limit = { 
+				OR = { 
+					region = TUR_923
+					region = PER_1122		
+					region = PER_1138					
+				}
+			}
+            add_province_modifier = {
+                name = lurish_administration
+                duration = -1
+            }
+        }
+		
+        THIS = { country_event = 180017 }	
+		
+    }
+}
+
+country_event = { #Sets up tribal maluses in Qashqai territory
+    id = 180017
+    title = "EVTNAME180017"
+    desc = "EVTDESC180017"
+    picture = "tehran_infantry"
+
+	is_triggered_only = yes
+
+    option = {
+        name = "EVTOPTA180017"
+
+		set_country_flag = tribal_troubles_shekhbizin
+        any_owned = {
+            limit = { 
+				region = PER_1135
+			}
+            add_province_modifier = {
+                name = qashqai_administration
+                duration = -1
+            }
+        }		
+		
+    }
+}
+
+country_event = { #Lurish and Qashqai secession
+    id = 180018
+    title = "EVTNAME180018"
+    desc = "EVTDESC180018"
+    picture = "baktiaris_persans"
+
+    trigger = {
+		OR = {
+			tag = ZND
+			tag = PER
+			tag = ARY
+		}
+		exists = yes
+		has_country_flag = reformed_iranian_tribal_army
+		war = no
+    }
+
+    mean_time_to_happen = { months = 2 }
+	
+    fire_only_once = yes	
+
+    option = {
+        name = "EVTOPTA180018"
+        capital = 1127
+		set_country_flag = lurish_qashqai_secession
+        release_vassal = LUR
+        LUR = {
+            define_general = {
+                name = "Yar-Mohammad Kermanshahi"
+                personality = audacious
+                background = natural_born_leader
+            }
+			add_country_modifier = {
+				name = "flowers_of_ruin"
+				duration = -1
+			}
+			ammunition = 100
+			small_arms = 100
+			artillery = 25
+			canned_food = 100			
+        }		
+        release_vassal = QSQ
+        QSQ = {
+            define_general = {
+                name = "Kosrow Khan"
+                personality = efficient
+                background = school_of_offense
+            }
+			add_country_modifier = {
+				name = "flowers_of_ruin"
+				duration = -1
+			}
+			ammunition = 100
+			small_arms = 100
+			artillery = 25
+			canned_food = 100			
+        }		
+    }
+}
+
+country_event = { #War between the Shekhbizin central government, Luristan and Qashqai
+    id = 180019
+    title = "EVTNAME180019"
+    desc = "EVTDESC180019"
+    picture = "qajar_military"
+	
+    trigger = {
+		OR = {
+			tag = ZND
+			tag = PER
+			tag = ARY
+		}
+		exists = yes
+		LUR = { exists = yes }
+		QSQ = { exists = yes }
+		has_country_flag = lurish_qashqai_secession
+    }
+
+    fire_only_once = yes
+
+    mean_time_to_happen = {
+        months = 6
+        modifier = {
+            factor = 0.6
+            war_exhaustion = 50
+        }
+    }
+
+    option = {
+        name = "EVTOPTA180019"
+        THIS = {
+            release_vassal = LUR
+            war = {
+                target = LUR
+                attacker_goal = { casus_belli = civil_war }
+                defender_goal = { casus_belli = status_quo }
+            }
+            release_vassal = QSQ
+            war = {
+                target = QSQ
+                attacker_goal = { casus_belli = civil_war }
+                defender_goal = { casus_belli = status_quo }
+            }			
+        }
+		set_country_flag = shekhbizin_civil_war
+        ai_chance = { factor = 95 }
+    }
+	
+    option = {
+        name = "EVTOPTB180019"
+        prestige = -25		
+        THIS = {
+            release_vassal = LUR
+            release_vassal = QSQ		
+        }
+        ai_chance = { factor = 5 }
+    }	
+	
+}
+
+country_event = { #If Shekhbizin wins the civil war, erase QSQ and LUR cores
+    id = 180020
+    title = "EVTNAME180020"
+    desc = "EVTDESC180020"
+    picture = "french_mission_1848"
+
+    trigger = {
+		OR = {
+			tag = ZND
+			tag = PER
+			tag = ARY
+		}
+		exists = yes
+		LUR = { exists = no }
+		QSQ = { exists = no }		
+		has_country_flag = shekhbizin_civil_war
+		war = no
+    }
+
+    mean_time_to_happen = { months = 10 }
+	
+    fire_only_once = yes	
+
+    option = {
+        name = "EVTOPTA180020"
+        LUR = { all_core = { remove_core = LUR } }
+        QSQ = { all_core = { remove_core = QSQ } }		
+		add_accepted_culture = lurish
+		add_accepted_culture = qashqai
+		add_accepted_culture = khalaj
     }
 }

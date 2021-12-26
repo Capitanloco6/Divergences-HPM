@@ -686,15 +686,19 @@ country_event = {
 	fire_only_once = yes 
 	
 	option = { 
-	name = "334323.A"
-	war = { 
-	target = TON  
-	attacker_goal = {
+		name = "334323.A"
+        casus_belli = {
+            target = TON
+            type = establish_protectorate_casus_belli
+            months = 60
+        }		
+		war = { 
+			target = TON  
+			attacker_goal = {
 				casus_belli = establish_protectorate_casus_belli 
 			}
 		}
-	badboy = -7 
-	ai_chance = { factor = 90 }
+		ai_chance = { factor = 90 }
 	}
 	
 	option = { 

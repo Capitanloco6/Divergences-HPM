@@ -2711,6 +2711,25 @@ esfahan_opium_production = {
 	icon = 16
 }
 
+shekhbizin_tribal_army = {
+    mobilisation_size = -0.15
+    icon = 18
+}
+
+lurish_administration = {
+    local_RGO_throughput = -0.25
+	farm_rgo_eff = -0.25
+	mine_rgo_eff = -0.25	
+    icon = 4
+}
+
+qashqai_administration = {
+    local_RGO_throughput = -0.25
+	farm_rgo_eff = -0.25
+	mine_rgo_eff = -0.25	
+    icon = 4
+}
+
 ### China ###
 
 china_weisuo = {
