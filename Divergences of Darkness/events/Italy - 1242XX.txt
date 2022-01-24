@@ -1131,7 +1131,7 @@ country_event = { #Arborean emigration
     }
 }
 
-country_event = { #Venitian emigration
+country_event = { #Venetian emigration
     id = 124222
     title = "ITA3.T"
     desc = "ITA3.D"
