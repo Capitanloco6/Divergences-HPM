@@ -1098,13 +1098,11 @@ country_event = { #Armenian intervention in Cilicia
 	picture = "armenian_nationalists"
 	
 	trigger = {
-	    tag = ARM 
-	    894 = { owned_by = CLC
-	    }
-	    TUR = { has_country_flag = cilician_uprising 
-	    }
+		tag = ARM 
+		894 = { owned_by = CLC }
+		TUR = { has_country_flag = cilician_uprising }
 	}	
-		
+	
 	mean_time_to_happen = { months = 1 }
 	
 	fire_only_once = yes
@@ -1113,12 +1111,11 @@ country_event = { #Armenian intervention in Cilicia
 	    name = "EVTOPTA180030"
 		create_alliance = CLC
 		badboy = 2
-		TUR = {country_event = 180020 
-		}
+		TUR = { country_event = 180032 }
 		set_country_flag = armenia_protects_cilicia
         ai_chance = { factor = 80 } 
 		}
-	}
+
 	
 	option = {
         name = "EVTOPTB180030"
@@ -1130,6 +1127,7 @@ country_event = { #Armenian intervention in Cilicia
 		ai_chance = { factor = 20 } 
     }	
 }
+
 
 country_event = { #Armenia puppets Cilicia without war 
     id = 180031
@@ -1363,7 +1361,7 @@ country_event = { #how to deal with the shaki naibs
 		    limit = { is_core = ARM }
 		    add_province_modifier = {
 		        name = former_naib_land 
-			    duration = 5475
+			    duration = 1825
 		    }	
 		}	
 		any_pop = {

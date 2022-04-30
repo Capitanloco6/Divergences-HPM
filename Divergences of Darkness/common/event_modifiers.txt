@@ -2732,7 +2732,7 @@ qashqai_administration = {
 
 former_naib_land = {
     assimilation_rate = 1
-    population_growth = 0.02
+    population_growth = 0.005
     local_rgo_output = 1
 }
 
