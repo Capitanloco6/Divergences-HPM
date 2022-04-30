@@ -159,8 +159,11 @@ political_decisions = {
 
         potential = {
             tag = VEN
-            government = democracy
-            rank = 15
+            rank = 15			
+            OR = { 
+				government = democracy
+				government = merchant_republic
+			}
             NOT = {
                 has_country_flag = greek_integration
                 GRE = { exists = yes }
