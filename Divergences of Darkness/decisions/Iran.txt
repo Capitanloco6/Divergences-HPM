@@ -590,7 +590,7 @@ political_decisions = {
 		}	
 		allow = {
 		    biologism = 1
-            920 = { owned_by = ARM }
+            1094 = { owned_by = ARM }
 		}	
 		effect = {
 		    add_accepted_culture = georgian 

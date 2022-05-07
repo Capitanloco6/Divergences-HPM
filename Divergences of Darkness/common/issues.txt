@@ -834,7 +834,7 @@ economic_reforms = {
 			
 			on_execute = {
 				effect = {
-				    activate_technology = early_classical_theory_and_critique
+				    #activate_technology = early_classical_theory_and_critique
 					any_pop = {
 						scaled_militancy = {
 							ideology = liberal
@@ -861,7 +861,7 @@ economic_reforms = {
 			
 			on_execute = {
 				effect = {
-					activate_technology = late_classical_theory
+					#activate_technology = late_classical_theory
 					any_pop = {
 						scaled_militancy = {
 							ideology = liberal
@@ -896,7 +896,7 @@ economic_reforms = {
 			
 			on_execute = {
 				effect = {
-				activate_technology = malthusian_thought
+				#activate_technology = malthusian_thought
 					any_pop = {
 						scaled_militancy = {
 							ideology = liberal
@@ -923,8 +923,8 @@ economic_reforms = {
 			
 			on_execute = {
 				effect = {
-					activate_technology = positivism
-					activate_technology = enlightenment_thought
+					#activate_technology = positivism
+					#activate_technology = enlightenment_thought
 					any_pop = {
 						scaled_militancy = {
 							ideology = liberal
@@ -957,7 +957,7 @@ economic_reforms = {
 			
 			on_execute = {
 				effect = {
-					activate_technology = piston_steam_engine
+					#activate_technology = piston_steam_engine
 
 					any_pop = {
 						scaled_militancy = {
@@ -984,7 +984,7 @@ economic_reforms = {
 			
 			on_execute = {
 				effect = {
-					activate_technology = high_pressure_steam_engine					
+					#activate_technology = high_pressure_steam_engine					
 					any_pop = {
 						scaled_militancy = {
 							ideology = liberal
@@ -1019,7 +1019,7 @@ economic_reforms = {
 			
 			on_execute = {
 				effect = {
-					activate_technology = mechanized_mining
+					#activate_technology = mechanized_mining
 					any_pop = {
 						scaled_militancy = {
 							ideology = liberal
@@ -1045,7 +1045,7 @@ economic_reforms = {
 			
 			on_execute = {
 				effect = {
-					activate_technology = freedom_of_trade					
+					#activate_technology = freedom_of_trade					
 					any_pop = {
 						scaled_militancy = {
 							ideology = liberal
@@ -1077,7 +1077,7 @@ economic_reforms = {
 			
 			on_execute = {
 				effect = {
-					activate_technology = no_standard
+					#activate_technology = no_standard
 					any_pop = {
 						scaled_militancy = {
 							ideology = liberal
@@ -1103,7 +1103,7 @@ economic_reforms = {
 			
 			on_execute = {
 				effect = {
-					activate_technology = ad_hoc_money_bill_printing
+					#activate_technology = ad_hoc_money_bill_printing
 					any_pop = {
 						scaled_militancy = {
 							ideology = liberal
@@ -1137,7 +1137,7 @@ economic_reforms = {
 			
 			on_execute = {
 				effect = {
-					activate_technology = private_banks
+					#activate_technology = private_banks
 					any_pop = {
 						scaled_militancy = {
 							ideology = liberal
@@ -1164,7 +1164,7 @@ economic_reforms = {
 			
 			on_execute = {
 				effect = {
-					activate_technology = stock_exchange
+					#activate_technology = stock_exchange
 					any_pop = {
 						scaled_militancy = {
 							ideology = liberal
@@ -1197,8 +1197,8 @@ economic_reforms = {
 			
 			on_execute = {
 				effect = {
-					activate_technology = late_enlightenment_philosophy
-					activate_technology = basic_chemistry
+					#activate_technology = late_enlightenment_philosophy
+					#activate_technology = basic_chemistry
 					any_pop = {
 						scaled_militancy = {
 							ideology = liberal
@@ -1226,7 +1226,7 @@ economic_reforms = {
 			on_execute = {
 				effect = {
 					
-					activate_technology = medicine
+					#activate_technology = medicine
 					any_pop = {
 						scaled_militancy = {
 							ideology = liberal
@@ -1267,7 +1267,7 @@ economic_reforms = {
 					}
 				}
 				effect = {
-					activate_technology = experimental_railroad
+					#activate_technology = experimental_railroad
 					build_railway_in_capital = {
 						in_whole_capital_state = yes # no = just in main capital province.
 						limit_to_world_greatest_level = yes
@@ -1300,7 +1300,7 @@ economic_reforms = {
 			
 			on_execute = {
 				effect = {
-					activate_technology = early_railroad
+					#activate_technology = early_railroad
 					any_pop = {
 						scaled_militancy = {
 							ideology = liberal
@@ -1336,7 +1336,7 @@ economic_reforms = {
 					can_build_factory_in_capital_state = canned_food_factory # example, no trigger needed here
 				}
 				effect = {
-					activate_technology = guild_based_production
+					#activate_technology = guild_based_production
 					build_factory_in_capital_state = canned_food_factory
 
 					any_pop = {
@@ -1364,7 +1364,7 @@ economic_reforms = {
 			
 			on_execute = {
 				effect = {
-					activate_technology = organized_factories
+					#activate_technology = organized_factories
 					build_factory_in_capital_state = cement_factory
 					
 					any_pop = {
@@ -1399,7 +1399,7 @@ economic_reforms = {
 			
 			on_execute = {
 				effect = {
-					activate_technology = mechanical_production
+					#activate_technology = mechanical_production
 					any_pop = {
 						scaled_militancy = {
 							ideology = liberal
@@ -1426,7 +1426,7 @@ economic_reforms = {
 			on_execute = {
 				effect = {
 					
-					activate_technology = interchangeable_parts
+					#activate_technology = interchangeable_parts
 					any_pop = {
 						scaled_militancy = {
 							ideology = liberal
@@ -1529,7 +1529,7 @@ military_reforms = {
 
 			on_execute = {
 				effect = {
-					activate_technology = flintlock_rifles
+					#activate_technology = flintlock_rifles
 					any_pop = {
 						scaled_militancy = {
 							ideology = liberal
@@ -1557,7 +1557,7 @@ military_reforms = {
 			
 			on_execute = {
 				effect = {
-					activate_technology = muzzle_loaded_rifles
+					#activate_technology = muzzle_loaded_rifles
 					any_pop = {
 						scaled_militancy = {
 							ideology = liberal
@@ -1589,7 +1589,7 @@ military_reforms = {
 			
 			on_execute = {
 				effect = {
-					activate_technology = post_napoleonic_thought
+					#activate_technology = post_napoleonic_thought
 						
 					any_pop = {
 						scaled_militancy = {
@@ -1617,7 +1617,7 @@ military_reforms = {
 
 			on_execute = {
 				effect = {
-					activate_technology = strategic_mobility
+					#activate_technology = strategic_mobility
 					build_fort_in_capital = {
 						in_whole_capital_state = no # no = just in main capital province.
 						limit_to_world_greatest_level = no
@@ -1656,7 +1656,7 @@ military_reforms = {
 			
 			on_execute = {
 				effect = {
-					activate_technology = military_staff_system
+					#activate_technology = military_staff_system
 					any_pop = {
 						scaled_militancy = {
 							ideology = liberal
@@ -1686,7 +1686,7 @@ military_reforms = {
 			on_execute = {
 
 				effect = {
-					activate_technology = military_plans
+					#activate_technology = military_plans
 					any_pop = {
 						scaled_militancy = {
 							ideology = liberal
@@ -1719,7 +1719,7 @@ military_reforms = {
 		
 			on_execute = {
 				effect = {
-					activate_technology = army_command_principle
+					#activate_technology = army_command_principle
 					any_pop = {
 						scaled_militancy = {
 							ideology = liberal
@@ -1747,7 +1747,7 @@ military_reforms = {
 		
 			on_execute = {
 				effect = {
-					activate_technology = army_professionalism
+					#activate_technology = army_professionalism
 					any_pop = {
 						scaled_militancy = {
 							ideology = liberal
@@ -1782,7 +1782,7 @@ military_reforms = {
 			
 			on_execute = {
 				effect = {
-					activate_technology = alphabetic_flag_signaling
+					#activate_technology = alphabetic_flag_signaling
 					any_pop = {
 						scaled_militancy = {
 							ideology = liberal
@@ -1811,8 +1811,8 @@ military_reforms = {
 
 			on_execute = {
 				effect = {
-				activate_technology = naval_plans
-				activate_technology = naval_design_bureaus
+				#activate_technology = naval_plans
+				#activate_technology = naval_design_bureaus
 					any_pop = {
 						scaled_militancy = {
 							ideology = liberal
@@ -1846,7 +1846,7 @@ military_reforms = {
 			
 			on_execute = {
 				effect = {
-					activate_technology = clipper_design
+					#activate_technology = clipper_design
 					any_pop = {
 						scaled_militancy = {
 							ideology = liberal
@@ -1875,8 +1875,8 @@ military_reforms = {
 			
 			on_execute = {
 				effect = {
-					activate_technology = clipper_design
-					activate_technology = steamers
+					#activate_technology = clipper_design
+					#activate_technology = steamers
 					any_pop = {
 						scaled_militancy = {
 							ideology = liberal
@@ -1910,7 +1910,7 @@ military_reforms = {
 			
 			on_execute = {
 				effect = {
-					activate_technology = the_command_principle
+					#activate_technology = the_command_principle
 					any_pop = {
 						scaled_militancy = {
 							ideology = liberal
@@ -1937,7 +1937,7 @@ military_reforms = {
 
 			on_execute = {
 				effect = {
-					activate_technology = naval_professionalism
+					#activate_technology = naval_professionalism
 					any_pop = {
 						scaled_militancy = {
 							ideology = liberal
@@ -1974,7 +1974,7 @@ military_reforms = {
 			
 			on_execute = {
 				effect = {
-					activate_technology = post_nelsonian_thought
+					#activate_technology = post_nelsonian_thought
 					
 					any_pop = {
 						scaled_militancy = {
@@ -2008,7 +2008,7 @@ military_reforms = {
 			
 			on_execute = {
 				effect = {
-					activate_technology = battleship_column_doctrine
+					#activate_technology = battleship_column_doctrine
 					
 					any_pop = {
 						scaled_militancy = {
@@ -2042,7 +2042,7 @@ military_reforms = {
 			
 			on_execute = {
 				effect = {
-					activate_technology = bronze_muzzle_loaded_artillery
+					#activate_technology = bronze_muzzle_loaded_artillery
 					
 					any_pop = {
 						scaled_militancy = {
@@ -2071,7 +2071,7 @@ military_reforms = {
 			
 			on_execute = {
 				effect = {
-					activate_technology = iron_muzzle_loaded_artillery
+					#activate_technology = iron_muzzle_loaded_artillery
 					
 					any_pop = {
 						scaled_militancy = {
