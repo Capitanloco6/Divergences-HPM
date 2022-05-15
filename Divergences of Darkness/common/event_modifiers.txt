@@ -2544,6 +2544,12 @@ university_athens = {
     icon = 5
 }
 
+university_venice = {
+    research_points_modifier = 0.05
+    prestige = 0.02
+    icon = 5
+}
+
 thrace_boom = {
     assimilation_rate = 0.05
     population_growth = 0.0025

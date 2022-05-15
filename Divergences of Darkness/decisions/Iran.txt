@@ -362,10 +362,7 @@ political_decisions = {
 			NOT = { has_country_flag = naib_question }
 		}
 		allow = {
-		    OR = {
-			    bureaucrats = 0.02
-				aristocrats = 0.02
-			}
+			early_classical_theory_and_critique = 1
 		}
 		effect = {
 		    any_pop = {
@@ -385,7 +382,7 @@ political_decisions = {
 			NOT = { has_country_flag = armenian_diaspora_returns }
 		}
 		allow = {
-	        bureaucrats = 0.02	
+	        #bureaucrats = 0.02	
 			experimental_railroad = 1
 		}
 		effect = {
@@ -420,10 +417,10 @@ political_decisions = {
 		    prestige = 5
 			badboy = 7
 			set_country_flag = armenian_caucasian_claims
-			1106 = { add_core = ARM }
-			1105 = { add_core = ARM }
-			1093 = { add_core = ARM }
-			886 = { add_core = ARM }
+			1106 = { add_core = THIS }
+			1105 = { add_core = THIS }
+			1093 = { add_core = THIS }
+			886 = { add_core = THIS }
 		}
 		ai_will_do = { factor = 1 }
 	}
@@ -438,20 +435,16 @@ political_decisions = {
         allow = { 
             civilized = yes
 			nationalism_n_imperialism = 1
-            ARM = {
-                all_core = {
-                    owned_by = ARM 		
-			    }
-            }
+            ARM = { all_core = { owned_by = ARM } }
         }
         effect = {
             prestige = 10
             badboy = 15 
-            882 = { add_core = ARM }	
-		    888 = { add_core = ARM }
-			891 = { add_core = ARM }
-			890 = { add_core = ARM }
-			887 = { add_core = ARM }
+            882 = { add_core = THIS }	
+		    888 = { add_core = THIS }
+			891 = { add_core = THIS }
+			890 = { add_core = THIS }
+			887 = { add_core = THIS }
 			set_country_flag = greater_armenia_claimed
 		}
         ai_will_do = { factor = 1 }

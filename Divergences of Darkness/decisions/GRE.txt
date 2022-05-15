@@ -184,40 +184,6 @@ political_decisions = {
         }
     }
 
-    university_of_athens = {
-        picture = university_athens_pic
-
-        potential = {
-            owns = 834
-            OR = {
-                tag = GRE
-                tag = VEN
-                tag = MAC
-            }
-            NOT = { has_global_flag = university_GRE }
-        }
-
-        allow = {
-            idealism = 1
-            year = 1850
-        }
-
-        effect = {
-            prestige = 5
-            any_pop = {
-                limit = { culture = greek }
-                literacy = 0.1
-            }
-            set_global_flag = university_GRE
-            834 = {
-                add_province_modifier = {
-                    name = university_athens
-                    duration = -1
-                }
-            }
-        }
-    }
-
     settle_east_MAC = {
         picture = east_macedonia
         potential = {

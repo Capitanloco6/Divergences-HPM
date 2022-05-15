@@ -1448,7 +1448,7 @@ country_event = {
     option = { name = "106054.A" }
 }
 
-country_event = {
+country_event = { #Intervention in the Aegean
     id = 106060
     title = "VEN1.T"
     desc = "VEN1.D"
@@ -1462,28 +1462,40 @@ country_event = {
         NOT = { year = 1839 }
     }
 
-    mean_time_to_happen = { months = 20 }
+    mean_time_to_happen = { months = 2 }
+	
+    immediate = { set_country_flag = ottoman_weakness }		
 
     option = {
         name = "106060.A"
-        set_country_flag = ottoman_weakness
         843 = { secede_province = THIS }
         846 = { secede_province = THIS }
         844 = { secede_province = THIS }
         TUR = { country_event = 106061 }
         badboy = 5
+        CLN = {
+            change_variable = {
+                which = greek_nationalism
+                value = 3
+            }
+        }			
         ai_chance = { factor = 30 }
     }
 
     option = {
         name = "106060.B"
-        set_country_flag = ottoman_weakness
         843 = { secede_province = THIS }
         846 = { secede_province = THIS }
         844 = { secede_province = THIS }
         869 = { secede_province = THIS }
         badboy = 15
         TUR = { country_event = 106063 }
+        CLN = {
+            change_variable = {
+                which = greek_nationalism
+                value = 2
+            }
+        }			
         ai_chance = { factor = 10 }
     }
 
@@ -1494,7 +1506,12 @@ country_event = {
             who = TUR
             value = 75
         }
-        set_country_flag = ottoman_weakness
+        CLN = {
+            change_variable = {
+                which = greek_nationalism
+                value = 1
+            }
+        }			
         ai_chance = { factor = 60 }
     }
 }
@@ -1511,7 +1528,7 @@ country_event = {
     option = {
         name = "106061.A"
         prestige = -5
-        ai_chance = { factor = 70 }
+        ai_chance = { factor = 95 }
     }
 
     option = {
@@ -1525,7 +1542,7 @@ country_event = {
             }
             defender_goal = { casus_belli = status_quo }
         }
-        ai_chance = { factor = 30 }
+        ai_chance = { factor = 5 }
     }
 }
 
@@ -1553,7 +1570,7 @@ country_event = {
     option = {
         name = "106063.A"
         prestige = -5
-        ai_chance = { factor = 20 }
+        ai_chance = { factor = 90 }
     }
 
     option = {
@@ -1571,7 +1588,7 @@ country_event = {
             }
             defender_goal = { casus_belli = status_quo }
         }
-        ai_chance = { factor = 80 }
+        ai_chance = { factor = 10 }
     }
 }
 
@@ -1665,7 +1682,7 @@ country_event = {
 }
 
 country_event = {
-    id = 106068 #Election
+    id = 106068 #Election of the Doge, need to set different values for Greek Nationalism
     title = "VEN9.T"
     desc = "VEN9.D"
 
@@ -1687,6 +1704,47 @@ country_event = {
         any_pop = {
             limit = { culture = venetian }
             ideology = {
+                factor = 0.03
+                value = conservative
+            }
+            scaled_militancy = {
+                factor = 2
+                ideology = liberal
+            }
+            scaled_militancy = {
+                factor = -4
+                ideology = reactionary
+            }
+            scaled_militancy = {
+                factor = -2
+                ideology = conservative
+            }
+        }
+        CLN = {
+            change_variable = {
+                which = greek_nationalism
+                value = 2
+            }
+        }		
+        ai_chance = {
+            factor = 40
+            modifier = {
+                factor = 1.2
+                ideology = conservative
+            }
+            modifier = {
+                factor = 1.4
+                ideology = reactionary
+            }
+        }	
+    }
+
+    option = {
+        name = "106068.B"
+        set_country_flag = salviati_doge
+        any_pop = {
+            limit = { culture = venetian }
+            ideology = {
                 factor = 0.05
                 value = liberal
             }
@@ -1699,6 +1757,16 @@ country_event = {
                 ideology = reactionary
             }
         }
+        any_pop = {
+            limit = { culture = greek }
+            militancy = -2
+        }
+        CLN = {
+            change_variable = {
+                which = greek_nationalism
+                value = -1
+            }
+        }			
         ai_chance = {
             factor = 30
             modifier = {
@@ -1716,51 +1784,18 @@ country_event = {
     }
 
     option = {
-        name = "106068.B"
-        set_country_flag = salviati_doge
-        any_pop = {
-            limit = { culture = venetian }
-            ideology = {
-                factor = 0.03
-                value = conservative
-            }
-            scaled_militancy = {
-                factor = 2
-                ideology = liberal
-            }
-            scaled_militancy = {
-                factor = -4
-                ideology = reactionary
-            }
-            scaled_militancy = {
-                factor = -2
-                ideology = conservative
-            }
-        }
-        ai_chance = {
-            factor = 40
-            modifier = {
-                factor = 1.2
-                ideology = conservative
-            }
-            modifier = {
-                factor = 1.4
-                ideology = reactionary
-            }
-        }
-    }
-
-    option = {
         name = "106068.C"
         set_country_flag = albrizzi_doge
-        any_pop = {
-            limit = { culture = greek }
-            militancy = -2
-        }
         any_pop = {
             limit = { culture = venetian }
             consciousness = 2
         }
+        CLN = {
+            change_variable = {
+                which = greek_nationalism
+                value = 1
+            }
+        }			
         ai_chance = {
             factor = 30
             modifier = {
@@ -2370,5 +2405,235 @@ country_event = {
                 duration = 1095
             }
         }
+    }
+}
+
+###Venice-Greece Rework
+
+country_event = { #Macedonian Independence inspires Greek Nationalism
+    id = 106095
+    title = "EVTNAME106095"
+    desc = "EVTDESC106095"
+
+    picture = "macedonia_independence"
+
+    trigger = {
+        tag = VEN
+		exists = yes
+		MAC = {
+			exists = yes
+			truce_with = TUR
+		}
+    }
+	
+    mean_time_to_happen = { days = 7 }	
+
+    fire_only_once = yes
+
+    option = {
+        name = "EVTOPTA106095"
+		set_country_flag = macedonian_war_finished
+        CLN = {
+            set_variable = {
+                which = greek_nationalism
+                value = 1
+            }
+        }
+    }
+}
+
+country_event = { #Failure of Macedonia stiffles Greek Nationalism
+    id = 106096
+    title = "EVTNAME106096"
+    desc = "EVTDESC106096"
+
+    picture = "macedonia_independence"
+
+    trigger = {
+        tag = VEN
+		exists = yes
+		MAC = { exists = no }
+    }
+	
+    mean_time_to_happen = { days = 7 }	
+
+    fire_only_once = yes
+
+    option = {
+        name = "EVTOPTA106096"
+		set_country_flag = macedonian_war_finished
+        CLN = {
+            set_variable = {
+                which = greek_nationalism
+                value = 0
+            }
+        }
+    }
+}
+
+country_event = { #Anti-Turkish riots in Thessalia
+    id = 106097
+    title = "EVTNAME106097"
+    desc = "EVTDESC106097"
+
+    picture = "turkish_massacre"
+
+    trigger = {
+        tag = VEN
+		has_country_flag = macedonian_war_finished
+		833 = { owned_by = THIS }		
+		year = 1839
+    }
+	
+    mean_time_to_happen = { days = 7 }	
+
+    fire_only_once = yes
+	
+    immediate = { set_country_flag = thessalia_riots_happened }	
+
+    option = {
+        name = "EVTOPTA106097"
+        CLN = {
+            change_variable = {
+                which = greek_nationalism
+                value = 2
+            }
+        }
+        ai_chance = { factor = 20 }			
+    }
+	
+    option = {
+        name = "EVTOPTB106097"
+        THIS = { 
+			country_event = { 
+				id = 106098
+				days = 7
+			}
+		}
+        any_owned = {
+            limit = { state_id = 832 }
+            any_pop = {
+                limit = { has_pop_culture = turkish }
+                reduce_pop = 0.9
+            }
+        }
+        ai_chance = { factor = 40 }			
+    }
+
+    option = {
+        name = "EVTOPTC106097"
+        THIS = { 
+			country_event = { 
+				id = 106098
+				days = 7
+			}
+		}
+        CLN = {
+            change_variable = {
+                which = greek_nationalism
+                value = -1
+            }
+        }
+        any_owned = {
+            limit = { state_id = 832 }
+            any_pop = {
+                limit = { has_pop_culture = turkish }
+                reduce_pop = 0.8
+            }
+        }	
+        ai_chance = { factor = 40 }		
+    }	
+}
+
+country_event = { #Ottomans hang Orthodox Patriarch in retaliation for massacres
+    id = 106098
+    title = "EVTNAME106098"
+    desc = "EVTDESC106098"
+
+    picture = "constantinople_patriarch_hanged"
+
+    is_triggered_only = yes
+
+    option = {
+        name = "EVTOPTA106098"
+        CLN = {
+            change_variable = {
+                which = greek_nationalism
+                value = 1
+            }
+        }
+    }
+}
+
+country_event = { #Ottomans hang Orthodox Patriarch in retaliation for massacres
+    id = 106099
+    title = "EVTNAME106099"
+    desc = "EVTDESC106099"
+
+    picture = "cafoscari"
+
+    trigger = {
+        tag = VEN
+		war = no
+		729 = { owned_by = THIS }		
+		834 = { owned_by = THIS }		
+		year = 1841
+    }
+
+    mean_time_to_happen = { days = 7 }	
+
+    fire_only_once = yes
+	
+    immediate = { set_country_flag = new_venetian_university }	
+
+    option = {
+        name = "EVTOPTA106099"
+        any_pop = {
+            limit = { 
+				culture = venetian
+				location = { is_core = VEN }				
+			}
+            literacy = 0.1
+        }
+        729 = {
+            add_province_modifier = {
+				name = university_venice
+                duration = -1
+            }
+        }		
+        CLN = {
+            change_variable = {
+                which = greek_nationalism
+                value = 1
+            }
+        }
+        ai_chance = { 
+			factor = 70 
+            modifier = {
+                factor = 0
+                has_country_flag = salviati_doge
+            }			
+		}		
+    }
+	
+    option = {
+        name = "EVTOPTB106099"
+        any_pop = {
+            limit = { culture = greek }
+            literacy = 0.1
+        }
+        834 = {
+            add_province_modifier = {
+				name = university_athens
+                duration = -1
+            }
+        }		
+        CLN = {
+            change_variable = {
+                which = greek_nationalism
+                value = -1
+            }
+        }
+        ai_chance = { factor = 30 }		
     }
 }
