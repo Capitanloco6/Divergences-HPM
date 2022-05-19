@@ -1,3 +1,3 @@
-owner = NANcontroller = NANadd_core = NAN
+owner = NANcontroller = NANadd_core = NAN
 trade_goods = timberterrain = savanna
 life_rating = 35
