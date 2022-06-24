@@ -29,13 +29,13 @@ political_decisions = {
             IME = {
                 all_core = { 
 					add_core = AZB
-					remove_core = IME
+					#remove_core = IME
 				}
             }
             SAM = {
                 all_core = { 
 					add_core = AZB
-					remove_core = SAM
+					#remove_core = SAM
 				}
             }			
             set_country_flag = annexed_georgian_principalities
@@ -440,11 +440,26 @@ political_decisions = {
         effect = {
             prestige = 10
             badboy = 15 
-            882 = { add_core = THIS }	
-		    888 = { add_core = THIS }
-			891 = { add_core = THIS }
-			890 = { add_core = THIS }
-			887 = { add_core = THIS }
+            882 = { 
+				add_core = THIS
+				remove_core = ERZ
+			}	
+		    888 = { 
+				add_core = THIS 
+				remove_core = ERZ				
+			}
+			891 = { 
+				add_core = THIS
+				remove_core = ERZ				
+			}
+			890 = { 
+				add_core = THIS 
+				remove_core = ERZ				
+			}
+			887 = { 
+				add_core = THIS
+				remove_core = ERZ				
+			}
 			set_country_flag = greater_armenia_claimed
 		}
         ai_will_do = { factor = 1 }

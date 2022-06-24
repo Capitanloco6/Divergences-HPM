@@ -5,7 +5,7 @@ government = absolute_monarchy
 plurality = 0.0
 nationalvalue = nv_order
 literacy = 0.1
-civilized = yes
+civilized = no
 
 # Political reforms
 slavery = no_slavery
@@ -36,14 +36,14 @@ border_policy = open_borders
 set_country_flag = coptic_country
 
 # Technologies
-early_classical_theory_and_critique = 1
-late_enlightenment_philosophy = 1
-enlightenment_thought = 1
-private_banks = 1
-bronze_muzzle_loaded_artillery = 1
-military_staff_system = 1
-introspectionism = 1
-flintlock_rifles = 1
+#early_classical_theory_and_critique = 1
+#late_enlightenment_philosophy = 1
+#enlightenment_thought = 1
+#private_banks = 1
+#bronze_muzzle_loaded_artillery = 1
+#military_staff_system = 1
+#introspectionism = 1
+#flintlock_rifles = 1
 
 # Unciv Reforms
 admin_reform = yes_admin_reform
@@ -67,9 +67,3 @@ upper_house = {
 }
 
 oob = "ARM_oob.txt"
-
-1861.1.1 = {
-# Technologies
-
-#Inventions
-}

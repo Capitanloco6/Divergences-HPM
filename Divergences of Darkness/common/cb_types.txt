@@ -3704,10 +3704,10 @@ persia_acquire_state = {
         THIS = {
             OR = {
                 primary_culture = persian
-                tag = AZB
-                tag = AFS
-                tag = QAJ
-                tag = ZND
+                AND = { 
+					tag = AZB
+					has_country_flag = iranian_ambition
+				}
             }
             number_of_states = 2
             NOT = {
