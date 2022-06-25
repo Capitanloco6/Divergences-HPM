@@ -2766,7 +2766,10 @@ country_event = {
 
     trigger = {
         owns = 354
-        NOT = { is_culture_group = germanic }
+        NOT = { 
+			is_culture_group = germanic
+			primary_culture = czech
+		}
         CAE = {
             exists = yes
             NOT = {

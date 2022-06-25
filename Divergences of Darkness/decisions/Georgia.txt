@@ -148,6 +148,7 @@ political_decisions = {
     create_georgia = { 
 	    picture = st_george 
         potential = {
+			ai = no
             NOT = {
                 exists = GEO
                 tag = SAM

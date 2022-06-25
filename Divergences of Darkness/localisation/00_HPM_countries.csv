@@ -176,6 +176,7 @@ SER_liberal_2;Narodna Radikalna Stranka;;;;;;;;;;;;x;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 SER_anarcho_liberal;Anarho-Liberalno Stranka;;;;;;;;;;;;x;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 GRE_communist;Kommounistikó Kómma Elládas;;;;;;;;;;;;;
 GRE_socialist;Sosialistikó Kómma Elládas;;;;;;;;;;;;;
+GRE_socialist_2;Agrotergatiko Komma;;;;;;;;;;;;;
 GRE_fascist;Ethniki Enosis Ellados;;;;;;;;;;;;;
 GRE_anarcho_liberal;Ethnikón Rizospastikón Kómma;;;;;;;;;;;;;
 GRE_reactionary;Kómma ton Napaíon;;;;;;;;;;;;;
@@ -4414,3 +4415,7 @@ AZW_prussian_constitutionalism;Timbuktu;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 AZW_hms_government;Timbuktu;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 KRT;Kartli;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;x
 KRT_ADJ;Kartlian;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;x
+MFQ;Montafeq Emirate;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;x
+MFQ_ADJ;Montafeq;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;x
+ERZ;Erzurum;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;x
+ERZ_ADJ;Karin;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;x
