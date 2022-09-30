@@ -253,12 +253,6 @@
 		size = 8850
 	}
 
-	clergymen = {
-		culture = persian
-		religion = sunni
-		size = 100
-	}
-
 	soldiers = {
 		culture = persian
 		religion = sunni
@@ -277,6 +271,12 @@
 		size = 1015
 	}
 	
+	bureaucrats = {
+		culture = persian
+		religion = sunni
+		size = 500
+	}	
+	
 	artisans = {
 		culture = persian
 		religion = sunni
@@ -292,8 +292,20 @@
 	farmers = {
 		culture = persian
 		religion = sunni
-		size = 72812
+		size = 52312
 	}
+	
+	clergymen = {
+		culture = persian
+		religion = ismaili
+		size = 100
+	}
+
+	farmers = {
+		culture = persian
+		religion = ismaili
+		size = 22000
+	}	
 	
 	aristocrats = {
 		culture = pashtun
@@ -441,8 +453,20 @@
 	farmers = {
 		culture = pashtun
 		religion = sunni
-		size = 15262
+		size = 11762
 	}
+	
+	soldiers = {
+		culture = pashtun
+		religion = sunni
+		size = 500
+	}	
+	
+	bureaucrats = {
+		culture = persian
+		religion = sunni
+		size = 50
+	}		
 
 	clergymen = {
 		culture = persian
@@ -459,8 +483,22 @@
 	farmers = {
 		culture = persian
 		religion = sunni
-		size = 18500
+		size = 18450
 	}
+	
+	clergymen = {
+		culture = persian
+		religion = ismaili
+		size = 50
+	}
+
+	farmers = {
+		culture = persian
+		religion = ismaili
+		size = 3000
+	}	
+	
+	
 }
 #Qandahar (368000/92000 POPS)
 1215 = {
@@ -561,7 +599,7 @@
 	farmers = {
 		culture = pashtun
 		religion = sunni
-		size = 3500
+		size = 4500
 	}
 
 
@@ -598,7 +636,7 @@
 	farmers = {
 		culture = baluchi
 		religion = sunni
-		size = 6000
+		size = 5000
 	}
 }
 
@@ -1179,8 +1217,20 @@
 	farmers = {
 		culture = persian
 		religion = sunni
-		size = 8912
+		size = 6737
 	}
+	
+	clergymen = {
+		culture = persian
+		religion = ismaili
+		size = 175
+	}
+
+	farmers = {
+		culture = persian
+		religion = ismaili
+		size = 2000
+	}	
 	
 	clergymen = {
 		culture = mongol
@@ -1204,6 +1254,75 @@
 		culture = mongol
 		religion = sunni
 		size = 2000
+	}
+}
+
+#Anar Dareh
+3379 = {
+	clergymen = {
+		culture = pashtun
+		religion = sunni
+		size = 75
+	}
+
+	soldiers = {
+		culture = pashtun
+		religion = sunni
+		size = 500
+	}
+	
+	farmers = {
+		culture = pashtun
+		religion = sunni
+		size = 13960
+	}
+	
+	clergymen = {
+		culture = persian
+		religion = sunni
+		size = 300
+	}
+
+	artisans = {
+		culture = persian
+		religion = sunni
+		size = 1400
+	}
+	
+	farmers = {
+		culture = persian
+		religion = sunni
+		size = 13025
+	}
+	
+	clergymen = {
+		culture = persian
+		religion = ismaili
+		size = 100
+	}	
+	
+	farmers = {
+		culture = persian
+		religion = ismaili
+		size = 2000
+	}	
+	
+	artisans = {
+		culture = mongol
+		religion = sunni
+		size = 40
+	}
+
+	soldiers = {
+		culture = mongol
+		religion = sunni
+		size = 120
+	}
+
+	farmers = {
+		culture = mongol
+		religion = sunni
+		size = 3400
 	}
 }
 #Badakhshan Region (340000)

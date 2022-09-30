@@ -2005,6 +2005,7 @@ iranian = {
         }
         radicalism = 1
     }
+	
     ossetian = {
         color = {
             227 177 41
@@ -2113,6 +2114,35 @@ iranian = {
             Zahedi
         }
     }
+
+	pamiri = {
+		color = { 100 180 160 } 
+		first_names = {
+			Abdullah Ahmad Azam Khudadad
+			Mehrab Mohammad Muhabbat 
+			Nasir Nawaz
+			Samandar Sherdil
+		}
+		last_names = {
+			Khan
+		}
+	}
+	
+    fahlavi = {
+        color = {
+            118 117 63
+        }
+        first_names = {
+            Abbas Abolghasem Abdolhossein Abdolsamad Abdolazim Ahmad Ali Bahram Ebrahim Esmail
+            "Fath Ali" Fazlollah Hamzeh Hasan Kamran Karim "Lotf Ali" Massoud "Moin ed-Din" "Mozzafer ed-Din"
+            Murad Muhsin "Naser ed-Din" Nosret Reza
+        }
+        last_names = {
+            Airom Ansari Ayrum Buzarjomehri Davallu Esfahani Farhani Jahanbani Kashani Khan
+            Khuzai Meshhedi Nakhchevani Pesyan Rokni Sassanid Shafaei Shahbakhti Shirazi Tabrizi
+            Tahmasebi Zahedi
+        }
+    }	
 
     union = ARY
 }
