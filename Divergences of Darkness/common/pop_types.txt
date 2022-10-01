@@ -824,9 +824,9 @@ assimilation_chance = {
     modifier = {
         factor = -20
         has_culture_core = yes
-		NOT = {
-			location = { has_province_modifier = forced_integration }
-		}		
+		#NOT = {
+		#	location = { has_province_modifier = forced_integration }
+		#}		
     }
 
     #modifier = {
