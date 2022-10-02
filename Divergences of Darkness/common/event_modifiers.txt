@@ -2,6 +2,70 @@
 # scriptable and usable for event-system below.
 ##################################################################################################
 
+####AI Personalities
+
+coward_ai = {
+    badboy = -0.01
+    cb_generation_speed_modifier = 0.25
+    icon = 3
+}
+
+benefactor_ai = {
+    cb_generation_speed_modifier = 0.1
+    icon = 3
+}
+
+malevolent_ai = {
+    cb_generation_speed_modifier = -0.05
+    icon = 3
+}
+
+picking_personality = {
+    icon = 3
+}
+
+####
+
+landlocked_province = {
+    icon = 2    
+}
+
+######
+##Rebel Modifiers
+######
+partisan_occupation = {
+    icon = 17
+}
+
+core_when_done = {
+    icon = 17
+}
+
+######
+##Government
+######
+
+constitutional_crisis = {
+    badboy = 0.01
+    icon = 6
+}
+
+democratic_peace_summit = {
+    badboy = -0.01
+    diplomatic_points_modifier = -0.05
+    icon = 5
+}
+
+regency_government = {
+    global_pop_consciousness_modifier = 0.1
+    global_pop_militancy_modifier = 0.05
+    political_reform_desire = 0.25
+    cb_generation_speed_modifier = -0.25
+    influence_modifier = -0.25
+    org_regain = -0.25
+    icon = 8
+}
+
 french_liberal_school = {
     max_tariff = -0.25
     administrative_efficiency_modifier = 0.2
@@ -123,6 +187,26 @@ national_instability = {
 #}
 
 ##Disasters
+
+homeland_productive_year = {
+    farm_RGO_eff = 0.25
+    pop_militancy_modifier = -0.01
+    icon = 13
+}
+
+severe_homeland_drought = {
+    farm_RGO_eff = -0.45
+    farm_rgo_size = -0.25
+    pop_militancy_modifier = 0.02
+    icon = 14
+}
+
+homeland_drought = {
+    farm_RGO_eff = -0.25
+    farm_rgo_size = -0.15
+    pop_militancy_modifier = 0.01
+    icon = 14
+}
 earthquake_devastation = {
     local_artisan_output = -0.5
     local_artisan_input = -0.5
@@ -177,7 +261,7 @@ state_of_emergency_modifier = {
     war_exhaustion = -0.1
     global_pop_militancy_modifier = -0.3
     min_military_spending = 0.25
-    max_social_spending = -0.3
+    max_social_spending = 0.3
     min_tariff = 0.25
     ruling_party_support = -0.25
     icon = 5
@@ -1003,7 +1087,7 @@ militant_trade_union = {
 
 worker_union = {
     pop_consciousness_modifier = 0.1
-    poor_everyday_needs = -0.1
+#    poor_everyday_needs = -0.1
     farm_rgo_eff = -0.05
     mine_rgo_eff = -0.05
     icon = 4
@@ -1062,7 +1146,7 @@ the_massacre = {
     icon = 18
 }
 fascist_welfare = {
-    poor_everyday_needs = -0.1
+#    poor_everyday_needs = -0.1
     population_growth = 0.001
     pop_militancy_modifier = -0.05
     icon = 12
@@ -1110,7 +1194,7 @@ educational_reform = {
 }
 
 legation_quarter = {
-    pop_militancy_modifier = 0.03
+    global_pop_militancy_modifier = 0.03
     research_points_modifier = 0.05
     icon = 8
 }
