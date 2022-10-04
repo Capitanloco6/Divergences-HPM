@@ -2024,6 +2024,7 @@ country_event = { # Soran is given the choice to either keep Mosul or leave the 
 			value = -50
 		}
 		add_accepted_culture = assyrian
+		set_country_flag = soran_assyria
 	}
 	option = {  
         name = "EVTOPTB125169"
@@ -2861,7 +2862,7 @@ country_event = {
 	
     trigger = {
         war = no
-        924 = { is_capital = yes }
+		has_country_flag = soran_assyria
 		civilized = yes
     }
 	
