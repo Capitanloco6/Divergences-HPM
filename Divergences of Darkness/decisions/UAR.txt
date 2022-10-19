@@ -654,6 +654,7 @@ political_decisions = {
 		    has_country_flag = supporting_the_kuren_kurdistana_azad
 			NOT = {
 			    has_country_flag = withdrawn_support_kuren_kurdistana_azad
+			    has_country_flag = dealt_with_kka				
 			}
 		}
 
@@ -664,6 +665,7 @@ political_decisions = {
 
 		effect = {
 		    #remove_country_modifier = kuren_kurdistana_azad
+			set_country_flag = dealt_with_kka
 			country_event = 125179
 		}
 	}
