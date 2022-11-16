@@ -54,8 +54,6 @@ upper_house = {
 # Unciv Reforms
 military_constructions = yes_military_constructions
 
-set_country_flag = sunni_country
-
 # Starting Consciousness
 consciousness = 0
 nonstate_consciousness = 0
