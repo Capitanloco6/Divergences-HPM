@@ -1319,28 +1319,28 @@ country_event = {
         NOT = {
             exists = LBN
             has_country_flag = no_lebanon_independence
-            primary_culture = syriac
+            primary_culture = mashriqi
         }
         is_possible_vassal = LBN
         revolution_n_counterrevolution = 1
         OR = {
             AND = {
-                NOT = { accepted_culture = syriac }
+                NOT = { accepted_culture = mashriqi }
                 any_state = {
                     any_owned_province = {
                         is_core = LBN
-                        culture = syriac
+                        culture = mashriqi
                         literacy = 0.25
                     }
                     average_militancy = 3
                 }
             }
             AND = {
-                accepted_culture = syriac
+                accepted_culture = mashriqi
                 any_state = {
                     any_owned_province = {
                         is_core = LBN
-                        culture = syriac
+                        culture = mashriqi
                         literacy = 0.5
                     }
                     average_militancy = 7
@@ -1355,7 +1355,7 @@ country_event = {
         modifier = {
             factor = 1.5
             any_pop = {
-                has_pop_culture = syriac
+                has_pop_culture = mashriqi
                 is_accepted_culture = yes
             }
         }
@@ -1389,20 +1389,20 @@ country_event = {
     immediate = {
         random_owned = {
             limit = {
-                owner = { accepted_culture = syriac }
+                owner = { accepted_culture = mashriqi }
             }
-            owner = { remove_accepted_culture = syriac }
+            owner = { remove_accepted_culture = mashriqi }
         }
     }
 
     option = {
         name = "EVT90017OPTA"
         any_pop = {
-            limit = { has_pop_culture = syriac }
+            limit = { has_pop_culture = mashriqi }
             militancy = 3
         }
         any_owned = {
-            limit = { culture = syriac }
+            limit = { culture = mashriqi }
             add_province_modifier = {
                 name = nationalist_agitation
                 duration = 365
@@ -1455,17 +1455,17 @@ country_event = {
         release_vassal = LBN
         LBN = {
             any_pop = {
-                limit = { has_pop_culture = syriac }
+                limit = { has_pop_culture = mashriqi }
                 militancy = -8
             }
         }
         any_pop = {
-            limit = { has_pop_culture = syriac }
+            limit = { has_pop_culture = mashriqi }
             militancy = -3
         }
         any_pop = {
             limit = {
-                NOT = { has_pop_culture = syriac }
+                NOT = { has_pop_culture = mashriqi }
                 is_primary_culture = no
             }
             militancy = 1
@@ -1531,7 +1531,7 @@ country_event = {
         name = "EVT90017OPTC"
         set_country_flag = no_lebanon_independence
         any_pop = {
-            limit = { has_pop_culture = syriac }
+            limit = { has_pop_culture = mashriqi }
             militancy = 8
         }
         ai_chance = { factor = 0 }
