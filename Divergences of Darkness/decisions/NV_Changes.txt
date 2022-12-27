@@ -18,16 +18,8 @@ political_decisions = {
         
         effect = { set_country_flag = nv_change }
         
-        ai_will_do = { 
-            factor = 1 
-            
-            modifier = {
-                factor = 0
-                OR = {
-                    is_culture_group = chinese
-                    substate_of = QNG
-                }
-            }
+        ai_will_do = {
+            factor = 1
         }
     }
 

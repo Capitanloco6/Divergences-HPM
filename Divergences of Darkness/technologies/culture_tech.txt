@@ -75,9 +75,9 @@ realism = {
         modifier = {
             factor = 5
             OR = {
-                tag = DUA
-                tag = TUS
-            }
+				tag = DUA
+				tag = TUS
+			}
         }
         modifier = {
             factor = 0.1
@@ -493,6 +493,7 @@ positivism = {
                 tag = GER
                 tag = HLR
                 tag = ARC
+                tag = ARC
             }
         }
     }
@@ -524,7 +525,7 @@ functionalism = {
             NOT = { tag = TUR }
             OR = {
                 not = { literacy = 0.50 }
-                tag = ENG
+                tag = DUA
             }
             OR = {
                 is_greater_power = yes
@@ -542,6 +543,7 @@ functionalism = {
                 tag = NGF
                 tag = GER
                 tag = HLR
+                tag = ARC
                 tag = ARC
             }
         }
@@ -575,7 +577,7 @@ biologism = {
             OR = {
                 not = { literacy = 0.7 }
                 year = 1880
-                tag = ENG
+                tag = DUA
             }
             OR = {
                 is_greater_power = yes
@@ -593,6 +595,7 @@ biologism = {
                 tag = NGF
                 tag = GER
                 tag = HLR
+                tag = ARC
                 tag = ARC
             }
         }

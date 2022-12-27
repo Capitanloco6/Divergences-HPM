@@ -125,7 +125,7 @@ political_decisions = {
                     }
                 }
             }
-            PER = {
+            ARY = {
                 all_core = {
                     OR = {
                         owned_by = THIS

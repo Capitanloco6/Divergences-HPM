@@ -743,10 +743,10 @@ iron_steamers = {
             factor = 0
             NOT = { total_num_of_ports = 1 }
         }
-#       modifier = {
-#           factor = 30
-#           tag = ENG
-#       }
+        modifier = {
+            factor = 30
+            tag = DUA
+        }
         modifier = {
             factor = 100
             is_greater_power = yes

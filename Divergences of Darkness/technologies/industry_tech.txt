@@ -689,6 +689,7 @@ puddling = {
                 tag = NGF
                 tag = GER
                 tag = ENL
+                tag = DUA
                 tag = FRA
                 tag = AUS
                 tag = RUS
@@ -779,6 +780,7 @@ hot_blast = {
                 tag = AUS
                 tag = ENG
                 tag = ENL
+                tag = DUA
                 tag = FRA
                 tag = RUS
                 tag = BOH
@@ -1113,6 +1115,8 @@ experimental_railroad = {
                 tag = POL
                 tag = PLC
                 tag = AUS
+                tag = BOH
+                tag = DUA
             }
         }
         modifier = {
@@ -1166,6 +1170,7 @@ early_railroad = {
                 tag = BOH
                 tag = AUS
                 tag = PLC
+                tag = DUA
             }
         }
         modifier = {

@@ -144,7 +144,6 @@ country_event = {
         NOT = { is_culture_group = chinese }
         any_owned_province = {
             port = yes
-            #NOT = { has_province_modifier = boxer_presence }
             NOT = { has_province_modifier = western_presence }
         }
     }
@@ -237,7 +236,6 @@ country_event = {
         random_owned = {
             limit = {
                 port = yes
-                #NOT = { has_province_modifier = boxer_presence }
                 NOT = { has_province_modifier = western_presence }
             }
             add_province_modifier = {
@@ -388,7 +386,6 @@ country_event = {
         has_country_modifier = foreign_smugglers
         any_owned_province = {
             NOT = { has_province_modifier = local_opium_habit }
-            #NOT = { has_province_modifier = boxer_presence }
         }
     }
 
@@ -410,7 +407,6 @@ country_event = {
         random_owned = {
             limit = {
                 NOT = { has_province_modifier = local_opium_habit }
-                #NOT = { has_province_modifier = boxer_presence }
             }
             add_province_modifier = {
                 name = local_opium_habit
@@ -427,7 +423,6 @@ country_event = {
         random_owned = {
             limit = {
                 NOT = { has_province_modifier = local_opium_habit }
-                #NOT = { has_province_modifier = boxer_presence }
             }
             any_pop = {
                 reduce_pop = 0.98
@@ -470,7 +465,6 @@ country_event = {
                 any_neighbor_province = { has_province_modifier = western_presence }
             }
             NOT = { has_province_modifier = western_presence }
-            #NOT = { has_province_modifier = boxer_presence }
         }
     }
 
@@ -534,7 +528,6 @@ country_event = {
                     any_neighbor_province = { has_province_modifier = western_presence }
                 }
                 NOT = { has_province_modifier = western_presence }
-                #NOT = { has_province_modifier = boxer_presence }
             }
             add_province_modifier = {
                 name = "western_presence"
@@ -714,7 +707,6 @@ country_event = {
                 any_neighbor_province = { has_province_modifier = western_presence }
             }
             NOT = { has_province_modifier = western_presence }
-            #NOT = { has_province_modifier = boxer_presence }
         }
     }
 
@@ -760,7 +752,6 @@ country_event = {
             limit = {
                 is_capital = yes
                 NOT = { has_province_modifier = western_presence }
-                #NOT = { has_province_modifier = boxer_presence }
             }
             add_province_modifier = {
                 name = "western_presence"
@@ -783,7 +774,6 @@ country_event = {
                     any_neighbor_province = { has_province_modifier = western_presence }
                 }
                 NOT = { has_province_modifier = western_presence }
-                #NOT = { has_province_modifier = boxer_presence }
                 owner = {
                     capital_scope = { has_province_modifier = western_presence }
                 }
@@ -1072,7 +1062,6 @@ country_event = {
             limit = {
                 port = yes
                 #NOT = { has_province_modifier = foreign_trading_post }
-                #NOT = { has_province_modifier = boxer_presence }
             }
             any_pop = {
                 consciousness = -3
@@ -1096,7 +1085,6 @@ country_event = {
         has_country_modifier = foreign_trading_post
         any_owned_province = {
             NOT = { has_province_modifier = local_opium_habit }
-            #NOT = { has_province_modifier = boxer_presence }
         }
     }
 
@@ -1128,7 +1116,6 @@ country_event = {
             limit = {
                 #has_province_modifier = foreign_trading_post
                 NOT = { has_province_modifier = local_opium_habit }
-                #NOT = { has_province_modifier = boxer_presence }
             }
             add_province_modifier = {
                 name = "local_opium_habit"
@@ -1160,7 +1147,6 @@ country_event = {
         random_owned = {
             limit = {
                 NOT = { has_province_modifier = local_opium_habit }
-                #NOT = { has_province_modifier = boxer_presence }
             }
             any_pop = { militancy = 2 }
         }
@@ -1235,7 +1221,6 @@ country_event = {
         any_owned_province = {
             port = yes
             NOT = { has_province_modifier = local_opium_habit }
-            #NOT = { has_province_modifier = boxer_presence }
         }
     }
 
@@ -1298,7 +1283,6 @@ country_event = {
                 port = yes
                 NOT = { has_province_modifier = foreign_smugglers }
                 NOT = { has_province_modifier = local_opium_habit }
-                #NOT = { has_province_modifier = boxer_presence }
             }
             state_scope = {
                 any_pop = {
@@ -1319,7 +1303,6 @@ country_event = {
             limit = {
                 port = yes
                 NOT = { has_province_modifier = local_opium_habit }
-                #NOT = { has_province_modifier = boxer_presence }
             }
             any_pop = {
                 reduce_pop = 0.98
@@ -1352,7 +1335,6 @@ province_event = {
         owner = { civilized = no }
         any_neighbor_province = { has_province_modifier = local_opium_habit }
         NOT = { has_province_modifier = local_opium_habit }
-        #NOT = { has_province_modifier = boxer_presence }
     }
 
     mean_time_to_happen = {
@@ -1440,7 +1422,6 @@ province_event = {
         }
         any_neighbor_province = { has_province_modifier = local_opium_habit }
         NOT = { has_province_modifier = local_opium_habit }
-        #NOT = { has_province_modifier = boxer_presence }
     }
 
     mean_time_to_happen = {
@@ -1541,7 +1522,6 @@ province_event = {
         }
         any_neighbor_province = { has_province_modifier = local_opium_habit }
         NOT = { has_province_modifier = local_opium_habit }
-        #NOT = { has_province_modifier = boxer_presence }
     }
 
     mean_time_to_happen = {
@@ -2107,7 +2087,6 @@ country_event = {
         has_country_modifier = western_influences
         any_owned_province = {
             NOT = { has_province_modifier = european_military_mission }
-            #NOT = { has_province_modifier = boxer_presence }
         }
     }
 
@@ -2149,7 +2128,6 @@ country_event = {
         random_owned = {
             limit = {
                 NOT = { has_province_modifier = european_military_mission }
-                #NOT = { has_province_modifier = boxer_presence }
             }
             add_province_modifier = {
                 name = european_military_mission
@@ -2240,7 +2218,7 @@ country_event = {
             remove_province_modifier = european_military_mission
         }
         years_of_research = -0.1
-        war_exhaustion = 20
+        war_exhaustion = 5
     }
 }
 
@@ -2852,9 +2830,6 @@ country_event = {
         is_vassal = no
         NOT = {
             has_country_modifier = rangaku
-            tag = QNG
-            vassal_of = QNG
-            substate_of = QNG
         }
     }
 
@@ -3209,7 +3184,6 @@ country_event = {
     trigger = {
         any_owned_province = {
             is_capital = yes
-            #NOT = { has_province_modifier = boxer_presence }
         }
         NOT = { has_country_modifier = legation_quarter }
         has_country_modifier = western_influences
@@ -3506,7 +3480,6 @@ country_event = {
         any_owned_province = {
             port = yes
             NOT = { has_province_modifier = local_opium_habit }
-            #NOT = { has_province_modifier = boxer_presence }
         }
         has_country_modifier = trade_restrictions
     }
@@ -3570,7 +3543,6 @@ country_event = {
             limit = {
                 port = yes
                 NOT = { has_province_modifier = local_opium_habit }
-                #NOT = { has_province_modifier = boxer_presence }
             }
             add_province_modifier = {
                 name = local_opium_habit
@@ -3877,8 +3849,6 @@ country_event = {
 			remove_province_modifier = legation_quarter
 			remove_province_modifier = kettler_denkmal
 			remove_province_modifier = extraterritoriality_granted
-			remove_province_modifier = boxer_presence
-			remove_province_modifier = boxer_agitation
 		}
 	}
 }
@@ -4007,8 +3977,6 @@ country_event = {
             remove_province_modifier = legation_quarter
             remove_province_modifier = kettler_denkmal
             remove_province_modifier = extraterritoriality_granted
-            remove_province_modifier = boxer_presence
-            #remove_province_modifier = boxer_agitation
         }
     }
 }
@@ -4409,8 +4377,6 @@ country_event = {
                         is_culture_group = chinese
                         has_country_modifier = uncivilized_isolationism
                         has_country_modifier = sakoku
-                        vassal_of = QNG
-                        substate_of = QNG
                     }
                     civilized = no
                     foreign_naval_officers = yes_foreign_naval_officers
@@ -4432,8 +4398,6 @@ country_event = {
                         is_culture_group = chinese
                         has_country_modifier = uncivilized_isolationism
                         has_country_modifier = sakoku
-                        vassal_of = QNG
-                        substate_of = QNG
                     }
                     civilized = no
                     foreign_training = yes_foreign_training
@@ -4504,8 +4468,6 @@ country_event = {
                     remove_province_modifier = legation_quarter
                     remove_province_modifier = kettler_denkmal
                     remove_province_modifier = extraterritoriality_granted
-                    remove_province_modifier = boxer_presence
-                    #remove_province_modifier = boxer_agitation
                 }
             }
         }

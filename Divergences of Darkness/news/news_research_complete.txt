@@ -82,7 +82,7 @@ news_priority = {
                     0 0 CHI
                 }
                 tags_eq = {
-                    0 0 QNG
+                    0 0 MCK
                 }
                 tags_eq = {
                     0 0 TAI
@@ -203,7 +203,7 @@ news_priority = {
                     0 0 CHI
                 }
                 tags_eq = {
-                    0 0 QNG
+                    0 0 MCK
                 }
                 tags_eq = {
                     0 0 TAI
