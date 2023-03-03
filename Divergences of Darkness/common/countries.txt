@@ -218,7 +218,6 @@ AZW = "countries/Azawad.txt" #Timbuktu
 MLI = "countries/Colonial Mali.txt"
 GMB = "countries/Gambia.txt"
 WSH = "countries/Western Sahara.txt"
-SEG = "countries/Segu.txt"
 MOS = "countries/Mossi.txt"
 MAL = "countries/Mali.txt"
 
