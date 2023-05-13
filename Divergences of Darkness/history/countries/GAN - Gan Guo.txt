@@ -1,4 +1,4 @@
-capital = 1476
+capital = 2468
 primary_culture = ganguan
 religion = mahayana
 government = absolute_monarchy
