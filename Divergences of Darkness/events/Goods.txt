@@ -1395,7 +1395,7 @@ province_event = {
         year = 1896
         or = {
             province_id = 87 # Monterey
-            province_id = 2162 # Veracruz
+            province_id = 2184 # Campeche
             province_id = 2163 # Tampico
             province_id = 702 # Lvov
         }

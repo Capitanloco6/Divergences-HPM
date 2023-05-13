@@ -3053,7 +3053,7 @@
 		culture = kurdish
 		religion = sunni
 		size = 260
-		 militancy = 8
+		militancy = 10
 		rebel_type = nationalist_rebels
 	}
 
@@ -3061,7 +3061,7 @@
 		culture = kurdish
 		religion = sunni
 		size = 1250
-		 militancy = 8
+		militancy = 10
 		rebel_type = nationalist_rebels
 	}
 
@@ -3069,7 +3069,7 @@
 		culture = kurdish
 		religion = sunni
 		size= 875
-		 militancy = 8
+		militancy = 10
 		rebel_type = nationalist_rebels
 	}
 
@@ -3077,7 +3077,7 @@
 		culture = kurdish
 		religion = sunni
 		size = 25875
-		 militancy = 8
+		militancy = 10
 		rebel_type = nationalist_rebels
 	}
 	
@@ -4218,7 +4218,7 @@
 		culture = kurdish
 		religion = sunni
 		size = 530
-	    militancy = 8
+	    militancy = 10
 		rebel_type = nationalist_rebels
 	}
 
@@ -4226,7 +4226,7 @@
 		culture = kurdish
 		religion = sunni
 		size = 290
-		militancy = 8
+		militancy = 10
 		rebel_type = nationalist_rebels
 	}
 
@@ -4234,7 +4234,7 @@
 		culture = kurdish
 		religion = sunni
 		size = 1325
-		militancy = 8
+		militancy = 10
 		rebel_type = nationalist_rebels
 	}
 
@@ -4242,7 +4242,7 @@
 		culture = kurdish
 		religion = sunni
 		size= 750
-		militancy = 8
+		militancy = 10
 		rebel_type = nationalist_rebels
 	}
 
@@ -4250,7 +4250,7 @@
 		culture = kurdish
 		religion = sunni
 		size = 23650
-		militancy = 8
+		militancy = 10
 		rebel_type = nationalist_rebels
 	}
 

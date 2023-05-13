@@ -2,6 +2,6 @@ owner = RWA
 controller = RWA
 add_core = RWA
 add_core = BUG
-trade_goods = coffee
+trade_goods = cattle
 terrain = montane_forest
 life_rating = 10

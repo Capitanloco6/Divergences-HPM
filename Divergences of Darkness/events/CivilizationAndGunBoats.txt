@@ -37,6 +37,10 @@ country_event = {
             name = "western_influences"
             duration = -1
         }
+        random_owned = {
+            limit = { owner = { NOT = { border_policy = open_borders } } }
+            owner = { political_reform = open_borders }
+        }
 
         ai_chance = {
             factor = 50
@@ -59,6 +63,10 @@ country_event = {
         add_country_modifier = {
             name = uncivilized_isolationism
             duration = -1
+        }
+        random_owned = {
+            limit = { owner = { NOT = { border_policy = closed_borders } } }
+            owner = { political_reform = closed_borders }
         }
         random_owned = {
             limit = {
@@ -259,15 +267,14 @@ country_event = {
             any_neighbor_country = { civilized = yes }
         }
         has_country_modifier = uncivilized_isolationism
+        NOT = { has_country_modifier = foreign_smugglers }
         any_owned_province = {
             OR = {
                 port = yes
                 any_neighbor_province = {
                     owner = { civilized = yes }
                 }
-                any_neighbor_province = { has_province_modifier = foreign_smugglers }
             }
-            NOT = { has_province_modifier = foreign_smugglers }
         }
     }
 
@@ -321,6 +328,10 @@ country_event = {
 
     option = {
         name = "EVT13015OPTA"
+        add_country_modifier = {
+            name = "foreign_smugglers"
+            duration = 3650
+        }
         random_owned = {
             limit = {
                 OR = {
@@ -328,13 +339,7 @@ country_event = {
                     any_neighbor_province = {
                         owner = { civilized = yes }
                     }
-                    any_neighbor_province = { has_province_modifier = foreign_smugglers }
                 }
-                NOT = { has_province_modifier = foreign_smugglers }
-            }
-            add_province_modifier = {
-                name = "foreign_smugglers"
-                duration = 3650
             }
             state_scope = {
                 any_pop = {
@@ -357,9 +362,7 @@ country_event = {
                     any_neighbor_province = {
                         owner = { civilized = yes }
                     }
-                    any_neighbor_province = { has_province_modifier = foreign_smugglers }
                 }
-                NOT = { has_province_modifier = foreign_smugglers }
             }
             state_scope = {
                 any_pop = {
@@ -380,8 +383,8 @@ country_event = {
 
     trigger = {
         civilized = no
+        has_country_modifier = foreign_smugglers
         any_owned_province = {
-            has_province_modifier = foreign_smugglers
             NOT = { has_province_modifier = local_opium_habit }
         }
     }
@@ -400,15 +403,14 @@ country_event = {
 
     option = {
         name = "EVT13016OPTA"
+        remove_country_modifier = foreign_smugglers
         random_owned = {
             limit = {
-                has_province_modifier = foreign_smugglers
                 NOT = { has_province_modifier = local_opium_habit }
             }
-            remove_province_modifier = foreign_smugglers
             add_province_modifier = {
                 name = local_opium_habit
-                duration = -1
+                duration = 3650
             }
         }
         ai_chance = { factor = 60 }
@@ -417,12 +419,11 @@ country_event = {
     option = {
         name = "EVT13016OPTB"
         prestige = -3
+        remove_country_modifier = foreign_smugglers
         random_owned = {
             limit = {
-                has_province_modifier = foreign_smugglers
                 NOT = { has_province_modifier = local_opium_habit }
             }
-            remove_province_modifier = foreign_smugglers
             any_pop = {
                 reduce_pop = 0.98
                 militancy = 6
@@ -987,10 +988,10 @@ country_event = {
     trigger = {
         any_owned_province = {
             port = yes
-            NOT = { has_province_modifier = foreign_trading_post }
         }
         civilized = no
         has_country_modifier = western_influences
+        NOT = { has_country_modifier = foreign_trading_post }
     }
 
     mean_time_to_happen = {
@@ -1037,14 +1038,13 @@ country_event = {
 
     option = {
         name = "EVTOPTA13040"
+        add_country_modifier = {
+            name = foreign_trading_post
+            duration = 3650
+        }
         random_owned = {
             limit = {
                 port = yes
-                NOT = { has_province_modifier = foreign_trading_post }
-            }
-            add_province_modifier = {
-                name = foreign_trading_post
-                duration = 3650
             }
             any_pop = {
                 consciousness = 2
@@ -1061,7 +1061,7 @@ country_event = {
         random_owned = {
             limit = {
                 port = yes
-                NOT = { has_province_modifier = foreign_trading_post }
+                #NOT = { has_province_modifier = foreign_trading_post }
             }
             any_pop = {
                 consciousness = -3
@@ -1082,8 +1082,8 @@ country_event = {
     trigger = {
         civilized = no
         NOT = { has_country_modifier = trade_restrictions }
+        has_country_modifier = foreign_trading_post
         any_owned_province = {
-            has_province_modifier = foreign_trading_post
             NOT = { has_province_modifier = local_opium_habit }
         }
     }
@@ -1114,12 +1114,12 @@ country_event = {
         name = "EVTOPTA13050"
         random_owned = {
             limit = {
-                has_province_modifier = foreign_trading_post
+                #has_province_modifier = foreign_trading_post
                 NOT = { has_province_modifier = local_opium_habit }
             }
             add_province_modifier = {
                 name = "local_opium_habit"
-                duration = -1
+                duration = 3650
             }
             any_pop = {
                 consciousness = 2
@@ -1143,12 +1143,11 @@ country_event = {
 
     option = {
         name = "EVTOPTC13050"
+        remove_country_modifier = foreign_trading_post
         random_owned = {
             limit = {
-                has_province_modifier = foreign_trading_post
                 NOT = { has_province_modifier = local_opium_habit }
             }
-            remove_province_modifier = foreign_trading_post
             any_pop = { militancy = 2 }
         }
         random_country = {
@@ -1218,9 +1217,9 @@ country_event = {
     trigger = {
         civilized = no
         has_country_modifier = trade_restrictions
+        NOT = { has_country_modifier = foreign_smugglers }
         any_owned_province = {
             port = yes
-            NOT = { has_province_modifier = foreign_smugglers }
             NOT = { has_province_modifier = local_opium_habit }
         }
     }
@@ -1275,15 +1274,15 @@ country_event = {
 
     option = {
         name = "EVT13051OPTA"
+        add_country_modifier = {
+            name = "foreign_smugglers"
+            duration = 3650
+        }
         random_owned = {
             limit = {
                 port = yes
-                NOT = { has_province_modifier = foreign_smugglers }
+                #NOT = { has_province_modifier = foreign_smugglers }
                 NOT = { has_province_modifier = local_opium_habit }
-            }
-            add_province_modifier = {
-                name = "foreign_smugglers"
-                duration = 3650
             }
             state_scope = {
                 any_pop = {
@@ -1303,7 +1302,6 @@ country_event = {
         random_owned = {
             limit = {
                 port = yes
-                NOT = { has_province_modifier = foreign_smugglers }
                 NOT = { has_province_modifier = local_opium_habit }
             }
             any_pop = {
@@ -1347,7 +1345,7 @@ province_event = {
         }
         modifier = {
             factor = 0.8
-            has_province_modifier = foreign_smugglers
+            has_country_modifier = foreign_smugglers
         }
     }
 
@@ -1355,7 +1353,7 @@ province_event = {
         name = "EVTOPTA13055"
         add_province_modifier = {
             name = local_opium_habit
-            duration = -1
+            duration = 3650
         }
         ai_chance = { factor = 90 }
     }
@@ -1446,7 +1444,7 @@ province_event = {
         name = "EVTOPTA13060"
         add_province_modifier = {
             name = "local_opium_habit"
-            duration = -1
+            duration = 3650
         }
         ai_chance = { factor = 90 }
     }
@@ -1556,7 +1554,7 @@ province_event = {
             any_owned = {
                 add_province_modifier = {
                     name = "local_opium_habit"
-                    duration = -1
+                    duration = 3650
                 }
             }
         }
@@ -1708,7 +1706,7 @@ country_event = {
     picture = "explorers"
 
     trigger = {
-        any_owned_province = { has_province_modifier = foreign_trading_post }
+        has_country_modifier = foreign_trading_post
         NOT = { has_country_modifier = sayings_of_the_dutch }
     }
 
@@ -1853,7 +1851,7 @@ country_event = {
     picture = "bazaar"
 
     trigger = {
-        any_owned_province = { has_province_modifier = foreign_trading_post }
+        has_country_modifier = foreign_trading_post
     }
 
     mean_time_to_happen = {
@@ -1906,8 +1904,10 @@ province_event = {
 
     trigger = {
         average_militancy = 3
+        owner = {
+            has_country_modifier = foreign_trading_post
+        }
         OR = {
-            has_province_modifier = foreign_trading_post
             has_province_modifier = western_presence
             has_province_modifier = european_military_mission
         }
@@ -1968,6 +1968,7 @@ province_event = {
                 remove_province_modifier = european_military_mission
             }
         }
+        owner = { remove_country_modifier = foreign_trading_post }
     }
 }
 
@@ -2231,8 +2232,12 @@ province_event = {
         OR = {
             has_province_modifier = european_military_mission
             has_province_modifier = western_presence
-            has_province_modifier = foreign_trading_post
-            has_province_modifier = foreign_smugglers
+            owner = {
+                OR = {
+                    has_country_modifier = foreign_trading_post
+                    has_country_modifier = foreign_smugglers
+                }
+            }
         }
         average_militancy = 3
     }
@@ -2273,8 +2278,11 @@ province_event = {
         name = "EVTOPTA13150"
         remove_province_modifier = european_military_mission
         remove_province_modifier = western_presence
-        remove_province_modifier = foreign_trading_post
-        remove_province_modifier = foreign_smugglers
+        #remove_province_modifier = foreign_smugglers
+        owner = {
+            remove_country_modifier = foreign_trading_post
+            remove_country_modifier = foreign_smugglers
+        }
         any_country = {
             limit = { is_greater_power = yes }
             relation = {
@@ -2308,12 +2316,14 @@ country_event = {
     picture = "arrested"
 
     trigger = {
+        OR = {
+            has_country_modifier = foreign_trading_post
+            has_country_modifier = foreign_smugglers
+        }
         any_owned_province = {
             OR = {
                 has_province_modifier = european_military_mission
                 has_province_modifier = western_presence
-                has_province_modifier = foreign_trading_post
-                has_province_modifier = foreign_smugglers
             }
             NOT = { has_province_modifier = extraterritoriality_granted }
             port = yes
@@ -2411,8 +2421,7 @@ country_event = {
                 OR = {
                     has_province_modifier = european_military_mission
                     has_province_modifier = western_presence
-                    has_province_modifier = foreign_trading_post
-                    has_province_modifier = foreign_smugglers
+                    #has_province_modifier = foreign_smugglers
                 }
                 NOT = { has_province_modifier = extraterritoriality_granted }
                 port = yes
@@ -2595,10 +2604,7 @@ country_event = {
         war = no
         part_of_sphere = no
         has_country_modifier = western_influences
-        any_owned_province = {
-            is_capital = yes
-            has_province_modifier = legation_quarter
-        }
+        has_country_modifier = legation_quarter
     }
 
     mean_time_to_happen = {
@@ -2859,6 +2865,10 @@ country_event = {
                     duration = -1
                 }
             }
+        }
+        random_owned = {
+            limit = { owner = { NOT = { border_policy = open_borders } } }
+            owner = { political_reform = open_borders }
         }
         random_owned = {
             limit = {
@@ -3174,8 +3184,8 @@ country_event = {
     trigger = {
         any_owned_province = {
             is_capital = yes
-            NOT = { has_province_modifier = legation_quarter }
         }
+        NOT = { has_country_modifier = legation_quarter }
         has_country_modifier = western_influences
         is_vassal = no
     }
@@ -3222,11 +3232,8 @@ country_event = {
 
     option = {
         name = "EVTOPTA13220" #Set up a legation quarter
+        add_country_modifier = { name = legation_quarter duration = 3650 }
         capital_scope = {
-            add_province_modifier = {
-                name = legation_quarter
-                duration = 3650
-            }
             any_pop = {
                 ideology = {
                     factor = 0.05
@@ -3329,9 +3336,9 @@ country_event = {
     picture = "Outside_influences"
 
     trigger = {
+        has_country_modifier = legation_quarter
         any_owned_province = {
             is_capital = yes
-            has_province_modifier = legation_quarter
             average_militancy = 1
         }
     }
@@ -3539,7 +3546,7 @@ country_event = {
             }
             add_province_modifier = {
                 name = local_opium_habit
-                duration = -1
+                duration = 3650
             }
         }
     }
@@ -3829,17 +3836,17 @@ country_event = {
 		remove_country_modifier = uncivilized_isolationism
 		remove_country_modifier = trade_restrictions
 		remove_country_modifier = sayings_of_the_dutch
+		remove_country_modifier = foreign_smugglers
+		remove_country_modifier = legation_quarter		
 		clr_country_flag = using_foreign_weapons
 		clr_country_flag = using_foreign_artillery
 		clr_country_flag = using_foreign_ships
 		clr_country_flag = using_foreign_shipyards
 		any_owned = {
 			remove_province_modifier = western_presence
-			remove_province_modifier = foreign_smugglers
 			remove_province_modifier = foreign_trading_post
 			remove_province_modifier = local_opium_habit
 			remove_province_modifier = european_military_mission
-			remove_province_modifier = legation_quarter
 			remove_province_modifier = kettler_denkmal
 			remove_province_modifier = extraterritoriality_granted
 		}
@@ -3924,12 +3931,31 @@ country_event = {
                 }
             }
         }
+        random_owned = {
+            limit = {
+                owner = {
+                    has_country_modifier = uncivilized_isolationism
+                    NOT = { border_policy = closed_borders } }
+                }
+            owner = { political_reform = closed_borders }
+        }
+
+        random_owned = {
+            limit = {
+                owner = {
+                    has_country_modifier = western_influences
+                    NOT = { border_policy = open_borders } }
+                }
+            owner = { political_reform = open_borders }
+        }
         remove_country_modifier = assegai
         remove_country_modifier = educational_reform
         remove_country_modifier = military_reform
         remove_country_modifier = western_influences
         remove_country_modifier = uncivilized_isolationism
         remove_country_modifier = trade_restrictions
+        remove_country_modifier = foreign_trading_post
+        remove_country_modifier = foreign_smugglers
         remove_country_modifier = sayings_of_the_dutch
         remove_country_modifier = rangaku
         remove_country_modifier = sakoku
@@ -3938,13 +3964,17 @@ country_event = {
         remove_country_modifier = isolationist_foreign_naval_schools
         remove_country_modifier = isolationist_foreign_officers
         remove_country_modifier = isolationist_foreign_training
+        random_owned = {
+            limit = { owner = { has_country_modifier = legation_quarter } }
+            owner = { remove_country_modifier = legation_quarter }
+        }
         any_owned = {
             remove_province_modifier = western_presence
-            remove_province_modifier = foreign_smugglers
+            #remove_province_modifier = foreign_smugglers
             remove_province_modifier = foreign_trading_post
             remove_province_modifier = local_opium_habit
             remove_province_modifier = european_military_mission
-            remove_province_modifier = legation_quarter
+            #remove_province_modifier = legation_quarter
             remove_province_modifier = kettler_denkmal
             remove_province_modifier = extraterritoriality_granted
         }
@@ -4230,7 +4260,6 @@ province_event = {
     }
 }
 
-
 #Treaty Ports
 province_event = {
     id = 90958
@@ -4420,21 +4449,24 @@ country_event = {
                 remove_country_modifier = western_influences
                 remove_country_modifier = uncivilized_isolationism
                 remove_country_modifier = trade_restrictions
+                remove_country_modifier = foreign_trading_post
+                remove_country_modifier = foreign_smugglers
                 remove_country_modifier = sayings_of_the_dutch
                 remove_country_modifier = rangaku
                 remove_country_modifier = sakoku
                 remove_country_modifier = western_presence
+                remove_country_modifier = legation_quarter				
                 remove_country_modifier = isolationist_foreign_naval_officers
                 remove_country_modifier = isolationist_foreign_naval_schools
                 remove_country_modifier = isolationist_foreign_officers
                 remove_country_modifier = isolationist_foreign_training
                 any_owned = {
                     remove_province_modifier = western_presence
-                    remove_province_modifier = foreign_smugglers
+                    #remove_province_modifier = foreign_smugglers
                     remove_province_modifier = foreign_trading_post
                     remove_province_modifier = local_opium_habit
                     remove_province_modifier = european_military_mission
-                    remove_province_modifier = legation_quarter
+                    #remove_province_modifier = legation_quarter
                     remove_province_modifier = kettler_denkmal
                     remove_province_modifier = extraterritoriality_granted
                 }

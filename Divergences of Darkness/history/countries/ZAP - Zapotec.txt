@@ -3,7 +3,7 @@ primary_culture = zapotec
 religion = catholic
 government = democracy
 plurality = 0.05
-nationalvalue = nv_order
+nationalvalue = nv_productivity
 literacy = 0.16
 civilized = yes
 

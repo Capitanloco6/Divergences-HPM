@@ -4,4 +4,4 @@ add_core = AIN
 trade_goods = cattle
 terrain = boreal
 life_rating = 15
-colonial = 1
+

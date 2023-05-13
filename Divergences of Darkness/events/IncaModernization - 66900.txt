@@ -49,13 +49,13 @@ country_event = {
         remove_country_modifier = isolationist_foreign_naval_schools
         remove_country_modifier = isolationist_foreign_officers
         remove_country_modifier = isolationist_foreign_training
+        remove_country_modifier = foreign_smugglers		
+        remove_country_modifier = legation_quarter			
         any_owned = {
             remove_province_modifier = western_presence
-            remove_province_modifier = foreign_smugglers
             remove_province_modifier = foreign_trading_post
             remove_province_modifier = local_opium_habit
             remove_province_modifier = european_military_mission
-            remove_province_modifier = legation_quarter
             remove_province_modifier = kettler_denkmal
             remove_province_modifier = extraterritoriality_granted
         }
