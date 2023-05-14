@@ -871,9 +871,9 @@ foreign_smugglers = {
 }
 
 foreign_trading_post = {
-    poor_life_needs = -0.1
-    middle_life_needs = -0.1
-    rich_life_needs = -0.1
+    #poor_life_needs = -0.1
+    #middle_life_needs = -0.1
+    #rich_life_needs = -0.1
     pop_militancy_modifier = 0.05
     icon = 11
 }
@@ -1003,7 +1003,7 @@ militant_trade_union = {
 
 worker_union = {
     pop_consciousness_modifier = 0.1
-    poor_everyday_needs = -0.1
+    #poor_everyday_needs = -0.1
     farm_rgo_eff = -0.05
     mine_rgo_eff = -0.05
     icon = 4
@@ -1062,7 +1062,7 @@ the_massacre = {
     icon = 18
 }
 fascist_welfare = {
-    poor_everyday_needs = -0.1
+    #poor_everyday_needs = -0.1
     population_growth = 0.001
     pop_militancy_modifier = -0.05
     icon = 12
@@ -1110,7 +1110,7 @@ educational_reform = {
 }
 
 legation_quarter = {
-    pop_militancy_modifier = 0.03
+    global_pop_militancy_modifier = 0.03
     research_points_modifier = 0.05
     icon = 8
 }
@@ -2900,4 +2900,215 @@ hellinopoieisi = {
     culture_tech_research_bonus = 0.1
     global_assimilation_rate = 0.5
     icon = 10
+}
+
+### Hungary ###
+
+hungarian_noble_privilege = {
+    poor_life_needs = 0.1
+    poor_income_modifier = -0.1	
+    middle_life_needs = 0.1
+    middle_income_modifier = -0.1	
+    icon = 14
+}
+
+szekely_privilege = {
+    farm_rgo_eff = -0.25
+    farm_rgo_size = -0.25	
+    icon = 18
+}
+
+koenigsboden = {
+    local_artisan_output = 0.1
+    assimilation_rate = -0.5
+    icon = 19
+}
+
+szekely_tax_exemption = {
+    land_organisation = 0.05
+    tax_efficiency = -0.15
+    icon = 10
+}
+
+szekely_unrest = {
+    local_artisan_output = -0.25
+    local_RGO_output = -0.25
+    life_rating = -0.1
+    immigrant_push = 0.25
+    pop_militancy_modifier = 0.01
+    icon = 18
+}
+
+vlach_unrest = {
+    local_artisan_output = -0.25
+    local_RGO_output = -0.25
+    pop_militancy_modifier = 0.01
+    icon = 16
+}
+
+ADS_activity = {
+    local_artisan_output = -0.2
+    local_RGO_output = -0.2
+    pop_militancy_modifier = 0.02
+    pop_consciousness_modifier = 0.02	
+    icon = 10
+}
+
+transylvanian_revolution = {
+    mobilisation_size = 0.02
+    supply_consumption = -0.2
+    war_exhaustion = -0.25
+    icon = 5
+}
+
+negotiations_moldavia = {
+    global_assimilation_rate = -0.5
+    icon = 18
+}
+
+italian_mission_albania = {
+	land_attrition = -0.05
+	land_unit_start_experience = 5
+    land_organisation = 0.1
+    org_regain = 0.1
+    mobilisation_size = 0.1
+    mobilisation_economy_impact = -0.1	
+	icon = 17
+}
+
+italian_investment_valona = {
+    local_repair = 0.5
+    local_ship_build = -0.05
+	icon = 17
+}
+
+## Islamic Law ##
+institutionalised_sharia = {
+	literacy_con_impact = -0.5
+	issue_change_speed = -0.5
+	suppression_points_modifier = 0.5	
+	icon = 5
+}
+
+### League of Cemanahuac ###
+
+demographic_pressure_indian = {
+    pop_militancy_modifier = 0.05
+    local_artisan_output = -0.5
+    local_artisan_input = -0.5
+    immigrant_attract = 0.25	
+	icon = 5
+}
+
+henequen_boom = {
+    farm_rgo_size = 2.5
+    pop_consciousness_modifier = 0.1
+    icon = 18
+}
+
+criollo_ayuntamientos = {
+    poor_life_needs = 0.1
+    poor_income_modifier = -0.1	
+    rich_income_modifier = 0.1		
+    pop_militancy_modifier = 0.05	
+    icon = 14
+}
+
+siete_patidas_abolished = {
+    research_points_modifier = 0.05
+    education_efficiency_modifier = 0.05
+	culture_tech_research_bonus = 0.05	
+    icon = 5
+}
+
+maya_city_rediscovered = {
+    immigrant_attract = 0.5
+    population_growth = 0.0005
+    prestige = 0.05	
+    icon = 11
+}
+
+emancipated_maya = {
+    mobilisation_size = 0.2
+    land_organisation = 0.2
+    org_regain = 0.1
+    icon = 1
+}
+
+bataab_office_abolished = {
+    tariff_efficiency_modifier = 0.2
+    administrative_efficiency_modifier = 0.2
+    icon = 9
+}
+
+otomi_caciques_gone = {
+    tax_efficiency = 0.1
+    administrative_efficiency_modifier = 0.1
+    icon = 9
+}
+
+cargo_system = {
+    core_pop_militancy_modifier = 0.1
+    global_pop_consciousness_modifier = 0.1
+    issue_change_speed = 0.1
+    icon = 16
+}
+
+enedzaa_education = {
+    education_efficiency_modifier = 0.35
+    research_points_modifier = 0.2
+    icon = 3
+}
+
+eneedzaa_plantations = {
+    farm_RGO_eff = 0.5
+    farm_RGO_size = 0.5	
+    pop_militancy_modifier = 0.05
+    icon = 20
+}
+
+union_mixe_farmers = {
+    RGO_output = 0.1
+    social_reform_desire = 0.1
+    icon = 18
+}
+
+eneedzaa_road = {
+    immigrant_attract = -0.25
+    pop_militancy_modifier = 0.05
+    icon = 4
+}
+
+social_defence_militia = {
+    global_population_growth = -0.0005
+    core_pop_militancy_modifier = 0.1	
+    icon = 4
+}
+
+zapotec_heritage = {
+    education_efficiency_modifier = 0.05
+    research_points_modifier = 0.05
+    diplomatic_points_modifier = 0.1	
+    icon = 19
+}
+
+cochineal_dye = {
+    life_rating = 0.25
+    immigrant_attract = 0.75
+    farm_RGO_size = 0.5	
+    farm_RGO_eff = 0.5
+    icon = 9
+}
+
+coo_yuu = {
+    rgo_output = 0.1
+    population_growth = 0.001
+    icon = 9
+}
+
+colombian_clergy_privilege = {
+    administrative_efficiency_modifier = -0.1
+    tax_efficiency = -0.05
+    education_efficiency_modifier = -0.1
+    icon = 7
 }

@@ -964,11 +964,67 @@ country_event = { ###### natives divide Mexico between themselves
         UCA = { country_event = 46424 }
 
         any_owned = {
-            limit = { is_core = YUC }
-            secede_province = YUC
+            limit = { is_core = YCT }
+            secede_province = YCT
         }
 
-        YUC = { country_event = 46424 }
+        YCT = { country_event = 46424 }
+		
+        any_owned = {
+            limit = { is_core = HUA }
+            secede_province = HUA
+        }
+
+        HUA = { country_event = 46424 }		
+		
+        any_owned = {
+            limit = { is_core = MIX }
+            secede_province = MIX
+        }
+
+        MIX = { country_event = 46424 }	
+		
+        any_owned = {
+            limit = { is_core = OAX }
+            secede_province = OAX
+        }
+
+        OAX = { country_event = 46424 }	
+
+        any_owned = {
+            limit = { is_core = OTO }
+            secede_province = OTO
+        }
+
+        OTO = { country_event = 46424 }		
+
+        any_owned = {
+            limit = { is_core = QIC }
+            secede_province = QIC
+        }
+
+        QIC = { country_event = 46424 }	
+
+        any_owned = {
+            limit = { is_core = TOT }
+            secede_province = TOT
+        }
+
+        TOT = { country_event = 46424 }	
+
+		2162 = { add_core = VCZ }
+		2164 = { add_core = VCZ }		
+		3433 = { add_core = VCZ }
+		3434 = { add_core = VCZ }
+		3437 = { add_core = VCZ }
+		3438 = { add_core = VCZ }
+		
+        any_owned = {
+            limit = { is_core = VCZ }
+            secede_province = VCZ
+        }
+
+        VCZ = { country_event = 46424 }			
 
         any_owned = {
             limit = { is_core = ZAP }
@@ -2085,7 +2141,7 @@ country_event = { ####For the proletariat !
         political_reform = underground_parties
         political_reform = closed_borders
         political_reform = mandatory_service
-        political_reform = protected
+        political_reform = all_voting_pops
         political_reform = no_slavery
         social_reform = good_minimum_wage
         social_reform = eight_hours
@@ -2310,4 +2366,2112 @@ country_event = {
         prestige = 5
         set_country_flag = chapultepec_castle
     }
+}
+
+country_event = {
+    id = 466000
+    title = "EVTNAME466000" #Starts military revolt chain
+    desc = "EVTDESC466000"
+
+    picture = "mier_expedition"
+	
+    fire_only_once = yes		
+
+    trigger = {
+		exists = yes
+        has_country_flag = caudillos_alienated		
+        has_global_flag = columbian_unity
+    }
+
+    mean_time_to_happen = { months = 2 }
+
+    option = {
+        name = "EVT466000OPTA"
+		2144 = { add_core = GCR }
+		2147 = { add_core = GCR }		
+		2152 = { add_core = GCR }
+		MEX_2146 = { add_core = GCR }
+		MEX_2158 = { add_core = GCR }
+		TEX_134 = { add_core = GCR }
+		TEX_132 = { add_core = GCR }		
+		country_event = {
+			id = 466001 
+			days = 20
+		}
+    }
+}
+
+country_event = {
+    id = 466001
+    title = "EVTNAME466001" #Failed coup d'etat by Mexican military
+    desc = "EVTDESC466001"
+
+    picture = "attack_orleans"
+
+    is_triggered_only = yes
+
+    option = {
+        name = "EVT466001OPTA"
+        prestige = -5
+        release_vassal = GCR
+        GCR = {
+			government = presidential_dictatorship
+            ruling_party_ideology = reactionary
+            political_reform = none_voting
+            political_reform = party_appointed
+            political_reform = no_meeting
+            political_reform = state_press
+            political_reform = state_controlled
+            political_reform = underground_parties
+            political_reform = primary_culture_only
+            political_reform = mandatory_service				
+            define_general = {
+                name = "Tomás Villa"
+                personality = wrathful
+                background = natural_born_leader
+            }
+            define_general = {
+                name = "Manuel Luis de Madeira"
+                personality = unflinching
+                background = priest
+            }			
+			add_country_modifier = {
+				name = "begin_revolution"
+				duration = 750
+			}
+			ammunition = 100
+			small_arms = 100
+			artillery = 25
+			canned_food = 100			
+        }			
+        set_country_flag = revolt_tomas_villa
+    }
+}
+
+
+country_event = { #War between the government of de las Casas and the Tomás Villa coup
+    id = 466002
+    title = "EVTNAME466002"
+    desc = "EVTDESC466002"
+    picture = "french_intervention"
+	
+    trigger = {
+		tag = CLM
+		exists = yes
+		GCR = { exists = yes }
+		has_country_flag = revolt_tomas_villa
+    }
+
+    fire_only_once = yes
+
+    mean_time_to_happen = {
+        months = 6
+        modifier = {
+            factor = 0.2
+            war = yes
+        }
+    }
+
+    option = {
+        name = "EVTOPTA466002"
+        THIS = {
+            release_vassal = GCR
+            war = {
+                target = GCR
+                attacker_goal = { casus_belli = civil_war }
+                defender_goal = { casus_belli = civil_war }
+            }			
+        }
+		set_country_flag = tomas_villa_war
+		clr_country_flag = revolt_tomas_villa
+    }
+	
+}
+
+country_event = { #If Gran Colombia wins, erase GCR cores
+    id = 466003
+    title = "EVTNAME466003"
+    desc = "EVTDESC466003"
+    picture = "cinco_mayo"
+
+    trigger = {
+		tag = CLM
+		exists = yes
+		GCR = { exists = no }		
+		has_country_flag = tomas_villa_war
+		war = no
+    }
+
+    mean_time_to_happen = { months = 10 }
+	
+    fire_only_once = yes	
+
+    option = {
+        name = "EVTOPTA466003"
+        GCR = { all_core = { remove_core = GCR } }
+		clr_country_flag = tomas_villa_war
+    }
+}
+
+country_event = { #If Tomas Villa wins, switch to dicatorship Gran Colombia
+    id = 466004
+    title = "EVTNAME466004"
+    desc = "EVTDESC466004"
+    picture = "cinco_mayo"
+
+    trigger = {
+		tag = GCR
+		exists = yes
+		CLM = { exists = no }		
+		war = no
+    }
+
+    mean_time_to_happen = { months = 10 }
+	
+    fire_only_once = yes	
+
+    option = {
+        name = "EVTOPTA466004"
+		change_tag = CLM
+		add_accepted_culture = lusitanian
+        GCR = { all_core = { remove_core = GCR } }
+    }
+}
+
+country_event = {
+    id = 466005
+    title = "EVTNAME466005" #The Almasi Movement Spreads
+    desc = "EVTDESC466005"
+
+    picture = "lynchburg_1863"
+	
+    fire_only_once = yes		
+
+    trigger = {
+		exists = yes
+        has_country_flag = slavery_clm		
+        has_global_flag = columbian_unity
+    }
+
+    mean_time_to_happen = { months = 2 }
+
+    option = {
+        name = "EVT466005OPTA"
+		2141 = { add_core = LIB }
+		2153 = { add_core = LIB }		
+		2156 = { add_core = LIB }
+		2157 = { add_core = LIB }
+		2161 = { add_core = LIB }
+		2168 = { add_core = LIB }
+		2169 = { add_core = LIB }		
+		country_event = {
+			id = 466006 
+			days = 20
+		}
+    }
+}
+
+country_event = {
+    id = 466006
+    title = "EVTNAME466006" #The Day of the Lord
+    desc = "EVTDESC466006"
+    picture = "nate_turner"
+	
+    is_triggered_only = yes
+
+    option = {
+        name = "EVT466006OPTA"
+        prestige = -5
+        release_vassal = LIB
+        LIB = {
+			government = theocracy
+            ruling_party_ideology = reactionary
+            political_reform = none_voting
+            political_reform = party_appointed
+            political_reform = no_meeting
+            political_reform = state_press
+            political_reform = state_controlled
+            political_reform = underground_parties
+            political_reform = primary_culture_only
+            political_reform = mandatory_service		
+            define_general = {
+                name = "Father Ibrahima"
+                personality = deeply_religious
+                background = cursed_luck
+            }
+			add_country_modifier = {
+				name = "begin_revolution"
+				duration = 750
+			}
+			ammunition = 100
+			small_arms = 100
+			artillery = 25
+			canned_food = 100			
+        }
+        set_country_flag = revolt_ibrahima				
+		ai_chance = { factor = 100 }	
+    }
+	
+    option = {
+        name = "EVT466006OPTB"
+        prestige = -5
+        set_country_flag = revolt_ibrahima		
+        release_vassal = LIB
+        LIB = {
+			government = theocracy
+            ruling_party_ideology = reactionary
+            political_reform = none_voting
+            political_reform = party_appointed
+            political_reform = no_meeting
+            political_reform = state_press
+            political_reform = state_controlled
+            political_reform = underground_parties
+            political_reform = primary_culture_only
+            political_reform = mandatory_service		
+            define_general = {
+                name = "Father Ibrahima"
+                personality = deeply_religious
+                background = cursed_luck
+            }
+			add_country_modifier = {
+				name = "begin_revolution"
+				duration = 750
+			}
+			ammunition = 100
+			small_arms = 100
+			artillery = 25
+			canned_food = 100			
+        }
+        change_tag_no_core_switch = LIB		
+        ai_chance = { factor = 0 }			
+    }	
+}
+
+
+country_event = { #Almasi Revolt starts
+    id = 466007
+    title = "EVTNAME466007"
+    desc = "EVTDESC466007"
+    picture = "retreat_brady"	
+
+    trigger = {
+		tag = CLM
+		exists = yes
+		LIB = { exists = yes }
+		has_country_flag = revolt_ibrahima
+    }
+
+    fire_only_once = yes
+
+    mean_time_to_happen = {
+        months = 6
+        modifier = {
+            factor = 0.2
+            war = yes
+        }
+    }
+
+    option = {
+        name = "EVTOPTA466007"
+        THIS = {
+            release_vassal = LIB
+            war = {
+                target = LIB
+                attacker_goal = { casus_belli = civil_war }
+                defender_goal = { casus_belli = status_quo }
+            }			
+        }
+        LIB = { country_event = 466009 }		
+		set_country_flag = almasi_war
+		clr_country_flag = revolt_ibrahima
+    }
+	
+}
+
+country_event = { #If Gran Colombia wins, erase LIB cores
+    id = 466008
+    title = "EVTNAME466008"
+    desc = "EVTDESC466008"
+    picture = "burial_bahia"
+
+    trigger = {
+		exists = yes
+		tag = CLM		
+		LIB = { exists = no }		
+		has_country_flag = almasi_war
+		war = no
+    }
+
+    mean_time_to_happen = { months = 10 }
+	
+    fire_only_once = yes	
+
+    option = {
+        name = "EVTOPTA466008"
+        LIB = { all_core = { remove_core = LIB } }
+		clr_country_flag = almasi_war
+		clr_country_flag = the_slavery_debate
+    }
+}
+
+country_event = {
+    id = 466009
+    title = "EVTNAME466009" #Inform LIB of war against CLM
+    desc = "EVTDESC466009"
+
+    picture = "retreat_brady"
+
+    is_triggered_only = yes
+
+    option = {
+        name = "EVT466009OPTA"
+		add_country_modifier = {
+			name = "drive_to_reunify"
+			duration = 750
+		}
+    }
+}
+
+country_event = {
+    id = 466010
+    title = "EVTNAME466010" #Inform AMA of war against LIB
+    desc = "EVTDESC466010"
+
+    picture = "retreat_brady"
+
+    is_triggered_only = yes
+
+    option = {
+        name = "EVT466010OPTA"
+        any_pop = {
+            limit = {
+                has_pop_culture = afro_frankish
+            }
+            militancy = 5
+        }
+    }
+}
+
+country_event = { #If the revolt wins the Almasi war, remove CLM cores
+    id = 466011
+    title = "EVTNAME466011"
+    desc = "EVTDESC466011"
+    picture = "celebration_emancipation"
+
+    trigger = {
+		war = no	
+		exists = yes
+		tag = LIB		
+        is_vassal = no		
+    }
+
+    mean_time_to_happen = { months = 1 }
+	
+    fire_only_once = yes	
+
+    option = {
+        name = "EVTOPTA466011"
+        LIB = { all_core = { remove_core = CLM } }
+		set_country_flag = liberia_free
+		CLM = { clr_country_flag = the_slavery_debate }
+    }
+}
+
+country_event = { #The Death of Father Ibrahima
+    id = 466012
+    title = "EVTNAME466012"
+    desc = "EVTDESC466012"
+    picture = "antebellum_funeral"
+
+    trigger = {
+		war = no	
+		exists = yes
+		has_country_flag = liberia_free	
+    }
+
+    mean_time_to_happen = { months = 30 }
+	
+    fire_only_once = yes	
+
+    option = {
+        name = "EVTOPTA466012"
+		prestige = 15
+        ai_chance = { factor = 0 }			
+    }
+	
+    option = {
+        name = "EVTOPTB466012"
+        government = absolute_monarchy
+        political_reform = none_voting
+        political_reform = party_appointed
+        political_reform = no_meeting
+        political_reform = state_press
+        political_reform = state_controlled
+        political_reform = underground_parties
+        political_reform = culture_voting_only
+        ai_chance = { factor = 30 }			
+    }
+	
+    option = {
+        name = "EVTOPTC466012"
+        government = democracy
+        ruling_party_ideology = liberal		
+        political_reform = state_equal_weight
+        political_reform = universal_weighted_voting
+        political_reform = yes_meeting
+        political_reform = no_trade_unions
+        political_reform = first_past_the_post
+        political_reform = non_secret_ballots		
+        political_reform = free_press
+        political_reform = open_borders
+		ai_chance = { factor = 70 }	
+    }	
+	
+}
+
+country_event = {
+    id = 466013
+    title = "EVTNAME466013" #Demographic pressure in the Indian lands. Starts League of Cemanahuac chain
+    desc = "EVTDESC466013"
+
+    picture = "mayan_bale"
+	
+    fire_only_once = yes		
+
+    trigger = {
+		exists = yes
+        has_country_flag = castas		
+        has_global_flag = columbian_unity
+    }
+
+    mean_time_to_happen = { months = 2 }
+
+    option = {
+        name = "EVT466013OPTA"
+		any_owned = {
+			limit = {
+				OR = {
+					is_core = AZT
+					is_core = HUA
+					is_core = MIX
+					is_core = OAX
+					is_core = OTO
+					is_core = QIC
+					is_core = TOT					
+					is_core = YCT
+					is_core = PUR					
+				}
+			}			
+			add_province_modifier = {
+				name = demographic_pressure_indian
+				duration = -1
+			}		
+		}	
+		country_event = {
+			id = 466014 
+			days = 15
+		}
+    }
+}
+
+country_event = {
+    id = 466014
+    title = "EVTNAME466014" #Henequen Boom
+    desc = "EVTDESC466014"
+
+    picture = "henequen_plantation"
+
+    is_triggered_only = yes
+
+    option = {
+        name = "EVT466014OPTA"
+		2183 = { 
+			trade_goods = cotton
+            add_province_modifier = {
+                name = henequen_boom
+                duration = -1
+            }			
+		}
+		3452 = { 
+			trade_goods = cotton
+            add_province_modifier = {
+                name = henequen_boom
+                duration = -1
+            }			
+		}			
+		3441 = { 
+			trade_goods = cotton
+            add_province_modifier = {
+                name = henequen_boom
+                duration = -1
+            }			
+		}
+		country_event = {
+			id = 466015
+			days = 20
+		}		
+    }
+}
+
+country_event = {
+    id = 466015
+    title = "EVTNAME466015" #Abolition of the Indian Republics
+    desc = "EVTDESC466015"
+
+    picture = "criollo_ayuntamientos"
+
+    is_triggered_only = yes
+
+    option = {
+        name = "EVT466015OPTA"
+		any_owned = {
+			limit = {
+				OR = {
+					is_core = AZT
+					is_core = HUA
+					is_core = MIX
+					is_core = OAX
+					is_core = OTO
+					is_core = QIC
+					is_core = TOT					
+					is_core = YCT
+					is_core = PUR					
+				}
+			}			
+			add_province_modifier = {
+				name = criollo_ayuntamientos
+				duration = -1
+			}		
+		}
+		set_country_flag = ready_native_conscription
+    }
+}
+
+country_event = {
+    id = 466016
+    title = "EVTNAME466016" #Conscription of natives in the Gran Colombian army
+    desc = "EVTDESC466016"
+
+    picture = "mexican_artillery"
+	
+    trigger = {
+		exists = yes
+		war = yes
+        has_country_flag = ready_native_conscription
+    }
+	
+    fire_only_once = yes		
+
+    mean_time_to_happen = { days = 5 }
+
+    option = {
+        name = "EVT466016OPTA"
+        any_pop = {
+            limit = { 
+				OR = {
+					has_pop_culture = zapotec
+					has_pop_culture = mayan
+					has_pop_culture = quiche
+					has_pop_culture = huastec
+					has_pop_culture = mixe
+					has_pop_culture = mixtec
+					has_pop_culture = nahua
+					has_pop_culture = otomi
+					has_pop_culture = tarascan
+					has_pop_culture = totonac
+					has_pop_culture = zoque					
+				}
+			}
+            militancy = 5
+            consciousness = 3
+        }	
+		country_event = {
+			id = 466017
+			days = 25
+		}
+    }
+}
+
+country_event = {
+    id = 466017
+    title = "EVTNAME466017" #The Pronunciamiento of Chilpancingo
+    desc = "EVTDESC466017"
+
+    picture = "chilpancingo_massacre"
+
+    is_triggered_only = yes
+
+    option = {
+        name = "EVT466017OPTA"
+		any_owned = {
+			limit = {
+				OR = {
+					is_core = AZT
+					is_core = HUA
+					is_core = MIX
+					is_core = OAX
+					is_core = OTO
+					is_core = QIC
+					is_core = TOT					
+					is_core = YCT				
+					is_core = ZAP					
+				}
+			}			
+			add_core = CMN
+		}
+		country_event = {
+			id = 466018
+			days = 7
+		}
+    }
+}
+
+country_event = {
+    id = 466018
+    title = "EVTNAME466018" #The League of Cemanahuac
+    desc = "EVTDESC466018"
+
+    picture = "chan_santa_cruz"
+
+    is_triggered_only = yes
+
+    option = {
+        name = "EVT466018OPTA"
+		country_event = {
+			id = 466019
+			days = 150
+		}
+        any_owned = {
+            limit = { has_province_modifier = demographic_pressure_indian }
+            remove_province_modifier = demographic_pressure_indian			
+        }		
+        any_owned = {
+            limit = { has_province_modifier = criollo_ayuntamientos }
+            remove_province_modifier = criollo_ayuntamientos			
+        }			
+        release_vassal = CMN
+        CMN = {
+			government = provisional_government
+			political_reform = none_voting		
+            define_general = {
+                name = "Alonso Xochiquentzin"
+                personality = coolminded
+                background = school_of_defense
+            }
+			add_country_modifier = {
+				name = "begin_revolution"
+				duration = 750
+			}
+			ammunition = 100
+			small_arms = 100
+			artillery = 25
+			canned_food = 100
+			any_pop = {
+				limit = { 
+					OR = {
+						has_pop_culture = zapotec
+						has_pop_culture = mayan
+						has_pop_culture = quiche
+						has_pop_culture = huastec
+						has_pop_culture = mixe
+						has_pop_culture = mixtec
+						has_pop_culture = nahua
+						has_pop_culture = otomi
+						has_pop_culture = tarascan
+						has_pop_culture = totonac
+						has_pop_culture = zoque					
+					}
+				}
+				militancy = -5
+			}			
+        }
+        ai_chance = { factor = 100 }			
+    }
+	
+    option = {
+        name = "EVT466018OPTB"
+		country_event = {
+			id = 466019
+			days = 150
+		}	
+        any_owned = {
+            limit = { has_province_modifier = demographic_pressure_indian }
+            remove_province_modifier = demographic_pressure_indian			
+        }		
+        any_owned = {
+            limit = { has_province_modifier = criollo_ayuntamientos }
+            remove_province_modifier = criollo_ayuntamientos			
+        }		
+        release_vassal = CMN
+        CMN = {
+			government = provisional_government
+			political_reform = none_voting		
+            define_general = {
+                name = "Alonso Xochiquentzin"
+                personality = coolminded
+                background = school_of_defense
+            }
+			add_country_modifier = {
+				name = "begin_revolution"
+				duration = 750
+			}
+			ammunition = 100
+			small_arms = 100
+			artillery = 25
+			canned_food = 100			
+        }
+        change_tag_no_core_switch = CMN
+        ai_chance = { factor = 0 }		
+    }	
+	
+}
+
+country_event = { #War against Cemanahuac starts
+    id = 466019
+    title = "EVTNAME466019"
+    desc = "EVTDESC466019"
+    picture = "caste_war"	
+
+    is_triggered_only = yes
+
+    option = {
+        name = "EVTOPTA466019"
+        THIS = {
+            release_vassal = CMN
+            war = {
+                target = CMN
+                attacker_goal = { casus_belli = civil_war }
+                defender_goal = { casus_belli = status_quo }
+            }			
+        }
+        CMN = { country_event = 466020 }			
+		set_country_flag = cemanahuac_war
+		clr_country_flag = ready_native_conscription
+    }
+	
+}
+
+country_event = {
+    id = 466020
+    title = "EVTNAME466020" #Inform CMN of war against CLM
+    desc = "EVTDESC466020"
+
+    picture = "caste_war"
+
+    is_triggered_only = yes
+
+    option = {
+        name = "EVT466020OPTA"
+		add_country_modifier = {
+			name = "drive_to_reunify"
+			duration = 750
+		}
+    }
+}
+
+country_event = { #Dissolution the League of Cemanahuac
+    id = 466021
+    title = "EVTNAME466021"
+    desc = "EVTDESC466021"
+    picture = "atzacoalco"
+
+    trigger = {
+		war = no	
+		exists = yes
+		tag = CMN		
+        is_vassal = no		
+    }
+
+    mean_time_to_happen = { months = 1 }
+	
+    fire_only_once = yes	
+	
+	immediate = { set_global_flag = cemanahuac_victorious }
+
+    option = {
+        name = "EVTOPTA466021" #Play as the Nahua
+		CLM = { country_event = 466023 }
+        CMN = { 
+			all_core = { 
+				remove_core = CLM 
+				remove_core = CMN 				
+			} 
+		}
+        release = MIX
+        MIX = {
+			government = hms_government
+			political_reform = no_slavery
+			political_reform = appointed
+			political_reform = wealth_voting
+			political_reform = yes_meeting
+			political_reform = censored_press
+			political_reform = no_trade_unions
+			political_reform = first_past_the_post
+			political_reform = non_secret_ballots	
+        }		
+        release = OAX
+        OAX = {
+			government = absolute_monarchy
+			political_reform = no_slavery
+			political_reform = appointed
+			political_reform = none_voting
+			political_reform = yes_meeting
+			political_reform = state_press
+			political_reform = no_trade_unions
+			political_reform = first_past_the_post
+			political_reform = underground_parties	
+        }		
+        release = OTO
+        OTO = {
+			government = absolute_monarchy
+			political_reform = no_slavery
+			political_reform = appointed
+			political_reform = none_voting
+			political_reform = yes_meeting
+			political_reform = state_press
+			political_reform = no_trade_unions
+			political_reform = first_past_the_post
+			political_reform = underground_parties	
+        }		
+        release = QIC
+        QIC = {
+			government = absolute_monarchy
+			political_reform = no_slavery
+			political_reform = appointed
+			political_reform = none_voting
+			political_reform = yes_meeting
+			political_reform = state_press
+			political_reform = no_trade_unions
+			political_reform = first_past_the_post
+			political_reform = underground_parties
+			set_country_flag = cannot_abolish_serfdom			
+        }			
+        release = TOT
+        TOT = {
+			government = democracy
+			political_reform = no_slavery
+			political_reform = state_equal_weight
+			political_reform = universal_weighted_voting
+			political_reform = yes_meeting
+			political_reform = free_press
+			political_reform = all_trade_unions
+			political_reform = first_past_the_post
+			political_reform = gerrymandering
+	
+        }		
+        release = YCT
+        YCT = {
+			government = democracy
+			political_reform = no_slavery
+			political_reform = state_equal_weight
+			political_reform = universal_weighted_voting
+			political_reform = yes_meeting
+			political_reform = free_press
+			political_reform = all_trade_unions
+			political_reform = first_past_the_post
+			political_reform = gerrymandering
+			set_country_flag = cannot_abolish_serfdom
+	
+        }			
+        release = HUA	
+        HUA = {
+			government = absolute_monarchy
+			political_reform = no_slavery
+			political_reform = appointed
+			political_reform = none_voting
+			political_reform = yes_meeting
+			political_reform = state_press
+			political_reform = no_trade_unions
+			political_reform = first_past_the_post
+			political_reform = underground_parties	
+        }
+        release = ZAP
+        ZAP = {
+			government = democracy
+			political_reform = no_slavery
+			political_reform = state_equal_weight
+			political_reform = universal_weighted_voting
+			political_reform = yes_meeting
+			political_reform = free_press
+			political_reform = all_trade_unions
+			political_reform = first_past_the_post
+			political_reform = gerrymandering
+	
+        }		
+        change_tag = AZT
+        AZT = {
+			government = provisional_government
+			political_reform = none_voting		
+        }
+        ai_chance = { factor = 25 }			
+    }
+	
+    option = {
+        name = "EVTOPTB466021"  #Play as the Huastecs
+		CLM = { country_event = 466023 }
+        CMN = { 
+			all_core = { 
+				remove_core = CLM 
+				remove_core = CMN 				
+			} 
+		}
+        release = AZT
+        AZT = {
+			government = provisional_government
+			political_reform = none_voting		
+        }		
+        release = MIX
+        MIX = {
+			government = hms_government
+			political_reform = no_slavery
+			political_reform = appointed
+			political_reform = wealth_voting
+			political_reform = yes_meeting
+			political_reform = censored_press
+			political_reform = no_trade_unions
+			political_reform = first_past_the_post
+			political_reform = non_secret_ballots
+        }		
+        release = OAX
+        OAX = {
+			government = absolute_monarchy
+			political_reform = no_slavery
+			political_reform = appointed
+			political_reform = none_voting
+			political_reform = yes_meeting
+			political_reform = state_press
+			political_reform = no_trade_unions
+			political_reform = first_past_the_post
+			political_reform = underground_parties	
+        }		
+        release = OTO
+        OTO = {
+			government = absolute_monarchy
+			political_reform = no_slavery
+			political_reform = appointed
+			political_reform = none_voting
+			political_reform = yes_meeting
+			political_reform = state_press
+			political_reform = no_trade_unions
+			political_reform = first_past_the_post
+			political_reform = underground_parties	
+        }		
+        release = QIC
+        QIC = {
+			government = absolute_monarchy
+			political_reform = no_slavery
+			political_reform = appointed
+			political_reform = none_voting
+			political_reform = yes_meeting
+			political_reform = state_press
+			political_reform = no_trade_unions
+			political_reform = first_past_the_post
+			political_reform = underground_parties
+			set_country_flag = cannot_abolish_serfdom
+        }			
+        release = TOT
+        TOT = {
+			government = democracy
+			political_reform = no_slavery
+			political_reform = state_equal_weight
+			political_reform = universal_weighted_voting
+			political_reform = yes_meeting
+			political_reform = free_press
+			political_reform = all_trade_unions
+			political_reform = first_past_the_post
+			political_reform = gerrymandering
+	
+        }		
+        release = YCT
+        YCT = {
+			government = democracy
+			political_reform = no_slavery
+			political_reform = state_equal_weight
+			political_reform = universal_weighted_voting
+			political_reform = yes_meeting
+			political_reform = free_press
+			political_reform = all_trade_unions
+			political_reform = first_past_the_post
+			political_reform = gerrymandering
+			set_country_flag = cannot_abolish_serfdom
+	
+        }
+        release = ZAP
+        ZAP = {
+			government = democracy
+			political_reform = no_slavery
+			political_reform = state_equal_weight
+			political_reform = universal_weighted_voting
+			political_reform = yes_meeting
+			political_reform = free_press
+			political_reform = all_trade_unions
+			political_reform = first_past_the_post
+			political_reform = gerrymandering
+	
+        }		       
+		change_tag = HUA
+        HUA = {
+			government = absolute_monarchy
+			political_reform = no_slavery
+			political_reform = appointed
+			political_reform = none_voting
+			political_reform = yes_meeting
+			political_reform = state_press
+			political_reform = no_trade_unions
+			political_reform = first_past_the_post
+			political_reform = underground_parties	
+			
+			primary_culture = huastec
+			remove_accepted_culture = nahua 
+			
+        }
+        ai_chance = { factor = 25 }			
+    }
+	
+    option = {
+        name = "EVTOPTC466021"   #Play as the Totonaca
+		CLM = { country_event = 466023 }
+        CMN = { 
+			all_core = { 
+				remove_core = CLM 
+				remove_core = CMN 				
+			} 
+		}
+        release = AZT
+        AZT = {
+			government = provisional_government
+			political_reform = none_voting		
+        }		
+        release = MIX
+        MIX = {
+			government = hms_government
+			political_reform = no_slavery
+			political_reform = appointed
+			political_reform = wealth_voting
+			political_reform = yes_meeting
+			political_reform = censored_press
+			political_reform = no_trade_unions
+			political_reform = first_past_the_post
+			political_reform = non_secret_ballots
+        }		
+        release = OAX
+        OAX = {
+			government = absolute_monarchy
+			political_reform = no_slavery
+			political_reform = appointed
+			political_reform = none_voting
+			political_reform = yes_meeting
+			political_reform = state_press
+			political_reform = no_trade_unions
+			political_reform = first_past_the_post
+			political_reform = underground_parties	
+        }		
+        release = OTO
+        OTO = {
+			government = absolute_monarchy
+			political_reform = no_slavery
+			political_reform = appointed
+			political_reform = none_voting
+			political_reform = yes_meeting
+			political_reform = state_press
+			political_reform = no_trade_unions
+			political_reform = first_past_the_post
+			political_reform = underground_parties	
+        }		
+        release = QIC
+        QIC = {
+			government = absolute_monarchy
+			political_reform = no_slavery
+			political_reform = appointed
+			political_reform = none_voting
+			political_reform = yes_meeting
+			political_reform = state_press
+			political_reform = no_trade_unions
+			political_reform = first_past_the_post
+			political_reform = underground_parties
+			set_country_flag = cannot_abolish_serfdom			
+        }			
+        release = YCT
+        YCT = {
+			government = democracy
+			political_reform = no_slavery
+			political_reform = state_equal_weight
+			political_reform = universal_weighted_voting
+			political_reform = yes_meeting
+			political_reform = free_press
+			political_reform = all_trade_unions
+			political_reform = first_past_the_post
+			political_reform = gerrymandering
+			set_country_flag = cannot_abolish_serfdom
+	
+        }			
+        release = HUA	
+        HUA = {
+			government = absolute_monarchy
+			political_reform = no_slavery
+			political_reform = appointed
+			political_reform = none_voting
+			political_reform = yes_meeting
+			political_reform = state_press
+			political_reform = no_trade_unions
+			political_reform = first_past_the_post
+			political_reform = underground_parties	
+        }
+        release = ZAP
+        ZAP = {
+			government = democracy
+			political_reform = no_slavery
+			political_reform = state_equal_weight
+			political_reform = universal_weighted_voting
+			political_reform = yes_meeting
+			political_reform = free_press
+			political_reform = all_trade_unions
+			political_reform = first_past_the_post
+			political_reform = gerrymandering
+	
+        }
+		
+        change_tag = TOT
+        TOT = {
+			government = democracy
+			political_reform = no_slavery
+			political_reform = state_equal_weight
+			political_reform = universal_weighted_voting
+			political_reform = yes_meeting
+			political_reform = free_press
+			political_reform = all_trade_unions
+			political_reform = first_past_the_post
+			political_reform = gerrymandering
+			
+			primary_culture = totonac
+			remove_accepted_culture = nahua			
+			
+        }			
+        ai_chance = { factor = 25 }			
+    }
+
+    option = {
+        name = "EVTOPTD466021" #Play as the Otomi
+		CLM = { country_event = 466023 }
+        CMN = { 
+			all_core = { 
+				remove_core = CLM 
+				remove_core = CMN 				
+			} 
+		}
+        release = AZT
+        AZT = {
+			government = provisional_government
+			political_reform = none_voting		
+        }		
+        release = MIX
+        MIX = {
+			government = hms_government
+			political_reform = no_slavery
+			political_reform = appointed
+			political_reform = wealth_voting
+			political_reform = yes_meeting
+			political_reform = censored_press
+			political_reform = no_trade_unions
+			political_reform = first_past_the_post
+			political_reform = non_secret_ballots
+        }		
+        release = OAX
+        OAX = {
+			government = absolute_monarchy
+			political_reform = no_slavery
+			political_reform = appointed
+			political_reform = none_voting
+			political_reform = yes_meeting
+			political_reform = state_press
+			political_reform = no_trade_unions
+			political_reform = first_past_the_post
+			political_reform = underground_parties	
+        }		
+        release = QIC
+        QIC = {
+			government = absolute_monarchy
+			political_reform = no_slavery
+			political_reform = appointed
+			political_reform = none_voting
+			political_reform = yes_meeting
+			political_reform = state_press
+			political_reform = no_trade_unions
+			political_reform = first_past_the_post
+			political_reform = underground_parties
+			set_country_flag = cannot_abolish_serfdom			
+        }			
+        release = TOT
+        TOT = {
+			government = democracy
+			political_reform = no_slavery
+			political_reform = state_equal_weight
+			political_reform = universal_weighted_voting
+			political_reform = yes_meeting
+			political_reform = free_press
+			political_reform = all_trade_unions
+			political_reform = first_past_the_post
+			political_reform = gerrymandering
+	
+        }		
+        release = YCT
+        YCT = {
+			government = democracy
+			political_reform = no_slavery
+			political_reform = state_equal_weight
+			political_reform = universal_weighted_voting
+			political_reform = yes_meeting
+			political_reform = free_press
+			political_reform = all_trade_unions
+			political_reform = first_past_the_post
+			political_reform = gerrymandering
+			set_country_flag = cannot_abolish_serfdom
+	
+        }	
+        release = ZAP
+        ZAP = {
+			government = democracy
+			political_reform = no_slavery
+			political_reform = state_equal_weight
+			political_reform = universal_weighted_voting
+			political_reform = yes_meeting
+			political_reform = free_press
+			political_reform = all_trade_unions
+			political_reform = first_past_the_post
+			political_reform = gerrymandering
+	
+        }		
+        release = HUA	
+        HUA = {
+			government = absolute_monarchy
+			political_reform = no_slavery
+			political_reform = appointed
+			political_reform = none_voting
+			political_reform = yes_meeting
+			political_reform = state_press
+			political_reform = no_trade_unions
+			political_reform = first_past_the_post
+			political_reform = underground_parties	
+        }
+		
+        change_tag = OTO
+        OTO = {
+			government = absolute_monarchy
+			political_reform = no_slavery
+			political_reform = appointed
+			political_reform = none_voting
+			political_reform = yes_meeting
+			political_reform = state_press
+			political_reform = no_trade_unions
+			political_reform = first_past_the_post
+			political_reform = underground_parties	
+			
+			primary_culture = otomi
+			remove_accepted_culture = nahua				
+			
+        }			
+        ai_chance = { factor = 25 }		
+    }
+	
+    option = {
+        name = "EVTOPTE466021" #Choose other options
+		CMN = { country_event = 466022 }
+        ai_chance = { factor = 0 }			
+    }	
+
+}
+
+country_event = { #Dissolution the League of Cemanahuac
+    id = 466022
+    title = "EVTNAME466022"
+    desc = "EVTDESC466022"
+    picture = "atzacoalco"
+
+    is_triggered_only = yes	
+
+    option = {
+        name = "EVTOPTA466022" #Play as the Mixtec
+		CLM = { country_event = 466023 }
+        CMN = { 
+			all_core = { 
+				remove_core = CLM 
+				remove_core = CMN 				
+			} 
+		}
+        release = MIX
+        MIX = {
+			government = hms_government
+			political_reform = no_slavery
+			political_reform = appointed
+			political_reform = wealth_voting
+			political_reform = yes_meeting
+			political_reform = censored_press
+			political_reform = no_trade_unions
+			political_reform = first_past_the_post
+			political_reform = non_secret_ballots	
+        }		
+        release = OTO
+        OTO = {
+			government = absolute_monarchy
+			political_reform = no_slavery
+			political_reform = appointed
+			political_reform = none_voting
+			political_reform = yes_meeting
+			political_reform = state_press
+			political_reform = no_trade_unions
+			political_reform = first_past_the_post
+			political_reform = underground_parties	
+        }		
+        release = QIC
+        QIC = {
+			government = absolute_monarchy
+			political_reform = no_slavery
+			political_reform = appointed
+			political_reform = none_voting
+			political_reform = yes_meeting
+			political_reform = state_press
+			political_reform = no_trade_unions
+			political_reform = first_past_the_post
+			political_reform = underground_parties
+			set_country_flag = cannot_abolish_serfdom			
+        }			
+        release = TOT
+        TOT = {
+			government = democracy
+			political_reform = no_slavery
+			political_reform = state_equal_weight
+			political_reform = universal_weighted_voting
+			political_reform = yes_meeting
+			political_reform = free_press
+			political_reform = all_trade_unions
+			political_reform = first_past_the_post
+			political_reform = gerrymandering
+	
+        }		
+        release = YCT
+        YCT = {
+			government = democracy
+			political_reform = no_slavery
+			political_reform = state_equal_weight
+			political_reform = universal_weighted_voting
+			political_reform = yes_meeting
+			political_reform = free_press
+			political_reform = all_trade_unions
+			political_reform = first_past_the_post
+			political_reform = gerrymandering
+			set_country_flag = cannot_abolish_serfdom
+	
+        }			
+        release = HUA	
+        HUA = {
+			government = absolute_monarchy
+			political_reform = no_slavery
+			political_reform = appointed
+			political_reform = none_voting
+			political_reform = yes_meeting
+			political_reform = state_press
+			political_reform = no_trade_unions
+			political_reform = first_past_the_post
+			political_reform = underground_parties	
+        }
+        release = ZAP
+        ZAP = {
+			government = democracy
+			political_reform = no_slavery
+			political_reform = state_equal_weight
+			political_reform = universal_weighted_voting
+			political_reform = yes_meeting
+			political_reform = free_press
+			political_reform = all_trade_unions
+			political_reform = first_past_the_post
+			political_reform = gerrymandering
+	
+        }		
+        release = AZT
+        AZT = {
+			government = provisional_government
+			political_reform = none_voting		
+        }
+  		
+        change_tag = OAX
+        OAX = {
+			government = absolute_monarchy
+			political_reform = no_slavery
+			political_reform = appointed
+			political_reform = none_voting
+			political_reform = yes_meeting
+			political_reform = state_press
+			political_reform = no_trade_unions
+			political_reform = first_past_the_post
+			political_reform = underground_parties	
+			
+			primary_culture = mixtec
+			add_accepted_culture = amuzgo
+			add_accepted_culture = tlapanec			
+			remove_accepted_culture = nahua				
+			
+        }			
+        ai_chance = { factor = 20 }			
+    }
+	
+    option = {
+        name = "EVTOPTB466022"  #Play as the Mixe
+		CLM = { country_event = 466023 }
+        CMN = { 
+			all_core = { 
+				remove_core = CLM 
+				remove_core = CMN 				
+			} 
+		}
+        release = AZT
+        AZT = {
+			government = provisional_government
+			political_reform = none_voting		
+        }		
+        release = OAX
+        OAX = {
+			government = absolute_monarchy
+			political_reform = no_slavery
+			political_reform = appointed
+			political_reform = none_voting
+			political_reform = yes_meeting
+			political_reform = state_press
+			political_reform = no_trade_unions
+			political_reform = first_past_the_post
+			political_reform = underground_parties	
+        }		
+        release = OTO
+        OTO = {
+			government = absolute_monarchy
+			political_reform = no_slavery
+			political_reform = appointed
+			political_reform = none_voting
+			political_reform = yes_meeting
+			political_reform = state_press
+			political_reform = no_trade_unions
+			political_reform = first_past_the_post
+			political_reform = underground_parties	
+        }		
+        release = QIC
+        QIC = {
+			government = absolute_monarchy
+			political_reform = no_slavery
+			political_reform = appointed
+			political_reform = none_voting
+			political_reform = yes_meeting
+			political_reform = state_press
+			political_reform = no_trade_unions
+			political_reform = first_past_the_post
+			political_reform = underground_parties	
+			set_country_flag = cannot_abolish_serfdom
+        }			
+        release = TOT
+        TOT = {
+			government = democracy
+			political_reform = no_slavery
+			political_reform = state_equal_weight
+			political_reform = universal_weighted_voting
+			political_reform = yes_meeting
+			political_reform = free_press
+			political_reform = all_trade_unions
+			political_reform = first_past_the_post
+			political_reform = gerrymandering
+	
+        }		
+        release = YCT
+        YCT = {
+			government = democracy
+			political_reform = no_slavery
+			political_reform = state_equal_weight
+			political_reform = universal_weighted_voting
+			political_reform = yes_meeting
+			political_reform = free_press
+			political_reform = all_trade_unions
+			political_reform = first_past_the_post
+			political_reform = gerrymandering
+			set_country_flag = cannot_abolish_serfdom
+	
+        }			
+        release = HUA	
+        HUA = {
+			government = absolute_monarchy
+			political_reform = no_slavery
+			political_reform = appointed
+			political_reform = none_voting
+			political_reform = yes_meeting
+			political_reform = state_press
+			political_reform = no_trade_unions
+			political_reform = first_past_the_post
+			political_reform = underground_parties	
+        }
+        release = ZAP
+        ZAP = {
+			government = democracy
+			political_reform = no_slavery
+			political_reform = state_equal_weight
+			political_reform = universal_weighted_voting
+			political_reform = yes_meeting
+			political_reform = free_press
+			political_reform = all_trade_unions
+			political_reform = first_past_the_post
+			political_reform = gerrymandering
+	
+        }
+		
+        change_tag = MIX
+        MIX = {
+			government = hms_government
+			political_reform = no_slavery
+			political_reform = appointed
+			political_reform = wealth_voting
+			political_reform = yes_meeting
+			political_reform = censored_press
+			political_reform = no_trade_unions
+			political_reform = first_past_the_post
+			political_reform = non_secret_ballots	
+			
+			primary_culture = mixe		
+			remove_accepted_culture = nahua				
+			
+        }		
+        ai_chance = { factor = 20 }			
+    }
+	
+    option = {
+        name = "EVTOPTC466022"   #Play as the Zapotecs
+		CLM = { country_event = 466023 }
+        CMN = { 
+			all_core = { 
+				remove_core = CLM 
+				remove_core = CMN 				
+			} 
+		}
+        release = AZT
+        AZT = {
+			government = provisional_government
+			political_reform = none_voting		
+        }		
+        release = MIX
+        MIX = {
+			government = hms_government
+			political_reform = no_slavery
+			political_reform = appointed
+			political_reform = wealth_voting
+			political_reform = yes_meeting
+			political_reform = censored_press
+			political_reform = no_trade_unions
+			political_reform = first_past_the_post
+			political_reform = non_secret_ballots
+        }		
+        release = OAX
+        OAX = {
+			government = absolute_monarchy
+			political_reform = no_slavery
+			political_reform = appointed
+			political_reform = none_voting
+			political_reform = yes_meeting
+			political_reform = state_press
+			political_reform = no_trade_unions
+			political_reform = first_past_the_post
+			political_reform = underground_parties	
+        }		
+        release = OTO
+        OTO = {
+			government = absolute_monarchy
+			political_reform = no_slavery
+			political_reform = appointed
+			political_reform = none_voting
+			political_reform = yes_meeting
+			political_reform = state_press
+			political_reform = no_trade_unions
+			political_reform = first_past_the_post
+			political_reform = underground_parties	
+        }		
+        release = QIC
+        QIC = {
+			government = absolute_monarchy
+			political_reform = no_slavery
+			political_reform = appointed
+			political_reform = none_voting
+			political_reform = yes_meeting
+			political_reform = state_press
+			political_reform = no_trade_unions
+			political_reform = first_past_the_post
+			political_reform = underground_parties	
+			set_country_flag = cannot_abolish_serfdom
+        }			
+        release = YCT
+        YCT = {
+			government = democracy
+			political_reform = no_slavery
+			political_reform = state_equal_weight
+			political_reform = universal_weighted_voting
+			political_reform = yes_meeting
+			political_reform = free_press
+			political_reform = all_trade_unions
+			political_reform = first_past_the_post
+			political_reform = gerrymandering
+			set_country_flag = cannot_abolish_serfdom
+	
+        }			
+        release = HUA	
+        HUA = {
+			government = absolute_monarchy
+			political_reform = no_slavery
+			political_reform = appointed
+			political_reform = none_voting
+			political_reform = yes_meeting
+			political_reform = state_press
+			political_reform = no_trade_unions
+			political_reform = first_past_the_post
+			political_reform = underground_parties	
+        }
+        release = TOT
+        TOT = {
+			government = democracy
+			political_reform = no_slavery
+			political_reform = state_equal_weight
+			political_reform = universal_weighted_voting
+			political_reform = yes_meeting
+			political_reform = free_press
+			political_reform = all_trade_unions
+			political_reform = first_past_the_post
+			political_reform = gerrymandering
+        }
+ 		
+        change_tag = ZAP
+        ZAP = {
+			government = democracy
+			political_reform = no_slavery
+			political_reform = state_equal_weight
+			political_reform = universal_weighted_voting
+			political_reform = yes_meeting
+			political_reform = free_press
+			political_reform = all_trade_unions
+			political_reform = first_past_the_post
+			political_reform = gerrymandering
+			
+			primary_culture = zapotec
+			remove_accepted_culture = nahua			
+	
+        }		
+        ai_chance = { factor = 20 }			
+    }
+
+    option = {
+        name = "EVTOPTD466022" #Play as the Yucatecs
+		CLM = { country_event = 466023 }
+        CMN = { 
+			all_core = { 
+				remove_core = CLM 
+				remove_core = CMN 				
+			} 
+		}
+        release = AZT
+        AZT = {
+			government = provisional_government
+			political_reform = none_voting		
+        }		
+        release = MIX
+        MIX = {
+			government = hms_government
+			political_reform = no_slavery
+			political_reform = appointed
+			political_reform = wealth_voting
+			political_reform = yes_meeting
+			political_reform = censored_press
+			political_reform = no_trade_unions
+			political_reform = first_past_the_post
+			political_reform = non_secret_ballots
+        }		
+        release = OAX
+        OAX = {
+			government = absolute_monarchy
+			political_reform = no_slavery
+			political_reform = appointed
+			political_reform = none_voting
+			political_reform = yes_meeting
+			political_reform = state_press
+			political_reform = no_trade_unions
+			political_reform = first_past_the_post
+			political_reform = underground_parties	
+        }		
+        release = QIC
+        QIC = {
+			government = absolute_monarchy
+			political_reform = no_slavery
+			political_reform = appointed
+			political_reform = none_voting
+			political_reform = yes_meeting
+			political_reform = state_press
+			political_reform = no_trade_unions
+			political_reform = first_past_the_post
+			political_reform = underground_parties	
+			set_country_flag = cannot_abolish_serfdom
+        }			
+        release = TOT
+        TOT = {
+			government = democracy
+			political_reform = no_slavery
+			political_reform = state_equal_weight
+			political_reform = universal_weighted_voting
+			political_reform = yes_meeting
+			political_reform = free_press
+			political_reform = all_trade_unions
+			political_reform = first_past_the_post
+			political_reform = gerrymandering
+	
+        }			
+        release = HUA	
+        HUA = {
+			government = absolute_monarchy
+			political_reform = no_slavery
+			political_reform = appointed
+			political_reform = none_voting
+			political_reform = yes_meeting
+			political_reform = state_press
+			political_reform = no_trade_unions
+			political_reform = first_past_the_post
+			political_reform = underground_parties	
+        }
+        release = OTO
+        OTO = {
+			government = absolute_monarchy
+			political_reform = no_slavery
+			political_reform = appointed
+			political_reform = none_voting
+			political_reform = yes_meeting
+			political_reform = state_press
+			political_reform = no_trade_unions
+			political_reform = first_past_the_post
+			political_reform = underground_parties	
+        }
+        release = ZAP
+        ZAP = {
+			government = democracy
+			political_reform = no_slavery
+			political_reform = state_equal_weight
+			political_reform = universal_weighted_voting
+			political_reform = yes_meeting
+			political_reform = free_press
+			political_reform = all_trade_unions
+			political_reform = first_past_the_post
+			political_reform = gerrymandering
+	
+        }
+ 		
+        change_tag = YCT
+        YCT = {
+			government = democracy
+			political_reform = no_slavery
+			political_reform = state_equal_weight
+			political_reform = universal_weighted_voting
+			political_reform = yes_meeting
+			political_reform = free_press
+			political_reform = all_trade_unions
+			political_reform = first_past_the_post
+			political_reform = gerrymandering
+			set_country_flag = cannot_abolish_serfdom
+			
+			primary_culture = mayan
+			add_accepted_culture = chol
+			remove_accepted_culture = nahua				
+			
+        }		
+        ai_chance = { factor = 20 }		
+    }
+	
+    option = {
+        name = "EVTOPTE466022" #Play as the Qiche
+		CLM = { country_event = 466023 }
+        CMN = { 
+			all_core = { 
+				remove_core = CLM 
+				remove_core = CMN 				
+			} 
+		}
+        release = AZT
+        AZT = {
+			government = provisional_government
+			political_reform = none_voting		
+        }		
+        release = MIX
+        MIX = {
+			government = hms_government
+			political_reform = no_slavery
+			political_reform = appointed
+			political_reform = wealth_voting
+			political_reform = yes_meeting
+			political_reform = censored_press
+			political_reform = no_trade_unions
+			political_reform = first_past_the_post
+			political_reform = non_secret_ballots	
+        }		
+        release = OAX
+        OAX = {
+			government = absolute_monarchy
+			political_reform = no_slavery
+			political_reform = appointed
+			political_reform = none_voting
+			political_reform = yes_meeting
+			political_reform = state_press
+			political_reform = no_trade_unions
+			political_reform = first_past_the_post
+			political_reform = underground_parties	
+        }		
+        release = TOT
+        TOT = {
+			government = democracy
+			political_reform = no_slavery
+			political_reform = state_equal_weight
+			political_reform = universal_weighted_voting
+			political_reform = yes_meeting
+			political_reform = free_press
+			political_reform = all_trade_unions
+			political_reform = first_past_the_post
+			political_reform = gerrymandering
+	
+        }			
+        release = HUA	
+        HUA = {
+			government = absolute_monarchy
+			political_reform = no_slavery
+			political_reform = appointed
+			political_reform = none_voting
+			political_reform = yes_meeting
+			political_reform = state_press
+			political_reform = no_trade_unions
+			political_reform = first_past_the_post
+			political_reform = underground_parties	
+        }
+        release = OTO
+        OTO = {
+			government = absolute_monarchy
+			political_reform = no_slavery
+			political_reform = appointed
+			political_reform = none_voting
+			political_reform = yes_meeting
+			political_reform = state_press
+			political_reform = no_trade_unions
+			political_reform = first_past_the_post
+			political_reform = underground_parties	
+        }
+        release = ZAP
+        ZAP = {
+			government = democracy
+			political_reform = no_slavery
+			political_reform = state_equal_weight
+			political_reform = universal_weighted_voting
+			political_reform = yes_meeting
+			political_reform = free_press
+			political_reform = all_trade_unions
+			political_reform = first_past_the_post
+			political_reform = gerrymandering
+	
+        }
+        release = YCT
+        YCT = {
+			government = democracy
+			political_reform = no_slavery
+			political_reform = state_equal_weight
+			political_reform = universal_weighted_voting
+			political_reform = yes_meeting
+			political_reform = free_press
+			political_reform = all_trade_unions
+			political_reform = first_past_the_post
+			political_reform = gerrymandering
+			set_country_flag = cannot_abolish_serfdom
+	
+        }
+        remove_accepted_culture = nahua  		
+        change_tag = QIC
+        QIC = {
+			government = absolute_monarchy
+			political_reform = no_slavery
+			political_reform = appointed
+			political_reform = none_voting
+			political_reform = yes_meeting
+			political_reform = state_press
+			political_reform = no_trade_unions
+			political_reform = first_past_the_post
+			political_reform = underground_parties	
+			set_country_flag = cannot_abolish_serfdom
+			
+			primary_culture = quiche
+			add_accepted_culture = chol
+			remove_accepted_culture = nahua			
+			
+        }		
+        ai_chance = { factor = 20 }		
+    }	
+	
+    option = {
+        name = "EVTOPTF466022" #Choose other options
+		CMN = { country_event = 466021 }
+        ai_chance = { factor = 0 }			
+    }	
+
+}
+
+country_event = {
+    id = 466023
+    title = "EVTNAME466023" #If Gran Colombia loses, switch to Mexico
+    desc = "EVTDESC466023"
+
+    picture = "calderon_bridge"
+
+    is_triggered_only = yes
+
+    option = {
+        name = "EVT466023OPTA"
+		2162 = { add_core = VCZ }
+		2164 = { add_core = VCZ }		
+		3433 = { add_core = VCZ }
+		3434 = { add_core = VCZ }
+		3437 = { add_core = VCZ }
+		3438 = { add_core = VCZ }		
+		release = VCZ
+		release = GRA		
+		release = UCA	
+		release = LST
+        any_country = {
+            any_owned = {
+                limit = { 
+					OR = {
+						is_core = VCZ
+						is_core = GRA
+						is_core = UCA
+						is_core = OTO
+						is_core = OAX
+						is_core = AZT
+						is_core = YCT
+						is_core = QIC
+						is_core = HUA
+						is_core = TOT						
+						is_core = MIX
+						is_core = ZAP						
+					}
+				}
+				remove_core = MEX
+				remove_core = CLM	
+            }
+        }
+        any_country = {
+            any_owned = {
+                limit = { 
+					OR = {
+						is_core = OTO
+						is_core = OAX
+						is_core = AZT
+						is_core = YCT
+						is_core = QIC
+						is_core = HUA
+						is_core = TOT						
+						is_core = MIX
+						is_core = ZAP						
+					}
+				}
+				add_core = JPB
+            }
+        }		
+		clr_country_flag = cannot_abolish_serfdom		
+		change_tag = MEX
+    }
+}
+
+country_event = { #If Gran Colombia wins, erase CMN cores
+    id = 466024
+    title = "EVTNAME466024"
+    desc = "EVTDESC466024"
+    picture = "velasco_valley_mexico"
+
+    trigger = {
+		exists = yes
+		tag = CLM
+		war = no
+		has_country_flag = cemanahuac_war		
+		CMN = { exists = no }
+		owns = 2177
+		has_recently_lost_war = no
+		NOT = { has_global_flag = cemanahuac_victorious }
+    }
+
+    mean_time_to_happen = { days = 1 }
+	
+    fire_only_once = yes	
+
+    option = {
+        name = "EVTOPTA466024"
+        CMN = { all_core = { remove_core = CMN } }
+		clr_country_flag = cemanahuac_war
+		clr_country_flag = cannot_abolish_serfdom		
+    }
+}
+
+country_event = { #If Gran Colombia keeps the left bank of the Amazon after secession, approach to sell
+    id = 466043
+    title = "EVTNAME466043"
+    desc = "EVTDESC466043"
+    picture = "left_amazon"
+
+    trigger = {
+		exists = yes
+		tag = CLM
+		war = no
+		owns = 2415
+		NOT = { owns = 2242 }
+		NOT = { owns = 2246 }
+		NOT = { owns = 2410 }		
+    }
+
+    mean_time_to_happen = { months = 3 }
+	
+    fire_only_once = yes	
+
+    option = {
+        name = "EVTOPTA466043"
+        random_country = {
+            limit = { owns = 2410 }
+			country_event = 466044
+        }
+        ai_chance = { factor = 100 }		
+    }
+	
+    option = {
+        name = "EVTOPTB466043"
+        prestige = 2		
+        ai_chance = { factor = 0 }			
+    }	
+	
+}
+
+country_event = { #Owner of the right bank of the Amazon approached to purchase left bank
+    id = 466044
+    title = "EVTNAME466044" 
+    desc = "EVTDESC466044"
+
+    picture = "left_amazon"
+
+    is_triggered_only = yes
+
+    option = {
+        name = "EVTOPTA466044"
+        BRZ_2408 = { remove_core = CLM }
+		FROM = {
+			treasury = 25000		
+			any_owned = {
+				limit = { region = BRZ_2408 }
+				secede_province = THIS
+				add_core = THIS				
+			}
+		}
+        ai_chance = { factor = 100 }		
+    }
+	
+    option = {
+        name = "EVTOPTB466044"
+        prestige = -2		
+        ai_chance = { factor = 0 }			
+    }	
+	
 }

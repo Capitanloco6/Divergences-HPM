@@ -21,7 +21,7 @@ country_event = {
     }
 
     mean_time_to_happen = {
-        months = 10
+        months = 6
         modifier = {
             factor = 0.2 #increase likelihood to happen
             year = 1840
@@ -43,20 +43,16 @@ country_event = {
     option = {
         name = "EVTOPTA46411"
         any_pop = { consciousness = 1 }
-        RAP = {
+        CLN = {
             set_variable = {
-                which = colombian_unity
-                value = 0
-            }
-            set_variable = {
-                which = granadan_separatists
-                value = 0
-            }
-            set_variable = {
-                which = dismantlement_clm
-                value = 0
+                which = colombian_separatism
+                value = 1
             }
         }
+		add_country_modifier = {
+			name = "colombian_clergy_privilege"
+			duration = -1
+		}		
         set_global_flag = congress_of_panama
         remove_country_modifier = CLM_fight
         CUB = {
@@ -84,20 +80,16 @@ country_event = {
 
     option = {
         name = "46408.A"
-        RAP = {
-            change_variable = {
-                which = colombian_unity
-                value = 1
-            }
-        }
+        set_country_flag = debated_congress
         ai_chance = { factor = 40 }
     }
 
     option = {
         name = "46408.B"
-        RAP = {
+        set_country_flag = debated_congress			
+        CLN = {
             change_variable = {
-                which = granadan_separatists
+                which = colombian_separatism
                 value = 1
             }
         }
@@ -106,10 +98,11 @@ country_event = {
 
     option = {
         name = "46408.C"
-        RAP = {
+        set_country_flag = debated_congress			
+        CLN = {
             change_variable = {
-                which = dismantlement_clm
-                value = 1
+                which = colombian_separatism
+                value = 2
             }
         }
         ai_chance = { factor = 25 }
@@ -127,17 +120,18 @@ country_event = {
         tag = CLM
         has_global_flag = congress_of_panama
         NOT = { has_global_flag = congress_of_panama_over }
-        NOT = { has_country_flag = trouble_streets }
     }
+	
+    fire_only_once = yes	
 
     mean_time_to_happen = { days = 2 }
 
     option = {
         name = "46401.A"
         set_country_flag = trouble_streets
-        RAP = {
+        CLN = {
             change_variable = {
-                which = granadan_separatists
+                which = colombian_separatism
                 value = 1
             }
         }
@@ -151,10 +145,10 @@ country_event = {
     option = {
         name = "46401.B"
         set_country_flag = trouble_streets
-        RAP = {
+        CLN = {
             change_variable = {
-                which = dismantlement_clm
-                value = 1
+                which = colombian_separatism
+                value = 2
             }
         }
         any_pop = {
@@ -176,77 +170,29 @@ country_event = {
         tag = CLM
         has_global_flag = congress_of_panama
         NOT = { has_global_flag = congress_of_panama_over }
-        NOT = { has_country_flag = priests_CLM }
     }
+
+    fire_only_once = yes
 
     mean_time_to_happen = { days = 3 }
 
     option = {
-        name = "46402.A"
-        set_country_flag = priests_CLM
-        RAP = {
+        name = "EVTOPTA46402"
+        set_country_flag = alienated_priests_CLM
+		remove_country_modifier = colombian_clergy_privilege		
+        CLN = {
             change_variable = {
-                which = colombian_unity
+                which = colombian_separatism
                 value = 1
             }
         }
     }
-}
-
-country_event = {
-    id = 46403
-
-    title = "Andagoya3.T"
-    desc = "Andagoya4.D"
-    picture = "colombian_clergy"
-
-    trigger = {
-        tag = CLM
-        has_global_flag = congress_of_panama
-        NOT = { has_global_flag = congress_of_panama_over }
-        NOT = { has_country_flag = priests_CLM }
-    }
-
-    mean_time_to_happen = { days = 3 }
-
+	
     option = {
-        name = "46403.A"
-        set_country_flag = priests_CLM
-        RAP = {
-            change_variable = {
-                which = granadan_separatists
-                value = 1
-            }
-        }
-    }
-}
-
-country_event = {
-    id = 46404
-
-    title = "Andagoya3.T"
-    desc = "Andagoya5.D"
-    picture = "colombian_clergy"
-
-    trigger = {
-        tag = CLM
-        has_global_flag = congress_of_panama
-        NOT = { has_global_flag = congress_of_panama_over }
-        NOT = { has_country_flag = priests_CLM }
-    }
-
-    mean_time_to_happen = { days = 3 }
-
-    option = {
-        name = "46404.A"
-        set_country_flag = priests_CLM
-        RAP = {
-            change_variable = {
-                which = dismantlement_clm
-                value = 1
-            }
-        }
-    }
+        name = "EVTOPTB46402"
+        set_country_flag = appeased_priests_CLM
+    }	
+	
 }
 
 country_event = {
@@ -260,8 +206,9 @@ country_event = {
         tag = CLM
         has_global_flag = congress_of_panama
         NOT = { has_global_flag = congress_of_panama_over }
-        NOT = { has_country_flag = caudillos }
     }
+	
+    fire_only_once = yes	
 
     mean_time_to_happen = { days = 10 }
 
@@ -276,14 +223,10 @@ country_event = {
             }
             militancy = -3
         }
-        set_country_flag = caudillos
-        RAP = {
+        set_country_flag = caudillos_appeased
+        CLN = {
             change_variable = {
-                which = dismantlement_clm
-                value = 1
-            }
-            change_variable = {
-                which = granadan_separatists
+                which = colombian_separatism
                 value = 1
             }
         }
@@ -301,13 +244,7 @@ country_event = {
             }
             militancy = 3
         }
-        set_country_flag = caudillos
-        RAP = {
-            change_variable = {
-                which = colombian_unity
-                value = 1
-            }
-        }
+        set_country_flag = caudillos_alienated
         ai_chance = { factor = 50 }
     }
 }
@@ -323,8 +260,9 @@ country_event = {
         tag = CLM
         has_global_flag = congress_of_panama
         NOT = { has_global_flag = congress_of_panama_over }
-        NOT = { has_country_flag = castas }
     }
+	
+    fire_only_once = yes	
 
     mean_time_to_happen = { days = 5 }
 
@@ -337,18 +275,25 @@ country_event = {
                     culture = nahua
                     culture = quechua
                     culture = tarascan
+                    culture = amuzgo
+                    culture = quiche
+                    culture = chol
+                    culture = huastec
+                    culture = chinantec
                     culture = mayan
+                    culture = mazatec	
+                    culture = mixe	
+                    culture = mixtec	
+                    culture = popoluca						
+                    culture = otomi		
+                    culture = tlapanec		
+                    culture = totonac	
+                    culture = zoque					
                 }
             }
             militancy = 4
         }
         set_country_flag = castas
-        RAP = {
-            change_variable = {
-                which = colombian_unity
-                value = 1
-            }
-        }
         ai_chance = { factor = 70 }
     }
 
@@ -365,10 +310,11 @@ country_event = {
             }
             militancy = 2
         }
-        set_country_flag = castas
-        RAP = {
+        set_country_flag = castas_abolished
+		clr_country_flag = cannot_abolish_serfdom		
+        CLN = {
             change_variable = {
-                which = dismantlement_clm
+                which = colombian_separatism
                 value = 1
             }
         }
@@ -387,8 +333,9 @@ country_event = {
         tag = CLM
         has_global_flag = congress_of_panama
         NOT = { has_global_flag = congress_of_panama_over }
-        NOT = { has_country_flag = slavery }
     }
+
+    fire_only_once = yes	
 
     mean_time_to_happen = { days = 5 }
 
@@ -398,13 +345,7 @@ country_event = {
             limit = { type = aristocrats }
             militancy = -2
         }
-        set_country_flag = slavery
-        RAP = {
-            change_variable = {
-                which = colombian_unity
-                value = 1
-            }
-        }
+        set_country_flag = slavery_clm
         ai_chance = { factor = 70 }
     }
 
@@ -414,15 +355,12 @@ country_event = {
             limit = { type = aristocrats }
             militancy = 5
         }
-        set_country_flag = slavery
+        set_country_flag = slavery_abolished_clm
         political_reform = no_slavery
-        RAP = {
+		clr_country_flag = the_slavery_debate		
+        CLN = {
             change_variable = {
-                which = dismantlement_clm
-                value = 1
-            }
-            change_variable = {
-                which = granadan_separatists
+                which = colombian_separatism
                 value = 1
             }
         }
@@ -442,48 +380,43 @@ country_event = {
     news_desc_short = "46409_NEWS_SHORT"
 
     major = yes
+	
+    fire_only_once = yes		
 
     trigger = {
         tag = CLM
         has_global_flag = congress_of_panama
         NOT = { has_global_flag = congress_of_panama_over }
-        RAP = {
-            check_variable = {
-                which = colombian_unity
-                value = 1
-            }
-        }
+		has_country_flag = debated_congress	
+		has_country_flag = trouble_streets		
+		OR = { 
+			has_country_flag = alienated_priests_CLM
+			has_country_flag = appeased_priests_CLM
+		}		
+		OR = { 
+			has_country_flag = caudillos_appeased
+			has_country_flag = caudillos_alienated
+		}
+		OR = { 
+			has_country_flag = castas
+			has_country_flag = castas_abolished
+		}		
+		OR = { 
+			has_country_flag = slavery_abolished_clm
+			has_country_flag = slavery_clm
+		}
+		NOT = {
+			CLN = {
+				check_variable = {
+					which = colombian_separatism
+					value = 3.01
+				}
+			}
+		}
     }
 
     mean_time_to_happen = {
         days = 60
-        modifier = {
-            factor = 0.75
-            RAP = {
-                check_variable = {
-                    which = colombian_unity
-                    value = 2
-                }
-            }
-        }
-        modifier = {
-            factor = 0.5
-            RAP = {
-                check_variable = {
-                    which = colombian_unity
-                    value = 3
-                }
-            }
-        }
-        modifier = {
-            factor = 0.5
-            RAP = {
-                check_variable = {
-                    which = colombian_unity
-                    value = 4
-                }
-            }
-        }
     }
 
     option = {
@@ -523,48 +456,49 @@ country_event = {
     desc = "EVTDESC46410"
 
     major = yes
+	
+    fire_only_once = yes		
 
     trigger = {
         tag = CLM
         has_global_flag = congress_of_panama
         NOT = { has_global_flag = congress_of_panama_over }
-        RAP = {
+		has_country_flag = debated_congress	
+		has_country_flag = trouble_streets		
+		OR = { 
+			has_country_flag = alienated_priests_CLM
+			has_country_flag = appeased_priests_CLM
+		}		
+		OR = { 
+			has_country_flag = caudillos_appeased
+			has_country_flag = caudillos_alienated
+		}
+		OR = { 
+			has_country_flag = castas
+			has_country_flag = castas_abolished
+		}		
+		OR = { 
+			has_country_flag = slavery_abolished_clm
+			has_country_flag = slavery_clm
+		}		
+		NOT = {
+			CLN = {
+				check_variable = {
+					which = colombian_separatism
+					value = 5.99
+				}
+			}
+		}
+        CLN = {
             check_variable = {
-                which = granadan_separatists
-                value = 1
+                which = colombian_separatism
+                value = 3.01
             }
         }
     }
 
     mean_time_to_happen = {
         days = 60
-        modifier = {
-            factor = 0.75
-            RAP = {
-                check_variable = {
-                    which = granadan_separatists
-                    value = 2
-                }
-            }
-        }
-        modifier = {
-            factor = 0.5
-            RAP = {
-                check_variable = {
-                    which = granadan_separatists
-                    value = 3
-                }
-            }
-        }
-        modifier = {
-            factor = 0.5
-            RAP = {
-                check_variable = {
-                    which = granadan_separatists
-                    value = 4
-                }
-            }
-        }
     }
 
     option = {
@@ -648,47 +582,40 @@ country_event = {
 
     major = yes
 
+    fire_only_once = yes	
+
     trigger = {
         tag = CLM
         has_global_flag = congress_of_panama
         NOT = { has_global_flag = congress_of_panama_over }
-        RAP = {
+		has_country_flag = debated_congress	
+		has_country_flag = trouble_streets		
+		OR = { 
+			has_country_flag = alienated_priests_CLM
+			has_country_flag = appeased_priests_CLM
+		}		
+		OR = { 
+			has_country_flag = caudillos_appeased
+			has_country_flag = caudillos_alienated
+		}
+		OR = { 
+			has_country_flag = castas
+			has_country_flag = castas_abolished
+		}		
+		OR = { 
+			has_country_flag = slavery_abolished_clm
+			has_country_flag = slavery_clm
+		}		
+        CLN = {
             check_variable = {
-                which = dismantlement_clm
-                value = 1
+                which = colombian_separatism
+                value = 5.99
             }
         }
     }
 
     mean_time_to_happen = {
         days = 60
-        modifier = {
-            factor = 0.75
-            RAP = {
-                check_variable = {
-                    which = dismantlement_clm
-                    value = 2
-                }
-            }
-        }
-        modifier = {
-            factor = 0.5
-            RAP = {
-                check_variable = {
-                    which = dismantlement_clm
-                    value = 3
-                }
-            }
-        }
-        modifier = {
-            factor = 0.5
-            RAP = {
-                check_variable = {
-                    which = dismantlement_clm
-                    value = 4
-                }
-            }
-        }
     }
 
     option = {

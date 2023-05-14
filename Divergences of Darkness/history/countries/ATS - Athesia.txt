@@ -46,6 +46,9 @@ upper_house = {
 	communist = 0
 }
 
+set_country_flag = catholic_country
+set_country_flag = new_world_nation
+
 post_napoleonic_thought = 1
 flintlock_rifles = 1
 bronze_muzzle_loaded_artillery = 1

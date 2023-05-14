@@ -1881,11 +1881,11 @@ country_event = {
                 owner = { civilized = no }
             }
             owner = {
+                remove_country_modifier = legation_quarter
+                remove_country_modifier = foreign_smugglers				
                 any_owned = {
                     remove_province_modifier = peasant_revolt
                     remove_province_modifier = western_presence
-                    remove_province_modifier = legation_quarter
-                    remove_province_modifier = foreign_smugglers
                     remove_province_modifier = foreign_trading_post
                     remove_province_modifier = local_opium_habit
                     remove_province_modifier = european_military_mission

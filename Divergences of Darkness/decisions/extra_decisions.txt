@@ -567,10 +567,6 @@ political_decisions = {
                     tag = HHR
                     tag = CHE
                     tag = IRO
-                    tag = AZT
-                    tag = PUR
-                    tag = ZAP
-                    tag = YUC
                 }
                 AND = {
                     tag = CLM
@@ -580,6 +576,7 @@ political_decisions = {
             OR = {
                 continent = north_america
                 continent = south_america
+                continent = australia_new_zealand				
             }
             NOT = { has_country_flag = land_of_opportunity }
         }
