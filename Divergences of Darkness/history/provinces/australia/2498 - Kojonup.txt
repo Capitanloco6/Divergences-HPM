@@ -1,4 +1,4 @@
-add_core = GAN
+add_core = ZOU
 trade_goods = grain
 life_rating = 30
 colonial = 1

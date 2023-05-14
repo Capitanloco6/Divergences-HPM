@@ -1,6 +1,6 @@
-owner = GAN
-controller = GAN
-add_core = GAN
+owner = ZOU
+controller = ZOU
+add_core = ZOU
 naval_base = 1
 trade_goods = grain
 life_rating = 35

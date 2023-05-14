@@ -2,7 +2,7 @@ political_decisions = {
     austral_destiny = {
         picture = zuharra
         potential = {
-            tag = GAN
+            tag = ZOU
             rank = 20
             NOT = { has_country_flag = austral_destiny }
         }
@@ -16,14 +16,14 @@ political_decisions = {
             prestige = 25
             badboy = 10
             set_country_flag = austral_destiny
-            AST_1097 = { add_core = GAN }
-            ENG_2509 = { add_core = GAN }
-            ENG_2513 = { add_core = GAN }
-            FRA_1097 = { add_core = GAN }
-            NET_1451 = { add_core = GAN }
-            AST_2529 = { add_core = GAN }
-            GER_2531 = { add_core = GAN }
-            AST_2534 = { add_core = GAN }
+            AST_1097 = { add_core = ZOU }
+            ENG_2509 = { add_core = ZOU }
+            ENG_2513 = { add_core = ZOU }
+            FRA_1097 = { add_core = ZOU }
+            NET_1451 = { add_core = ZOU }
+            AST_2529 = { add_core = ZOU }
+            GER_2531 = { add_core = ZOU }
+            AST_2534 = { add_core = ZOU }
             TUI = {
                 all_core = { add_core = THIS }
             }
@@ -34,7 +34,7 @@ political_decisions = {
     assimilate_tributaries = {
         picture = aboriginie_zhourao
         potential = {
-            tag = GAN
+            tag = ZOU
             NOT = { has_country_flag = assimilate_tributaries }
             NOT = { has_country_flag = aborigine_acc }
             rank = 20
@@ -48,7 +48,7 @@ political_decisions = {
         effect = {
             set_country_flag = assimilate_tributaries
             any_owned = {
-                limit = { is_core = GAN }
+                limit = { is_core = ZOU }
                 add_province_modifier = {
                     name = assimilate_tributaries_modif
                     duration = -1

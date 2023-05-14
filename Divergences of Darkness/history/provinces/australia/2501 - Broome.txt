@@ -1,4 +1,4 @@
-add_core = GAN
+add_core = ZOU
 trade_goods = grain
 terrain = savanna
 life_rating = 20
