@@ -134,7 +134,7 @@
 }
 
 #Kirikiriroa or Hamilton
-3413 = {
+3454 = {
 
 	clergymen = {
 		culture = maori

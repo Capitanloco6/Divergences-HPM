@@ -1,7 +1,7 @@
 ironclad = {
     icon = 9
     naval_icon = 6
-
+	
     type = naval
     sprite = Ironclad
     unit_type = big_ship

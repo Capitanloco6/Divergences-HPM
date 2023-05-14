@@ -3216,9 +3216,28 @@ oceanic = {
 }
 
 mesoandean = {
-    leader = nativeamerican
+    leader = mesoamerican
     is_overseas = no
     unit = Generic
+	
+    amuzgo = {
+        color = {
+            0 15 97
+        }
+        first_names = {
+            Pedro Ñaña Rafael Cuiñe Yaha Calixto Yahui Ñuhu Dzavui Nduvua
+            Nann Yujme Ehécatl Ilhuicóatl Ilhuitemoc Itzmin Ñuan Mazacoatl Miztli Jacobo
+            Necucyaotl Isidro Ocelotl Olontetl Papalotl Santiago Tepeyolotl Juan Tlanextic Tlecóatl
+            Tonahuac Topiltzin Xicohtencatl Xiuhcóatl Xólotl Yaotl Yoltzin
+        }
+
+        last_names = {
+            Flores Xipe Coaguila Gallardo Ocoñaña Cuautlaxahue Huanitzin Itzel Ixtlilxochitl Matlacuahuac
+            Mayahuel Moxo Nahui Ocelotl Panecatl Tlaxca Tletla Tzehe Xaxalpa Zicoténcatl
+            Cruz Zapotitla
+        }
+    }	
+	
     zapotec = {
         color = {
             87 199 81
@@ -3250,14 +3269,109 @@ mesoandean = {
             Xicara Xiloj
         }
     }
+	
+	quiche = { 
+		color = {100 70 120}
+		first_names = { Ixmacane Zipacna Ix Xamaniqinqu Vucub-Caquix Gukumatz Tecumbalam Balam Yunuen Yaxkin
+		Itzamna  }
+
+		last_names = { Ak'ab'al Cal Canek Canul Carrillo Ceh Chee Chi Choc Coc
+		Curruchic Ixquiac López Manzanero Mas Menchú Mérida Mes Osorio Pek
+		Poot Pop Puk Shal Sho Tecú Teul Tuyuc Xicara Xiloj }
+	}
+
+	chol = { 
+		color = {100 120 140}
+		first_names = { Ixmacane Zipacna Ix Xamaniqinqu Vucub-Caquix Gukumatz Tecumbalam Balam Yunuen Yaxkin
+		Itzamna  }
+
+		last_names = { Ak'ab'al Cal Canek Canul Carrillo Ceh Chee Chi Choc Coc
+		Curruchic Ixquiac López Manzanero Mas Menchú Mérida Mes Osorio Pek
+		Poot Pop Puk Shal Sho Tecú Teul Tuyuc Xicara Xiloj }
+	}
+
+	huastec = { 
+		color = {130 90 100}
+		first_names = { Ixmacane Zipacna Ix Xamaniqinqu Vucub-Caquix Olith Tecumbalam Balam Yunuen Yaxkin
+		Yaxu  }
+
+		last_names = { Ak'ab'al Anam Canek Acal Carrillo Ceh Chee Chi Choc Coc
+		Curruchic Ixquiac López Manzanero Mas Menchú Mérida Mes Osorio Pek
+		Poot Pop Puk Shal Sho Tokow Tima Tuyuc Wich Xiloj }
+	}
+	
+    chinantec = {
+        color = {
+            246 224 17
+        }
+        first_names = {
+            Pedro Rafael Cuiñe Yaha Calixto Yahui Ñuhu Dzavui Nduvua
+            Nann Yujme Jiun-pii Ilhuicóatl Ilhuitemoc Itzmin Ñuan Mazacoatl Miztli Jacobo
+            Necucyaotl Isidro Ocelotl Olontetl Papalotl Santiago Tepeyolotl Juan Tlanextic Tlecóatl
+            Tonahuac Topiltzin Xicohtencatl Xiuhcóatl Xólotl Yaotl Yoltzin
+        }
+
+        last_names = {
+            Flores Shamii-Jiun Coaguila Gallardo Ocoñaña Cuautlaxahue Huanitzin Itzel Ixtlilxochitl Matlacuahuac
+            Mayahuel Moxo Nahui Ocelotl Panecatl Tlaxca Tletla Tzehe Xaxalpa Zicoténcatl
+            Cruz Zapotitla
+        }
+    }	
+	
+    mazatec = {
+        color = {
+            199 199 199
+        }
+        first_names = {
+            Pedro Muibú Rafael Atlacatl Atzin Calixto Muxa Sejé Cipactli Cóatl
+            Coatzin Cuauhtli Ehécatl Ilhuicóatl Ilhuitemoc Mejiese Itzcoatl Mazacoatl Miztli Jacobo
+            Necucyaotl Isidro Ocelotl Olontetl Papalotl Santiago Tepeyolotl Juan Tlanextic Tlecóatl
+            Tonahuac Topiltzin Xicohtencatl Xiuhcóatl Xólotl Yaotl Yoltzin
+        }
+
+        last_names = {
+            Flores Atlanteco Coaguila Gallardo Naxu Toxterené Muxandájná Luxi Zdaná Naxi
+            Mayahuel Ngomá Nixten Yufi Niñú-Chimihña Tlaxca Tletla Tzehe Xaxalpa Zicoténcatl
+            Cruz Zapotitla
+        }
+    }	
+
+    mixe = {
+        color = {
+            158 194 133
+        }
+        first_names = {
+            Pedro Ahuizotl Rafael Unaak-uunk Atzin Calixto Täccam Potcam Necy
+        }
+
+        last_names = {
+            Flores Atlanteco Coaguila Gallardo Kish Eneedzaa Cruz 
+        }
+    }
+
+    mixtec = {
+        color = {
+            247 136 20
+        }
+        first_names = {
+            Ñaña Cuiñe Yaha Yahui Ñuhu Dzavui Nduvua
+            Nuñi Ya-Dutu Ya-Davi Ityi Yucu Yadeé
+        }
+
+        last_names = {
+            Xipe Ocoñaña Itan Itaii Yadee Savi Yuusavi
+            Ñicandyi Yutya Tatyi Mihndya
+        }
+    }	
+	
     nahua = {
         color = {
-            88 175 160
+            226 11 26
         }
         first_names = {
             Acamapichtli Ahuizotl Atl Atlacatl Atzin Azcatl Ceyaotl Cihuacoatl Cipactli Cóatl
             Coatzin Cuauhtli Ehécatl Ilhuicóatl Ilhuitemoc Itzmin Itzcoatl Mazacoatl Miztli Motecuhzoma
-            Necucyaotl Nezahualcóyot Ocelotl Olontetl Papalotl Quetzalcóatl Tepeyolotl Tizitl Tlanextic Tlecóatl
+            Necucyaotl Nezahualcóyot Ocelotl Olontetl Papalotl Mariano Tepeyolotl Tizitl Tlanextic Mimiaga
             Tonahuac Topiltzin Xicohtencatl Xiuhcóatl Xólotl Yaotl Yoltzin
         }
 
@@ -3267,6 +3381,39 @@ mesoandean = {
             Xochitl Zapotitla
         }
     }
+	
+    popoluca = {
+        color = {
+            60 223 107
+        }
+        first_names = {
+            Pedro Rafael Cuiñe Yaha Calixto Yahui Ñuhu Dzavui Nduvua
+            Nann Yujme Ehécatl Jama Ilhuitemoc Itzmin Ñuan Jamu Numa Jacobo
+            Sawa Isidro Ocelotl Olontetl Papalotl Santiago Tepeyolotl Juan Tlanextic Tlecóatl
+            Tonahuac Topiltzin Xicohtencatl Xiuhcóatl Xólotl Yaotl Yoltzin
+        }
+
+        last_names = {
+            Flores Shamii-Jiun Wintuc Gallardo Ocoñaña Jaychu Huanitzin Masawa Ixtlilxochitl Matlacuahuac
+            Mayahuel Moxo Nahui Ocelotl Panecatl Tlaxca Tletla Tzehe Xaxalpa Zicoténcatl
+            Cruz Zapotitla
+        }
+    }	
+	
+    otomi = {
+        color = {
+            60 22 106
+        }
+        first_names = {
+            Pedro Mähetsi Rafael Edahi Arhirani Calixto Yendri Xi'mhai Däxa Hyadi
+            Bädi Hats'i
+        }
+
+        last_names = {
+            Tseje Doni Soona Yohyai Dohai Bohai Anxaa
+        }
+    }
+	
     tarascan = {
         color = {
             87 188 192
@@ -3280,6 +3427,64 @@ mesoandean = {
             Ochoa Tinoco Toryo Tzintzunzan Cúrateme Xaracuaro Zurumban Pahuajume Uapeani
         }
     }
+	
+    tlapanec = {
+        color = {
+            236 147 149
+        }
+        first_names = {
+            Pedro Ahuizotl Rafael Atlacatl Atzin Calixto Ceyaotl Cihuacoatl Cipactli Cóatl
+            Coatzin Cuauhtli Ehécatl Ilhuicóatl Ilhuitemoc Itzmin Itzcoatl Mazacoatl Miztli Jacobo
+            Necucyaotl Isidro Ocelotl Olontetl Papalotl Santiago Tepeyolotl Juan Tlanextic Tlecóatl
+            Tonahuac Topiltzin Xicohtencatl Xiuhcóatl Xólotl Yaotl Yoltzin
+        }
+
+        last_names = {
+            Flores Atlanteco Coaguila Gallardo Coyotl Cuautlaxahue Huanitzin Itzel Ixtlilxochitl Matlacuahuac
+            Mayahuel Moxo Nahui Ocelotl Panecatl Tlaxca Tletla Tzehe Xaxalpa Zicoténcatl
+            Cruz Zapotitla
+        }
+    }	
+	
+    totonac = {
+        color = {
+            1 157 154
+        }
+        first_names = {
+            Makskut Aksanján Lakpatna Calixto Stáku Stákunisin Matkuyu Lakatzi't
+            Li-katsin Jilini Aktsini
+        }
+
+        last_names = {
+            Qatiyat Coaguila Xanat Ihtacat Sikulan-puskat Juki-luwa Lica'tzin Li-stákna
+            Cicini Kitsisluwa
+        }
+    }	
+	
+    zoque = {
+        color = {
+            226 134 33
+        }
+        first_names = {
+            Pedro Tujsava Rafael Atlacatl Atzin Calixto Sava Cihuacoatl Cipactli Cóatl
+            Coatzin Cuauhtli Ehécatl Ilhuicóatl Ilhuitemoc Itzmin Itzcoatl Mazacoatl Miztli Jacobo
+            Necucyaotl Isidro Ocelotl Olontetl Papalotl Santiago Tepeyolotl Juan Tlanextic Tlecóatl
+            Tonahuac Topiltzin Xicohtencatl Xiuhcóatl Xólotl Yaotl Yoltzin
+        }
+
+        last_names = {
+            Flores Atlanteco Coaguila Gallardo Coyotl Cuautlaxahue Huanitzin Itzel Ixtlilxochitl Matlacuahuac
+            Mayahuel Moxo Nahui Ocelotl Panecatl Tlaxca Tletla Tzehe Xaxalpa Zicoténcatl
+            Cruz Zapotitla
+        }
+    }	
+	
+}
+
+native_south_american = {
+    leader = nativeamerican
+    is_overseas = no
+	
     quechua = {
         color = {
             178 141 85
@@ -3309,12 +3514,8 @@ mesoandean = {
         last_names = {
             Apaza Canchi Mamani Catuna Collo Kondori Ticona Maita Aruno
         }
-    }
-}
-
-native_south_american = {
-    leader = nativeamerican
-    is_overseas = no
+    }	
+	
     guarani = {
         color = {
             89 80 175
@@ -3395,6 +3596,7 @@ native_south_american = {
 }
 
 native_north_american = {
+    leader = nativeamerican
     rohnnst = {
         color = {
             15 68 192
@@ -4062,90 +4264,6 @@ african_diaspora_cultures = {
     leader = african
     is_overseas = no
     unit = AfricanGC
-    afro_american = {
-        color = {
-            42 42 42
-        }
-        first_names = {
-            Aaron Alexander Andre Benton Caesar Cathay Charles Colin Ebenezer Edgar
-            Edward Frederick George Henry James Joseph Lewis Lloyd Matin Michael
-            Milton Osborne Pinckney Powhatan Robert Samuel Stewart Thomas William Wilson
-        }
-
-        last_names = {
-            Anderson Antoine Augusta Basset Beaty Blake Brooks Brown Cailloux Carney
-            Delany Douglass "Du Bois" Fields Flipper Gardner Griffin Hawkins Holland Jackson
-            King Mink Nell Pinn Ratcliff Remond Smith Stukes Tubman Veale
-        }
-    }
-    afro_caribbean = {
-        color = {
-            32 57 32
-        }
-        first_names = {
-            Anderson Anselm Arthur Ben Colville Cyril Earl Edwin Ellis Eric
-            Geoffrey George Graham Henry Herbert Hubert Jeffrey John Josiah Lennox
-            Lloyd Malcolm Mervyn Nicholas Rainford Reginald Robert Stokely William Winston
-        }
-
-        last_names = {
-            Abbott Best Blaize Brathwaite Carmichael Chambers Clark Douglas Dymally Findley
-            Goddard Hall Henson Holder James Jones Julian Kilgour Lassalle Lovelace
-            McIntosh Nurse Perry Roberts Robinson Shadd Stollmeyer Sylvester Williams Young
-        }
-    }
-    afro_caribeno = {
-        color = {
-            12 83 12
-        }
-        first_names = {
-            Antonio Armando Arsenio Arturo Bartolomé Carlos Dámaso Enrique Francisco Generoso
-            Guillermo Gumersindo Ignacio Israel Jacinto Jaime "José Celso" Juan Luciano Mario
-            Máximo Nelson Nicolás Orestes Orlando Pedro Pío Ramón Rubén Wifredo
-        }
-
-        last_names = {
-            Albizu Barbosa Barreto Bauzá Díaz Egües Estupiñán Garay González Guillén
-            Gutiérrez Hurtado Jiménez Jorrín Lam Leyva López Maceo Moré Morel
-            Peraza Pérez Piñeiro Pozo Repilado Rodríguez Santamaría Schomburg Valdés Villa
-        }
-    }
-    afro_brazilian = {
-        color = {
-            87 164 95
-        }
-        first_names = {
-            Afonso Aleixo Alexandre Anderson André Artur Cândido Carlos Denílson Djalma
-            Félix Francisco Guilherme Itamar João Joaquim Jorge José Kléber Leandro
-            Luís Manuel Marco Marcos Maurício Mauro Nilo Procópio Ricardo Ronaldo
-        }
-
-        last_names = {
-            Aragão Assunçao Bahia Barbosa Borges "de Cruz e Sousa" "da Lima" "de Lima Barreto" "de Ouro" "de Sousa"
-            "de Souza" "dos Reis" "dos Santos" Fidalgo Filho Gil Gomes "Machado de Assis" Nunes Oliveira
-            Otelo Paim Pandeiro Peçanha Pereira Pitanga Rodrigues Santos Silva Teixeira
-        }
-    }
-    afro_antillean = {
-        color = {
-            24 44 49
-        }
-        first_names = {
-            Alexis André Anténor Antoine Augustin Balthazar Beaubrun Céligny Charlemagne Charles
-            Cincinnatus Dantès Demesvar Denys Emmanuel Eugène Fabre Faustin Florvil François
-            Guillaume Hannibal Henri Jacques Jean Jean-Baptiste Jean-Louis Jean-Pierre Jonathas Joseph
-            Léon Louis Louis-Eugène Louis-Joseph Lysius Michel Monpoint Nissage Nord Oreste
-            Philippe Pierre Simon Sténio Sylvain Tandredè Thomas Timoleón Tirésias Vilbrum
-        }
-
-        last_names = {
-            Alexis Ardouin Auguste Bellegarde Boisrond-Canal Bonnet Borno Boyer Brutus Christophe
-            Conzé Dartiguenave Delorme Dessalines Domingue Firmin Geffrad Granville Guerrier Hyppolite
-            Iginac Janvier Jeune Lafontant Laleau Leconte Légitime Legouaze Léon Lhérisson
-            Madiou Péralte Pierrot Planchet Price Price-Mars Riché Rigaud Rivière-Hérard Roumain
-            Roy Saget Salnave Salomon Sam Simon Soulouque Théodore Vincent Zamor
-        }
-    }
     kreol = {
         color = {
             63 32 10

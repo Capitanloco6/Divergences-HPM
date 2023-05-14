@@ -1281,7 +1281,7 @@ country_event = {
         random_owned = {
             limit = {
                 port = yes
-                NOT = { has_province_modifier = foreign_smugglers }
+                #NOT = { has_province_modifier = foreign_smugglers }
                 NOT = { has_province_modifier = local_opium_habit }
             }
             state_scope = {
@@ -2278,7 +2278,7 @@ province_event = {
         name = "EVTOPTA13150"
         remove_province_modifier = european_military_mission
         remove_province_modifier = western_presence
-        remove_province_modifier = foreign_smugglers
+        #remove_province_modifier = foreign_smugglers
         owner = {
             remove_country_modifier = foreign_trading_post
             remove_country_modifier = foreign_smugglers
@@ -2421,7 +2421,7 @@ country_event = {
                 OR = {
                     has_province_modifier = european_military_mission
                     has_province_modifier = western_presence
-                    has_province_modifier = foreign_smugglers
+                    #has_province_modifier = foreign_smugglers
                 }
                 NOT = { has_province_modifier = extraterritoriality_granted }
                 port = yes
@@ -3836,17 +3836,17 @@ country_event = {
 		remove_country_modifier = uncivilized_isolationism
 		remove_country_modifier = trade_restrictions
 		remove_country_modifier = sayings_of_the_dutch
+		remove_country_modifier = foreign_smugglers
+		remove_country_modifier = legation_quarter		
 		clr_country_flag = using_foreign_weapons
 		clr_country_flag = using_foreign_artillery
 		clr_country_flag = using_foreign_ships
 		clr_country_flag = using_foreign_shipyards
 		any_owned = {
 			remove_province_modifier = western_presence
-			remove_province_modifier = foreign_smugglers
 			remove_province_modifier = foreign_trading_post
 			remove_province_modifier = local_opium_habit
 			remove_province_modifier = european_military_mission
-			remove_province_modifier = legation_quarter
 			remove_province_modifier = kettler_denkmal
 			remove_province_modifier = extraterritoriality_granted
 		}
@@ -3970,11 +3970,11 @@ country_event = {
         }
         any_owned = {
             remove_province_modifier = western_presence
-            remove_province_modifier = foreign_smugglers
+            #remove_province_modifier = foreign_smugglers
             remove_province_modifier = foreign_trading_post
             remove_province_modifier = local_opium_habit
             remove_province_modifier = european_military_mission
-            remove_province_modifier = legation_quarter
+            #remove_province_modifier = legation_quarter
             remove_province_modifier = kettler_denkmal
             remove_province_modifier = extraterritoriality_granted
         }
@@ -4455,17 +4455,18 @@ country_event = {
                 remove_country_modifier = rangaku
                 remove_country_modifier = sakoku
                 remove_country_modifier = western_presence
+                remove_country_modifier = legation_quarter				
                 remove_country_modifier = isolationist_foreign_naval_officers
                 remove_country_modifier = isolationist_foreign_naval_schools
                 remove_country_modifier = isolationist_foreign_officers
                 remove_country_modifier = isolationist_foreign_training
                 any_owned = {
                     remove_province_modifier = western_presence
-                    remove_province_modifier = foreign_smugglers
+                    #remove_province_modifier = foreign_smugglers
                     remove_province_modifier = foreign_trading_post
                     remove_province_modifier = local_opium_habit
                     remove_province_modifier = european_military_mission
-                    remove_province_modifier = legation_quarter
+                    #remove_province_modifier = legation_quarter
                     remove_province_modifier = kettler_denkmal
                     remove_province_modifier = extraterritoriality_granted
                 }

@@ -29,7 +29,7 @@
 	farmers = {
 		culture = central_american
 		religion = catholic
-		size = 2700
+		size = 5700
 	}
 
 	aristocrats = {
@@ -59,13 +59,19 @@
 	farmers = {
 		culture = mayan
 		religion = catholic
-		size = 3800
+		size = 6800
 	}
 
 	slaves = {
 		culture = mayan
 		religion = catholic
-		size = 4300
+		size = 7300
 	}
+	
+	farmers = {
+		culture = quiche
+		religion = catholic
+		size = 4400
+	}	
 
 }

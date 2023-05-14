@@ -567,10 +567,6 @@ political_decisions = {
                     tag = HHR
                     tag = CHE
                     tag = IRO
-                    tag = AZT
-                    tag = PUR
-                    tag = ZAP
-                    tag = YUC
                 }
                 AND = {
                     tag = CLM

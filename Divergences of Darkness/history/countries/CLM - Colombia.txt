@@ -31,7 +31,7 @@ school_reforms = no_schools
 
 #New Reforms
 conscription = one_year_draft
-debt_law = peonage
+debt_law = serfdom
 penal_system = capital_punishment
 child_labor = child_labor_legal
 citizens_rights = culture_voting_only
@@ -39,6 +39,8 @@ border_policy = open_borders
 
 set_country_flag = catholic_country
 set_country_flag = new_world_nation
+set_country_flag = cannot_abolish_serfdom
+set_country_flag = the_slavery_debate
 
 ruling_party = GCO_conservative
 last_election = 1832.3.10
