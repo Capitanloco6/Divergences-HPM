@@ -8,9 +8,11 @@ political_decisions = {
         allow = {
             is_greater_power = yes
             all_core = {
-				owned_by = THIS
-                    empty = yes
-					}
+				OR = {
+					owned_by = THIS
+					empty = yes
+				}
+			}
             nationalism_n_imperialism = 1
         }
         effect = {
