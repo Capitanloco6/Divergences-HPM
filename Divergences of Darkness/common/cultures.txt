@@ -1776,7 +1776,7 @@ north_caucasian_group = {
         radicalism = 30
     }
 
-    circassian = {
+    circassian = { #Not used in mod
         color = {
             185 206 6
         }
