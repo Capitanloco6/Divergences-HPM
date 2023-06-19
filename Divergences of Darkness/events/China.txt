@@ -115,18 +115,6 @@ country_event = {
                     name = "western_influences"
                     duration = -1
                 }
-            }
-        }
-        random_owned = {
-            limit = {
-                owner = { has_country_modifier = uncivilized_isolationism }
-            }
-            owner = {
-                remove_country_modifier = uncivilized_isolationism
-                add_country_modifier = {
-                    name = "western_influences"
-                    duration = -1
-                }
                 any_pop = {
                     scaled_militancy = {
                         ideology = liberal
