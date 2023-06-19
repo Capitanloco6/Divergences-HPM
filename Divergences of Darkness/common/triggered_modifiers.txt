@@ -334,6 +334,8 @@ sound_dues = {
             is_culture_group = british
             is_culture_group = french
             is_culture_group = beneluxian
+            primary_culture = czech
+            primary_culture = polish
             primary_culture = north_german
             primary_culture = russian
         }
