@@ -7,7 +7,7 @@ fascist_group = {
         color = {
             60 60 60
         }
-        date = 1900.1.1
+        date = 1905.1.1
 
 
         add_political_reform = {
