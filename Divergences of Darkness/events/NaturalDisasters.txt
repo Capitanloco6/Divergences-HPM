@@ -96,26 +96,26 @@ country_event = {
 
     trigger = {
         NOT = { has_country_modifier = national_tragedy }
-        invention = industrial_railroads
+        early_railroad = 1
     }
 
     mean_time_to_happen = {
         months = 900
         modifier = {
             factor = 0.95
-            invention = the_iron_horse
+            iron_railroad = 1
         }
         modifier = {
             factor = 0.95
-            invention = commercial_railroads
+            steel_railroad = 1
         }
         modifier = {
             factor = 0.95
-            invention = arteries_of_commerce
+            integral_rail_system = 1
         }
         modifier = {
             factor = 0.95
-            invention = autobahn
+            limited_access_roads = 1
         }
         modifier = {
             factor = 0.75
@@ -340,7 +340,7 @@ country_event = {
     id = 880290
     title = "EVTNAME880290"
     desc = "EVTDESC880290"
-    picture = "cholera" #Was not able to find a decent historical picture without clear (c) status. -GAGA
+    picture = "typeix"
 
     trigger = {
         NOT = { has_country_modifier = national_tragedy }
