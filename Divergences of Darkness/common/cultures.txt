@@ -1717,13 +1717,18 @@ north_caucasian_group = {
             252 255 161
         }
         first_names = {
-            Aslan Hamza "Jamal al-Din" Mansur Mohammad Murad Shamil Abatiy Bate Belatse
-            Blaneshu Dzeghaschte Discheshu Foqwe Ghwaze Hebale Hezeishe Hetezchiqwe #Jatawe Lawirsen Lhostenasch Mamish Nartschawe Nart Pschibiy Pagwe Psebide Qideghaze Qwbatiy Qwsh Zhanqeit Yapenes Wezrej Tsatsu Teimbolet
+            Abatiy Aghwrbiy Albech Albot "Alhx'es" "Alhx'o" Alijiqwe Aslan Bale Bate Batirbiy Belatse Biylhosten 
+            Blaneshu Bubeird Chawis Chetsu "Ch'ischiqwe" Dariqwe Dokshiqua Dzune Dzeghaschte Discheshu Foqwe Ghwaze 
+            Gushina Gushipsa Hamza Hanaqua Hebale Hegwtsire Hetezchiqwe Hetsu Hezeishe "Jamal al-Din" Jirandiqwe Kwshbiy 
+            Lhostenasch Mamsriqwe Mansur Menshaq Meshiqwe Mohammad Murad Nalbiy Nartshu Nerzan Pschimaxwe Qideghaze Schebet 
+            Shamil Shumaxwe Shupashe Takwu Tighwen Tighwenbiy Tsumash Werdeschawe Wezroqwe Yedij Zhore 
+            #Jatawe Lawirsen Mamish Nartschawe Nart Pschibiy Pagwe Psebide Qwbatiy Qwsh Zhanqeit Yapenes Wezrej Tsatsu Teimbolet
         }
 
         last_names = {
-            Mollah Bek Aghwrbiyç Alijiqwe Dzuneç Gushina Gushipsaç Dzadzooç Hatsiquaç Jirandiqua
-            Mashiquaç Naly Nartby Shoomaquaç Tsikira Zhambora
+            Abadzehs Adyghe Aghwrbiyç Alijiqwe Bek Birdzh Bzhedug Cherch Cherkess Dzuneç Dzadzooç Gushina Gushipsaç Hatsiquaç 
+            Hatuqwai Jirandiqua Kabarday Kabardi Kerzedzh Khatirame Kuytsuk Mamkhegh Mashiquaç Mollah Naly Nartby Natukhai 
+            Neghwey Shapsug al-Shishani Shoomaquaç Syupako Temirgoy Tsikira Ubykhs Zhambora Zhaney 
         }
         radicalism = 10
     }
