@@ -7578,6 +7578,8 @@ caliphate_jihad_cb = {
                 has_country_flag = sunni_country
                 has_country_flag = shiite_country
                 has_country_flag = ibadi_country
+                has_country_flag = ismaili_country
+                has_country_flag = zaydi_country
             }
         }
         THIS = {
