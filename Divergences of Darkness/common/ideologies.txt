@@ -409,15 +409,21 @@ liberal_group = {
         uncivilized = no
 
         add_political_reform = {
-            base = 0
+            base = 1
             modifier = {
-                factor = 0.9
-                ruling_party_ideology = anarcho_liberal
-                militancy = 9
-                political_movement_strength = 0.9
+                factor = -1
+                NOT = { ruling_party_ideology = anarcho_liberal }
             }
         }
-        remove_political_reform = { base = 0 }
+
+
+        remove_political_reform = {
+            base = 1
+            modifier = {
+                factor = -1
+                NOT = { ruling_party_ideology = anarcho_liberal }
+            }
+        }
         add_social_reform = { base = 0 }
         remove_social_reform = { base = 1 }
 
