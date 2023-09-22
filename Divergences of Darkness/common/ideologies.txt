@@ -11,20 +11,12 @@ fascist_group = {
 
 
         add_political_reform = {
-            base = 1
-            modifier = {
-                factor = -1
-                NOT = { ruling_party_ideology = fascist }
-            }
+            base = 0
         }
 
 
         remove_political_reform = {
             base = 1
-            modifier = {
-                factor = -1
-                NOT = { ruling_party_ideology = fascist }
-            }
         }
 
 
@@ -304,15 +296,21 @@ socialist_group = {
         date = 1860.1.1
 
         add_political_reform = {
-            base = 0
+            base = 1
             modifier = {
-                factor = 0.9
-                ruling_party_ideology = communist
-                militancy = 9
-                political_movement_strength = 0.9
+                factor = -1
+                NOT = { ruling_party_ideology = communist }
             }
         }
-        remove_political_reform = { base = 1 }
+
+
+        remove_political_reform = {
+            base = 1
+            modifier = {
+                factor = -1
+                NOT = { ruling_party_ideology = communist }
+            }
+        }
         add_social_reform = { base = 1 }
         remove_social_reform = { base = 0 }
     }
