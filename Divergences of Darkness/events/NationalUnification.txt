@@ -172,9 +172,7 @@ country_event = {
         random_owned = {
             limit = {
                 owner = {
-                    NOT = { tag = AUS }
                     NOT = { tag = MOL }
-                    NOT = { tag = SYL }
                     NOT = { tag = LUX }
                     NOT = { is_culture_group = south_asian }
                     NOT = { is_culture_group = scandinavian }

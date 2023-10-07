@@ -2975,7 +2975,7 @@ country_event = {
         any_owned = {
             limit = { is_core = DUA }
             remove_province_modifier = anglois_cultural_unity
-            remove_province_modifier = anglois_federalism
+            #remove_province_modifier = anglois_federalism
         }
 
         ENG_273 = { remove_core = DUA add_core = ENL }
@@ -3036,8 +3036,6 @@ country_event = {
                     is_core = SCO
                     is_core = IRE
                     is_core = OCC
-                    is_core = AQL
-                    is_core = NTL
                     is_core = PRV
                     is_core = NAV
                 }
@@ -3053,8 +3051,6 @@ country_event = {
                         is_core = SCO
                         is_core = IRE
                         is_core = OCC
-                        is_core = AQL
-                        is_core = NTL
                         is_core = PRV
                         is_core = NAV
                     }

@@ -1009,7 +1009,7 @@ country_event = {
 
 country_event = { 
 	id = 334337 
-	name = "334337.T" #DUA seeks a port
+	title = "334337.T" #DUA seeks a port
 	desc = "334337.D"
 	
 	trigger = { 
@@ -1058,7 +1058,7 @@ country_event = {
 
 country_event = { 
 	id = 334338 
-	name = "334338.T" #DUA seeks Shanghai -JAP not Great Power
+	title = "334338.T" #DUA seeks Shanghai -JAP not Great Power
 	desc = "334338.D"
 	
 	trigger = { 
@@ -1113,7 +1113,7 @@ country_event = {
 
 country_event = { 
 	id = 334339 
-	name = "334339.T" #DUA obtains Shanghai
+	title = "334339.T" #DUA obtains Shanghai
 	desc = "334339.D" 
 	news = yes 
 	news_desc_long = "334339_NEWS_LONG"
@@ -1180,7 +1180,7 @@ country_event = {
 
 country_event = { 
 	id = 334341 
-	name = "334341.T" #DUA seeks Shanghai -JAP is GP
+	title = "334341.T" #DUA seeks Shanghai -JAP is GP
 	desc = "334341.D"
 	picture = "Japanese_CHI"
 	
@@ -1249,7 +1249,7 @@ country_event = {
 
 country_event = { 
 	id = 334342 
-	name = "334342.T" #JAP protects MIG
+	title = "334342.T" #JAP protects MIG
 	desc = "334342.D"
 	
 	is_triggered_only = yes 
@@ -1287,7 +1287,7 @@ country_event = {
 
 country_event = { 
 	id = 334343 
-	name = "334343.T" #MIG informed of war by DUA
+	title = "334343.T" #MIG informed of war by DUA
 	desc = "334343.D"
 	picture = "Opiumwar"
 	news = yes 
@@ -1304,7 +1304,7 @@ country_event = {
 
 country_event = { 
 	id = 334344 
-	name = "334344.T" #JAP learns that DUA backs down
+	title = "334344.T" #JAP learns that DUA backs down
 	desc = "334344.D"
 	picture = "Japanese_CHI"
 	news = yes 
@@ -1322,7 +1322,7 @@ country_event = {
 
 country_event = { 
 	id = 334345
-	name = "334345.T" #CO-sovereignity in the East
+	title = "334345.T" #CO-sovereignity in the East
 	desc = "334345.D"
 	picture = "Unequal_Treaty_CHI"
 	
@@ -1353,7 +1353,7 @@ country_event = {
 	option = { 
 	name = "334345.B" #War for Shanghai
 	relation = { who = FROM value = -150}
-	eave_alliance = FROM
+	leave_alliance = FROM
 	end_military_access = FROM
 	war = {
 			target = MIG
@@ -1375,7 +1375,7 @@ country_event = {
 
 country_event = { 
 	id = 334346
-	name = "334346.T" #CO-sovereignity in the East
+	title = "334346.T" #CO-sovereignity in the East
 	desc = "334346.D"
 	picture = "Unequal_Treaty_CHI"
 	
@@ -1408,7 +1408,7 @@ country_event = {
 
 country_event = { 
 	id = 334347
-	name = "334347.T" #Shanghai is JAP
+	title = "334347.T" #Shanghai is JAP
 	desc = "334347.D"
 	picture = "Japanese_CHI"
 	news = yes 
@@ -1427,7 +1427,7 @@ country_event = {
 
 country_event = { 
 	id = 334348
-	name = "334348.T" #Jiaxing is DUA
+	title = "334348.T" #Jiaxing is DUA
 	desc = "334348.D"
 	picture = "Unequal_Treaty_CHI"
 	
@@ -1528,7 +1528,7 @@ country_event = {
 
 country_event = { 
 	id = 334351
-	name = "334338.T" #DUA seeks Shanghai -JAP not Great Power
+	title = "334338.T" #DUA seeks Shanghai -JAP not Great Power
 	desc = "334338.D"
 	
 	is_triggered_only = yes 

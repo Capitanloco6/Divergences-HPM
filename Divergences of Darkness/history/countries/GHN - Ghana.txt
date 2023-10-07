@@ -40,7 +40,7 @@ set_country_flag = animist_country
 
 set_country_flag = post_colonial_country
 
-ruling_party = ASH2_conservative
+ruling_party = ASH_conservative_2
 upper_house = {
 	fascist = 0
 	liberal = 0
