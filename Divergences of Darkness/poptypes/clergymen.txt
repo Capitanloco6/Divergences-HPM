@@ -6215,20 +6215,6 @@ issues = {
         modifier = {
             factor = 2.0
             country = { government = democracy }
-            NOT = {
-                country = { primary_culture = yankee }
-            }
-            NOT = {
-                country = { primary_culture = dixie }
-            }
-        }
-
-        modifier = {
-            factor = 0.5
-            OR = {
-                country = { primary_culture = yankee }
-                country = { primary_culture = dixie }
-            }
         }
 
         modifier = {

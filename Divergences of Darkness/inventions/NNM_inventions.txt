@@ -75,15 +75,6 @@ the_dark_continent = {
             NOT = { year = 1890 }
         }
         modifier = {
-            factor = -100
-            NOT = { is_greater_power = yes }
-            is_our_vassal = CNG
-            OR = {
-                has_country_flag = congo_master
-                has_country_flag = historical_congo
-            }
-        }
-        modifier = {
             factor = 20
             biologism = 1
         }

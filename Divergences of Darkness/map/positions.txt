@@ -91026,15 +91026,6 @@
             y = 1227.848333
         }
 
-        naval_base = {
-            x = 1339.460000
-            y = 1211.365000
-        }
-
-    }
-
-    building_rotation = {
-        naval_base = 4.897089
     }
 
 } # Tapachula

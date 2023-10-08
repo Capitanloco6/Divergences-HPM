@@ -829,7 +829,6 @@ country_event = {
                 OR = {
                     tag = YUG
                     tag = SER
-                    tag = DNB
                 }
             }
         }

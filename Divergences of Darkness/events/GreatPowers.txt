@@ -2041,7 +2041,6 @@ country_event = {
         random_country = {
             limit = {
                 prestige = 10
-                NOT = { tag = HAI }
                 capital_scope = { continent = north_america }
                 OR = {
                     is_greater_power = yes

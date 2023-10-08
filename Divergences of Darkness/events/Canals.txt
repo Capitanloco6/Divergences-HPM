@@ -398,10 +398,6 @@ country_event = {
         months = 6
         modifier = {
             factor = 0.8
-            cheap_steel = 1
-        }
-        modifier = {
-            factor = 0.8
             invention = nitroglycerin
         }
         modifier = {
@@ -466,10 +462,6 @@ country_event = {
         modifier = {
             factor = 10
             has_country_modifier = building_suez_canal_revolt
-        }
-        modifier = {
-            factor = 0.8
-            cheap_steel = 1
         }
         modifier = {
             factor = 0.8
@@ -540,10 +532,6 @@ country_event = {
         }
         modifier = {
             factor = 0.8
-            cheap_steel = 1
-        }
-        modifier = {
-            factor = 0.8
             invention = nitroglycerin
         }
         modifier = {
@@ -606,10 +594,6 @@ country_event = {
         modifier = {
             factor = 10
             has_country_modifier = building_suez_canal_revolt
-        }
-        modifier = {
-            factor = 0.8
-            cheap_steel = 1
         }
         modifier = {
             factor = 0.8
@@ -963,10 +947,6 @@ country_event = {
         }
         modifier = {
             factor = 0.9
-            cheap_steel = 1
-        }
-        modifier = {
-            factor = 0.9
             invention = nitroglycerin
         }
         modifier = {
@@ -1055,10 +1035,6 @@ country_event = {
         modifier = {
             factor = 0.9
             semi_automatization = 1
-        }
-        modifier = {
-            factor = 0.9
-            cheap_steel = 1
         }
         modifier = {
             factor = 0.9
@@ -1153,10 +1129,6 @@ country_event = {
         }
         modifier = {
             factor = 0.9
-            cheap_steel = 1
-        }
-        modifier = {
-            factor = 0.9
             invention = nitroglycerin
         }
         modifier = {
@@ -1246,10 +1218,6 @@ country_event = {
         modifier = {
             factor = 0.9
             semi_automatization = 1
-        }
-        modifier = {
-            factor = 0.9
-            cheap_steel = 1
         }
         modifier = {
             factor = 0.9
@@ -1666,7 +1634,6 @@ country_event = {
             has_global_flag = building_panama_canal_phase2
             has_global_flag = building_panama_canal_phase3
         }
-        high_n_low_pressure_steam_engines = 1
         interchangeable_parts = 1
     }
 
