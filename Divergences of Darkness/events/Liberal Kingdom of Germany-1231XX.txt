@@ -1148,9 +1148,6 @@ country_event = {
                 duration = 365
             }
         }
-        BOH = {
-            NGF = { split_troops = 0.30 }
-        }
         any_country = {
             limit = {
                 primary_culture = north_german
@@ -1561,7 +1558,7 @@ country_event = {
                     is_greater_power = no
                 }
             }
-            event = 11106
+            country_event = 11106
         }
         any_country = {
             limit = {

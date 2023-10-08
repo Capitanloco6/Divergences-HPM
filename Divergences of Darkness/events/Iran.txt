@@ -1308,17 +1308,19 @@ country_event = { # armenian turkish population exchange proposal is received
 				    }
 				    remove_core = ARM 
 			    }
-		    }	
-			FROM = { country_event = 180036 }
+		    }
+			any_country = {
+				limit = { has_country_flag = proposing_turko-armenian_population_exchange }
+				country_event = 180036
+			}			
 		    ai_chance = { factor = 50 }  
 	    }
 		option = {
 		    name = "EVTOPTB180035"
-			relation = {
-				who = FROM 
-				value = -50
-		    }
-            FROM = { country_event = 180037 }
+			any_country = {
+				limit = { has_country_flag = proposing_turko-armenian_population_exchange }
+				country_event = 180037
+			}
             ai_chance = { factor = 50 }			
 		}	
 }
@@ -2447,7 +2449,7 @@ country_event = { #Iranians incite rebellion in Dagestan
         name = "EVTOPTA180065"	
         release = DAG
         DAG = {
-            economic_reform = advanced_admin_reform
+            economic_reform = yes_monetary_reform
             activate_technology = no_standard
 			military_reform = foreign_weapons_two
 			military_reform = foreign_training_two			

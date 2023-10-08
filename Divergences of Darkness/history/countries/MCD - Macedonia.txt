@@ -36,7 +36,7 @@ border_policy = open_borders
 
 set_country_flag = orthodox_country
 
-ruling_party = BUL_conservative
+ruling_party = MAC_conservative_1
 upper_house = {
 	fascist = 0
 	liberal = 25

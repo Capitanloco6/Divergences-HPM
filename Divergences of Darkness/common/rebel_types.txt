@@ -2715,18 +2715,7 @@ liberal_rebels = {
             duration = 365
         }
         prestige_factor = -0.25
-
-        random_owned = {
-            limit = {
-                owner = {
-                    NOT = { tag = URU }
-                }
-            }
-            owner = {
-                country_event = 800054
-                plurality = -10
-            }
-        }
+        country_event = 800054
 
     }
 }
@@ -2861,13 +2850,6 @@ unciv_reactionary_rebels = {
         modifier = {
             factor = 1.02
             country = { civilization_progress = 0.75 }
-        }
-        modifier = {
-            factor = 0.01
-            country = {
-                tag = QNG
-                civilization_progress = 0.75
-            }
         }
         modifier = {
             factor = 1.02
@@ -3212,13 +3194,13 @@ separatist_rebels = {
     demands_enforced_effect = {
         prestige_factor = -0.2
         any_owned = {
-            limit = {
-                any_core = {
-                    exists = yes
-                    NOT = { is_primary_culture = THIS }
-                    NOT = { has_province_modifier = patriot_uprising }
-                }
-            }
+			limit = {
+			  any_core = {
+				exists = yes
+				NOT = { is_primary_culture = THIS }
+			  }
+			  NOT = { has_province_modifier = patriot_uprising }
+			}
             add_province_modifier = {
                 name = patriot_uprising
                 duration = 1095

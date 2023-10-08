@@ -836,19 +836,6 @@ FLA = {
     }
 }
 
-# Haiti
-HAI = {
-    color1 = {
-        43 42 130
-    }
-    color2 = {
-        99 137 153
-    }
-    color3 = {
-        187 79 86
-    }
-}
-
 # Holstein FIXED
 HOL = {
     color1 = {

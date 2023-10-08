@@ -164,39 +164,6 @@ neglected_education = {
     icon = 19
 }
 
-the_british_raj = {
-    trigger = {
-        exists = yes
-        OR = {
-            government = absolute_monarchy
-            government = prussian_constitutionalism
-            government = hms_government
-        }
-        NOT = { is_culture_group = iranian }
-        NOT = { is_culture_group = south_asian }
-        1227 = {
-            is_colonial = yes
-            owned_by = THIS
-        }
-        1236 = {
-            is_colonial = yes
-            owned_by = THIS
-        }
-        1251 = {
-            is_colonial = yes
-            owned_by = THIS
-        }
-        1297 = {
-            is_colonial = yes
-            owned_by = THIS
-        }
-    }
-    research_points = 0.5
-    core_pop_militancy_modifier = -0.05
-    prestige = 0.03
-    icon = 19
-}
-
 dutch_east_india = {
     trigger = {
         exists = yes
@@ -239,22 +206,6 @@ substate_nation = {
     tax_efficiency = 0.5
 
     icon = 10
-}
-
-chinese_substate = {
-    trigger = {
-        OR = {
-            substate_of = QNG
-            vassal_of = QNG
-        }
-        civilized = no
-        exists = yes
-        QNG = { government = absolute_monarchy }
-        is_culture_group = chinese
-    }
-    icon = 10
-    research_points_modifier = -0.2
-    global_pop_consciousness_modifier = 0.02
 }
 
 own_kiel_canal = {

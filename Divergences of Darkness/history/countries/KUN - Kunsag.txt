@@ -38,7 +38,7 @@ border_policy = open_borders
 
 set_country_flag = sunni_country
 
-ruling_party = HUN_liberal
+ruling_party = HUN_liberal_1
 upper_house = {
 	fascist = 0
 	liberal = 45
