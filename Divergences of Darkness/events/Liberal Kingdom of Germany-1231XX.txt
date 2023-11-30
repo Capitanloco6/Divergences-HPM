@@ -1477,15 +1477,9 @@ country_event = {
         year = 1900
         is_greater_power = yes
         NOT = { tag = KRL }
-        NOT = {
-            GER = { exists = yes }
-        }
-        NOT = {
-            CAE = { exists = yes }
-        }
-        NOT = {
-            HLR = { exists = yes }
-        }
+        GER = { exists = no }
+        CAE = { exists = no }
+        HLR = { exists = no }   
         NOT = {
             BRG = { rank = 4 }
         }
@@ -1555,8 +1549,8 @@ country_event = {
                     primary_culture = south_german
                     primary_culture = rheinish
                     primary_culture = north_german
-                    is_greater_power = no
                 }
+                is_greater_power = no				
             }
             country_event = 11106
         }
